@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "name": "Combat Benchmark 12",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1600,
+  "height": 850,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Line 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue Line 6",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 1,
+      "name": "Red Line 7",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "name": "Red Line 8",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 1,
+      "name": "Red Line 9",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "name": "Red Line 10",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 1,
+      "name": "Red Line 11",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "name": "Red Line 12",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 5,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 90
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 0,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 2,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 90
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 2,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 4,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 180
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 4,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 300,
+        "y": 230,
+        "radiusX": 95,
+        "radiusY": 110,
+        "height": 12,
+        "compact": true
+      },
+      {
+        "x": 1220,
+        "y": 550,
+        "radiusX": 90,
+        "radiusY": 90,
+        "height": 18,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 280,
+        "y": 90,
+        "radiusX": 45,
+        "radiusY": 42,
+        "density": 0.5
+      },
+      {
+        "x": 770,
+        "y": 360,
+        "radiusX": 60,
+        "radiusY": 60,
+        "density": 0.45
+      },
+      {
+        "x": 1260,
+        "y": 720,
+        "radiusX": 75,
+        "radiusY": 70,
+        "density": 0.6
+      }
+    ]
+  }
+}

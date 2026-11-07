@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "name": "Commonwealth Lab — Battle laboratory: coalition",
+  "width": 1100,
+  "height": 900,
+  "seed": 1796,
+  "commander_seed": 1796,
+  "blue": {
+    "infantry": 0,
+    "cavalry": 0,
+    "artillery": 0,
+    "specialists": {
+      "commonwealth_regulars": 1,
+      "commonwealth_militia": 1,
+      "commonwealth_scythemen": 1,
+      "revolutionary_line": 1,
+      "revolutionary_rifles": 1,
+      "haudenosaunee_skirmishers": 1,
+      "commonwealth_uhlans": 1,
+      "commonwealth_field_artillery": 1
+    }
+  },
+  "red": {
+    "infantry": 0,
+    "cavalry": 0,
+    "artillery": 1,
+    "specialists": {
+      "prussian_line": 2,
+      "prussian_grenadiers": 1,
+      "russian_musketeers": 1,
+      "russian_grenadiers": 1,
+      "russian_cossacks": 1,
+      "prussian_cuirassiers": 1
+    }
+  },
+  "symmetric": false,
+  "max_total": 60,
+  "max_per_type": 12,
+  "ai_armies": [
+    0,
+    1
+  ],
+  "ai_strategies": [
+    "balanced",
+    "all_out_attack"
+  ],
+  "army_commanders": [
+    {
+      "army": 0,
+      "commanderId": "tadeusz_kosciuszko"
+    },
+    {
+      "army": 1,
+      "commanderId": "alexander_suvorov"
+    }
+  ],
+  "terrain_preset": "Mixed Terrain",
+  "terrain_seed": 1796,
+  "terrain": {
+    "width": 1100,
+    "height": 900,
+    "hills": [
+      {
+        "x": 550,
+        "y": 350,
+        "radius_x": 110,
+        "radius_y": 140,
+        "height": 12,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 460,
+        "y": 200,
+        "radius_x": 100,
+        "radius_y": 130,
+        "density": 0.55
+      }
+    ]
+  },
+  "placements": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype_id": "commonwealth_regulars",
+      "kind": "infantry",
+      "name": "Commonwealth Regular Infantry",
+      "position": [
+        330,
+        80
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "historical-franciszek_ksawery_niesiolowski",
+        "name": "Franciszek Ksawery Niesiołowski",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "methodical",
+        "specialization": "steady_volley",
+        "biography": "Stationary infantry in line gain up to 18% volley accuracy as cohesion rises from 60 to 90.",
+        "nation": "",
+        "definition_id": "franciszek_ksawery_niesiolowski"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "archetype_id": "commonwealth_militia",
+      "kind": "infantry",
+      "name": "Citizen Militia",
+      "position": [
+        330,
+        170
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "historical-jakub_jasinski",
+        "name": "Jakub Jasiński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "aggressive",
+        "specialization": "revolutionary_fervour",
+        "biography": "Citizen formations locally outnumbered within 130 m take 18% less direct shock, 12% less casualty morale loss, and gain 10% melee power.",
+        "nation": "",
+        "definition_id": "jakub_jasinski"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "archetype_id": "commonwealth_scythemen",
+      "kind": "infantry",
+      "name": "Scythemen (Kosynierzy)",
+      "position": [
+        330,
+        260
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "archetype_id": "revolutionary_line",
+      "kind": "infantry",
+      "name": "Revolutionary Line Infantry",
+      "position": [
+        330,
+        350
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "historical-lord_edward_fitzgerald",
+        "name": "Lord Edward FitzGerald",
+        "background": "Revolutionary Britain",
+        "personality": "stalwart",
+        "specialization": "brotherhood_of_nations",
+        "biography": "With a visible, steady allied regiment of a different faction within 110 m: both recover cohesion 12% faster and up to 0.12 morale/s. Strongest coordination source only.",
+        "nation": "Ireland",
+        "definition_id": "lord_edward_fitzgerald"
+      }
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "archetype_id": "revolutionary_rifles",
+      "kind": "infantry",
+      "name": "Experimental Rifle Corps",
+      "position": [
+        330,
+        440
+      ],
+      "facing": 0,
+      "formation": "skirmish",
+      "commander": {
+        "id": "lab-officer-4",
+        "name": "Laboratory Officer 5",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "archetype_id": "haudenosaunee_skirmishers",
+      "kind": "infantry",
+      "name": "War Party",
+      "position": [
+        330,
+        530
+      ],
+      "facing": 0,
+      "formation": "skirmish",
+      "commander": {
+        "id": "historical-joseph_louis_cook",
+        "name": "Joseph Louis Cook",
+        "background": "Haudenosaunee Confederacy",
+        "personality": "opportunistic",
+        "specialization": "veteran_of_two_worlds",
+        "biography": "With a visible allied conventional regiment and a Haudenosaunee detachment within 110 m: both gain 15% cohesion recovery, 10% less manoeuvre disorder, and up to 0.12 morale/s.",
+        "nation": "Mohawk",
+        "definition_id": "joseph_louis_cook"
+      }
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "archetype_id": "commonwealth_uhlans",
+      "kind": "cavalry",
+      "name": "Advance Guard Lancers",
+      "position": [
+        330,
+        620
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "historical-antoni_madalinski",
+        "name": "Antoni Madaliński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "aggressive",
+        "specialization": "relentless_pursuit_signature",
+        "biography": "Moving pursuit +22%, contact gap +12%, pursuit disorder −20%; steady frontal combat −10%.",
+        "nation": "",
+        "definition_id": "antoni_madalinski"
+      }
+    },
+    {
+      "id": 7,
+      "army": 0,
+      "archetype_id": "commonwealth_field_artillery",
+      "kind": "artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": [
+        330,
+        710
+      ],
+      "facing": 0,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-7",
+        "name": "Laboratory Officer 8",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 8,
+      "army": 1,
+      "archetype_id": "prussian_line",
+      "kind": "infantry",
+      "name": "Musketeers",
+      "position": [
+        770,
+        80
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-8",
+        "name": "Laboratory Officer 9",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "archetype_id": "prussian_grenadiers",
+      "kind": "infantry",
+      "name": "Prussian Grenadiers",
+      "position": [
+        770,
+        170
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-9",
+        "name": "Laboratory Officer 10",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 10,
+      "army": 1,
+      "archetype_id": "russian_musketeers",
+      "kind": "infantry",
+      "name": "Russian Musketeers",
+      "position": [
+        770,
+        260
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "historical-pyotr_bagration",
+        "name": "Pyotr Bagration",
+        "background": "Russia",
+        "personality": "aggressive",
+        "specialization": "vanguard_assault",
+        "biography": "Infantry attack/advance speed +8%, manoeuvre disorder −12%, moving charge shock +8%.",
+        "nation": "Georgian",
+        "definition_id": "pyotr_bagration"
+      }
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "archetype_id": "russian_grenadiers",
+      "kind": "infantry",
+      "name": "Russian Grenadiers",
+      "position": [
+        770,
+        350
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-11",
+        "name": "Laboratory Officer 12",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 12,
+      "army": 1,
+      "archetype_id": "russian_cossacks",
+      "kind": "cavalry",
+      "name": "Russian Cossacks",
+      "position": [
+        770,
+        440
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "historical-matvei_platov",
+        "name": "Matvei Platov",
+        "background": "Russia",
+        "personality": "opportunistic",
+        "specialization": "cossack_screen",
+        "biography": "Light cavalry manoeuvre speed +6%, pursuit +15%, disruption −10%, terrain sight opacity −10%; avoids prepared fronts.",
+        "nation": "",
+        "definition_id": "matvei_platov"
+      }
+    },
+    {
+      "id": 13,
+      "army": 1,
+      "archetype_id": "prussian_cuirassiers",
+      "kind": "cavalry",
+      "name": "Prussian Cuirassiers",
+      "position": [
+        770,
+        530
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "historical-gebhard_leberecht_von_blucher",
+        "name": "Gebhard Leberecht von Blücher",
+        "background": "Prussia",
+        "personality": "aggressive",
+        "specialization": "vorwarts",
+        "biography": "Aggressive common AI policy; exposed charge shock +15%, but charging adds 0.10 fatigue/s and up to 2 cohesion loss on impact.",
+        "nation": "",
+        "definition_id": "gebhard_leberecht_von_blucher"
+      }
+    },
+    {
+      "id": 14,
+      "army": 1,
+      "archetype_id": "prussian_line",
+      "kind": "infantry",
+      "name": "Musketeers",
+      "position": [
+        770,
+        620
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-14",
+        "name": "Laboratory Officer 15",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 15,
+      "army": 1,
+      "archetype_id": "artillery",
+      "kind": "artillery",
+      "name": "Standard Field Artillery",
+      "position": [
+        770,
+        710
+      ],
+      "facing": 3.141592653589793,
+      "formation": "line",
+      "commander": {
+        "id": "lab-officer-15",
+        "name": "Laboratory Officer 16",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "name": "AI Woodland Harassment",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 900,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Haudenosaunee Woodland Skirmishers 1",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Standard Line Infantry 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 560,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Standard Line Infantry 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 320,
+        "y": 470
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Standard Line Infantry 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 600,
+        "y": 470
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [],
+  "terrain": {
+    "hills": [],
+    "forests": [
+      {
+        "x": 420,
+        "y": 300,
+        "radiusX": 150,
+        "radiusY": 100,
+        "density": 0.7
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "commanderSeed": 1729,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  }
+}

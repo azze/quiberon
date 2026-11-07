@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+results*.json
+results*.csv
+benchmark-results/
+
+saves/
+
+godot/.godot/
+godot/.mono/
+.tools/
+**/bin/
+**/obj/
+**/TestResults/
+/recordings/

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "Cavalry Breakthrough",
+  "width": 1000,
+  "height": 600,
+  "blue": {
+    "infantry": 2,
+    "cavalry": 0,
+    "artillery": 0,
+    "specialists": {
+      "commonwealth_uhlans": 2
+    }
+  },
+  "red": {
+    "infantry": 3,
+    "cavalry": 1,
+    "artillery": 0,
+    "specialists": {}
+  },
+  "seed": null,
+  "symmetric": false,
+  "max_per_type": 12,
+  "max_total": 48,
+  "ai_armies": [
+    1
+  ],
+  "placements": [],
+  "terrain_preset": "Open Field"
+}

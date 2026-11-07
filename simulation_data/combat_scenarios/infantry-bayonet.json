@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "name": "Infantry Bayonet Assault",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 90,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Infantry 1",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 400,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0,
+      "commander": {
+        "id": "officer-0",
+        "name": "Test Officer 0",
+        "rank": "Major",
+        "background": "Generic",
+        "personality": "aggressive",
+        "specialization": "firebrand",
+        "upgrades": [
+          "shock_commander",
+          "swift_reform"
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 447,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      }
+    }
+  ],
+  "terrain": null,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": false,
+  "commandersEnabled": true,
+  "commanderSeed": 1729,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  }
+}

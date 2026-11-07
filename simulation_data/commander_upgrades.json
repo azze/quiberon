@@ -1,0 +1,191 @@
+{
+  "limit": 3,
+  "tuning": {
+    "rolling_reload": 0.8,
+    "swift_formation": 0.75,
+    "swift_manoeuvre": 0.8,
+    "swift_recovery": 1.35,
+    "aura_morale": 0.3,
+    "aura_rally": 0.45,
+    "controlled_turn": 1.2,
+    "controlled_alignment": 1.1,
+    "controlled_disorder": 0.7,
+    "controlled_cooldown": 0.8,
+    "controlled_reform": 0.7,
+    "pursuit_power": 1.2,
+    "pursuit_recovery": 8.0,
+    "shock": 1.35,
+    "ambush_shock": 6.0,
+    "ambush_cohesion": 8.0,
+    "ambush_reset": 30.0,
+    "ambush_move": 40.0,
+    "harassing_cohesion": 3.0,
+    "defence": 0.8,
+    "mobile": 0.6,
+    "calculated": 0.65,
+    "calculated_seconds": 6.0,
+    "inspired_morale": 3.0,
+    "inspired_cooldown": 20.0
+  },
+  "definitions": [
+    {
+      "id": "rolling_volley",
+      "name": "Rolling Volley",
+      "description": "Line, cohesion >=70, stationary: reload -20% near a steady infantry ally within 90 m.",
+      "categories": [
+        "infantry"
+      ],
+      "roles": [],
+      "lineRequired": true,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "swift_reform",
+      "name": "Swift Reform",
+      "description": "Formation time -25%, manoeuvre disruption -20%, quiet cohesion recovery +35%.",
+      "categories": [
+        "infantry",
+        "cavalry"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "rallying_presence",
+      "name": "Rallying Presence",
+      "description": "Steady officer supports allies within 125 m: +0.30 morale/s, +0.45 while rallying; strongest aura only.",
+      "categories": [
+        "infantry",
+        "cavalry",
+        "artillery"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "controlled_charge",
+      "name": "Controlled Charge",
+      "description": "Charge turning +20%, alignment +10%, impact disorder -30%, cooldown -20%, reform time -30%.",
+      "categories": [
+        "cavalry"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "relentless_pursuit",
+      "name": "Relentless Pursuit",
+      "description": "Pursuit power +20%; recover 8 cohesion once per enemy routed by this regiment, per battle.",
+      "categories": [
+        "cavalry"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "shock_commander",
+      "name": "Shock Commander",
+      "description": "Forceful charges against exposed enemies inflict +35% morale shock; prepared fronts resist.",
+      "categories": [
+        "infantry",
+        "cavalry"
+      ],
+      "roles": [
+        "anchor",
+        "cavalry",
+        "flanker"
+      ],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "woodland_ambush",
+      "name": "Woodland Ambush",
+      "description": "First stationary volley from obscured forest cover: +6 morale shock and -8 cohesion. Reset needs 30 s without attacking and a 40 m move.",
+      "categories": [
+        "infantry"
+      ],
+      "roles": [
+        "skirmisher",
+        "rifles"
+      ],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "harassing_fire",
+      "name": "Harassing Fire",
+      "description": "A volley causing casualties removes 3 additional target cohesion; no extra casualty damage.",
+      "categories": [
+        "infantry"
+      ],
+      "roles": [
+        "skirmisher",
+        "rifles"
+      ],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "steadfast_defence",
+      "name": "Steadfast Defence",
+      "description": "Stationary, steady defensive line at cohesion >=60: charge resistance +20%, morale shock -20%.",
+      "categories": [
+        "infantry"
+      ],
+      "roles": [],
+      "lineRequired": true,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "mobile_battery",
+      "name": "Mobile Battery",
+      "description": "Limber and setup times -40%; existing battery AI can finish repositioning sooner.",
+      "categories": [
+        "artillery"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "calculated_fire",
+      "name": "Calculated Fire",
+      "description": "After 6 seconds stationary and deployed: horizontal and vertical aim scatter -35%; moving resets preparation.",
+      "categories": [
+        "artillery"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "inspired_attack",
+      "name": "Inspired Attack",
+      "description": "Damaging wavering/routing enemies inspires visible allies within 100 m for +3 morale; shared army cooldown 20 s.",
+      "categories": [
+        "infantry",
+        "cavalry"
+      ],
+      "roles": [],
+      "lineRequired": false,
+      "maxRank": 1,
+      "prerequisites": []
+    }
+  ]
+}

@@ -1,0 +1,848 @@
+{
+  "version": 1,
+  "name": "Combined Arms 60",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 3420,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Infantry 1",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 110
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Infantry 2",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 220
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Infantry 3",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 330
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Infantry 4",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 440
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Infantry 5",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 550
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue Infantry 6",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 660
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "name": "Blue Infantry 7",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 770
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 0,
+      "name": "Blue Infantry 8",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 880
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "name": "Blue Infantry 9",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 990
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 0,
+      "name": "Blue Infantry 10",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 1100
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "name": "Blue Infantry 11",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 1210
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 0,
+      "name": "Blue Infantry 12",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 1320
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 12,
+      "army": 0,
+      "name": "Blue Infantry 13",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 1430
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 13,
+      "army": 0,
+      "name": "Blue Infantry 14",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 1540
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 14,
+      "army": 0,
+      "name": "Blue Infantry 15",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 1650
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 15,
+      "army": 0,
+      "name": "Blue Infantry 16",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 1760
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 16,
+      "army": 0,
+      "name": "Blue Infantry 17",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 1870
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 17,
+      "army": 0,
+      "name": "Blue Infantry 18",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 1980
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 18,
+      "army": 0,
+      "name": "Blue Infantry 19",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 2090
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 19,
+      "army": 0,
+      "name": "Blue Infantry 20",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 2200
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 20,
+      "army": 0,
+      "name": "Blue Infantry 21",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 2310
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 21,
+      "army": 0,
+      "name": "Blue Infantry 22",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 2420
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 22,
+      "army": 0,
+      "name": "Blue Infantry 23",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 2530
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 23,
+      "army": 0,
+      "name": "Blue Infantry 24",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 2640
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 24,
+      "army": 0,
+      "name": "Blue Infantry 25",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 2750
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 25,
+      "army": 0,
+      "name": "Blue Infantry 26",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 2860
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 26,
+      "army": 0,
+      "name": "Blue Infantry 27",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 2970
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 27,
+      "army": 0,
+      "name": "Blue Infantry 28",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 3080
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 28,
+      "army": 0,
+      "name": "Blue Infantry 29",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 3190
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 29,
+      "army": 0,
+      "name": "Blue Infantry 30",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 3300
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 30,
+      "army": 1,
+      "name": "Red Infantry 31",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 110
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 31,
+      "army": 1,
+      "name": "Red Infantry 32",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 32,
+      "army": 1,
+      "name": "Red Infantry 33",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 33,
+      "army": 1,
+      "name": "Red Infantry 34",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 440
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 34,
+      "army": 1,
+      "name": "Red Infantry 35",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 35,
+      "army": 1,
+      "name": "Red Infantry 36",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 660
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 36,
+      "army": 1,
+      "name": "Red Infantry 37",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 770
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 37,
+      "army": 1,
+      "name": "Red Infantry 38",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 880
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 38,
+      "army": 1,
+      "name": "Red Infantry 39",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 990
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 39,
+      "army": 1,
+      "name": "Red Infantry 40",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 1100
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 40,
+      "army": 1,
+      "name": "Red Infantry 41",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 1210
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 41,
+      "army": 1,
+      "name": "Red Infantry 42",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 1320
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 42,
+      "army": 1,
+      "name": "Red Infantry 43",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 1430
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 43,
+      "army": 1,
+      "name": "Red Infantry 44",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 1540
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 44,
+      "army": 1,
+      "name": "Red Infantry 45",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 1650
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 45,
+      "army": 1,
+      "name": "Red Infantry 46",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 1760
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 46,
+      "army": 1,
+      "name": "Red Infantry 47",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 1870
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 47,
+      "army": 1,
+      "name": "Red Infantry 48",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 1980
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 48,
+      "army": 1,
+      "name": "Red Infantry 49",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 2090
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 49,
+      "army": 1,
+      "name": "Red Infantry 50",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 2200
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 50,
+      "army": 1,
+      "name": "Red Infantry 51",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 2310
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 51,
+      "army": 1,
+      "name": "Red Infantry 52",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 2420
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 52,
+      "army": 1,
+      "name": "Red Infantry 53",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 2530
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 53,
+      "army": 1,
+      "name": "Red Infantry 54",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 2640
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 54,
+      "army": 1,
+      "name": "Red Infantry 55",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 2750
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 55,
+      "army": 1,
+      "name": "Red Infantry 56",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 2860
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 56,
+      "army": 1,
+      "name": "Red Infantry 57",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 2970
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 57,
+      "army": 1,
+      "name": "Red Infantry 58",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 3080
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 58,
+      "army": 1,
+      "name": "Red Infantry 59",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 3190
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 59,
+      "army": 1,
+      "name": "Red Infantry 60",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 3300
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 3,
+      "order": {
+        "kind": "attack",
+        "targetId": 33
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 9,
+      "order": {
+        "kind": "attack",
+        "targetId": 39
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 15,
+      "order": {
+        "kind": "attack",
+        "targetId": 45
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 21,
+      "order": {
+        "kind": "attack",
+        "targetId": 51
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 27,
+      "order": {
+        "kind": "attack",
+        "targetId": 57
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 33,
+      "order": {
+        "kind": "attack",
+        "targetId": 3
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 39,
+      "order": {
+        "kind": "attack",
+        "targetId": 9
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 45,
+      "order": {
+        "kind": "attack",
+        "targetId": 15
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 51,
+      "order": {
+        "kind": "attack",
+        "targetId": 21
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 57,
+      "order": {
+        "kind": "attack",
+        "targetId": 27
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 530,
+        "y": 120,
+        "radiusX": 50,
+        "radiusY": 65,
+        "height": 8,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 460,
+        "y": 220,
+        "radiusX": 70,
+        "radiusY": 75,
+        "density": 0.6
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true
+}

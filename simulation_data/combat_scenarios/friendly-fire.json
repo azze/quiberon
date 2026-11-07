@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "name": "Artillery Friendly Fire",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Battery 1",
+      "archetype": "artillery",
+      "position": {
+        "x": 300,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 620,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 540,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 120,
+        "y": 650
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 1,
+      "name": "Red Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 1250,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "attack",
+        "targetId": 1
+      }
+    }
+  ],
+  "terrain": null,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true
+}

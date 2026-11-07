@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "name": "turning",
+  "seed": 17,
+  "width": 1000,
+  "height": 600,
+  "duration": 180,
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Movement Regiment 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 300,
+        "y": 200
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 550,
+          "y": 420
+        },
+        "facing": -1.5707963267948966
+      }
+    }
+  ],
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    30,
+    70,
+    80,
+    100,
+    200,
+    400,
+    700,
+    1800
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "name": "Uhlan Charge and Pursuit",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Infantry 1",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 400,
+        "y": 280
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 490,
+        "y": 280
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 30,
+      "morale": 28,
+      "state": "wavering"
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 120,
+        "y": 650
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 1250,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "attack",
+        "targetId": 1
+      }
+    }
+  ],
+  "terrain": null,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true
+}

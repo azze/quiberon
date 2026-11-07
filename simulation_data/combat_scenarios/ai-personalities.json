@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "name": "AI Cavalry Personalities",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 900,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Standard Cavalry 1",
+      "archetype": "cavalry",
+      "position": {
+        "x": 370,
+        "y": 250
+      },
+      "facing": 0.0,
+      "cohesion": 100.0,
+      "commander": {
+        "id": "officer-0",
+        "name": "Test Officer 0",
+        "rank": "Major",
+        "background": "Generic",
+        "personality": "aggressive",
+        "specialization": "firebrand"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Standard Cavalry 2",
+      "archetype": "cavalry",
+      "position": {
+        "x": 370,
+        "y": 490
+      },
+      "facing": 0.0,
+      "cohesion": 100.0,
+      "commander": {
+        "id": "officer-1",
+        "name": "Test Officer 1",
+        "rank": "Major",
+        "background": "Generic",
+        "personality": "cautious",
+        "specialization": "firebrand"
+      }
+    },
+    {
+      "id": 2,
+      "army": 1,
+      "name": "Red Standard Line Infantry 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 640,
+        "y": 250
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Standard Line Infantry 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 640,
+        "y": 490
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [],
+  "terrain": null,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "commanderSeed": 1729,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  }
+}

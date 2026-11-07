@@ -1,0 +1,4420 @@
+[
+  {
+    "input": {
+      "version": 1,
+      "name": "infantry-duel",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1000,
+      "height": 650,
+      "duration": 30,
+      "sampleTicks": [
+        0,
+        1,
+        2,
+        10,
+        20,
+        21,
+        50,
+        100,
+        200,
+        300
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 220
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 400
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 1,
+          "name": "Red Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 570,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 1,
+          "name": "Red Line 4",
+          "archetype": "infantry",
+          "position": {
+            "x": 570,
+            "y": 400
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null
+    },
+    "expected": {
+      "name": "infantry-duel",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 1,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 95.35166666666666,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 95.89333333333333,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 93.72666666666666,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 93.185,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            }
+          ]
+        },
+        {
+          "tick": 2,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 95.41666666666666,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 95.95833333333333,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 93.79166666666666,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 93.25,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 95.93666666666664,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 96.47833333333331,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 94.31166666666664,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 93.76999999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 20,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 96.58666666666662,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 97.12833333333329,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 94.96166666666662,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 94.41999999999996,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 21,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 96.65166666666661,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 97.19333333333329,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 95.02666666666661,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 94.48499999999996,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 50,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 98.53666666666655,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 99.07833333333322,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 96.91166666666655,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 96.36999999999989,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 232,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 229,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 99.61999999999978,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 224,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 226,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 224,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 221,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 300,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 430,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 222,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 430,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 222,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 570,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 222,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 570,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            }
+          ]
+        }
+      ],
+      "draws": 1154
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "ridge-defence",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1000,
+      "height": 650,
+      "duration": 90,
+      "sampleTicks": [
+        0,
+        1,
+        2,
+        10,
+        20,
+        21,
+        50,
+        100,
+        200,
+        300,
+        900
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 530,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 530,
+            "y": 400
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 1,
+          "name": "Red Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 310,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 1,
+          "name": "Red Line 4",
+          "archetype": "infantry",
+          "position": {
+            "x": 310,
+            "y": 400
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 2,
+          "order": {
+            "kind": "attack",
+            "targetId": 0
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 1
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 570,
+            "y": 310,
+            "radiusX": 90,
+            "radiusY": 170,
+            "height": 28,
+            "compact": true
+          }
+        ],
+        "forests": []
+      }
+    },
+    "expected": {
+      "name": "ridge-defence",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 310,
+                "y": 220
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 310,
+                "y": 400
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 1,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 310.20982515599655,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 310.20982515599655,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 2,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 310.4196395954211,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 310.4196395954211,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 312.097724400383,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 312.097724400383,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 20,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 314.1940175065127,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 314.1940175065127,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 21,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 314.4035508294953,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 314.4035508294953,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 50,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 320.4692368810699,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 320.4692368810699,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 330.8412581299479,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 330.8412581299479,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 350.89646027901057,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 350.89646027901057,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 300,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 369.514856545133,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 369.514856545133,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 900,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 530,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 220,
+              "cohesion": 100.0,
+              "reloadLeft": 3.600000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 530,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 218,
+              "cohesion": 100.0,
+              "reloadLeft": 3.600000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 375.1270323896174,
+                "y": 220.0
+              },
+              "facing": 0.0,
+              "strength": 217,
+              "cohesion": 100.0,
+              "reloadLeft": 3.6298800000000266,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 375.1270323896174,
+                "y": 400.0
+              },
+              "facing": 0.0,
+              "strength": 212,
+              "cohesion": 100.0,
+              "reloadLeft": 3.6298800000000266,
+              "combatState": "idle"
+            }
+          ]
+        }
+      ],
+      "draws": 1917
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "forest-engagement",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1000,
+      "height": 650,
+      "duration": 90,
+      "sampleTicks": [
+        0,
+        1,
+        2,
+        10,
+        20,
+        21,
+        50,
+        100,
+        200,
+        300,
+        900
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 400,
+            "y": 220
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 400,
+            "y": 400
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 1,
+          "name": "Red Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 540,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 1,
+          "name": "Red Line 4",
+          "archetype": "infantry",
+          "position": {
+            "x": 540,
+            "y": 400
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 2,
+          "order": {
+            "kind": "attack",
+            "targetId": 0
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 1
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [],
+        "forests": [
+          {
+            "x": 420,
+            "y": 220,
+            "radiusX": 80,
+            "radiusY": 60,
+            "density": 0.5
+          },
+          {
+            "x": 535,
+            "y": 400,
+            "radiusX": 95,
+            "radiusY": 75,
+            "density": 0.8
+          }
+        ]
+      }
+    },
+    "expected": {
+      "name": "forest-engagement",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 1,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.06,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 99.14333333333333,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 98.06,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 99.14333333333333,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            }
+          ]
+        },
+        {
+          "tick": 2,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.125,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 99.20833333333333,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 98.125,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 99.20833333333333,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.64499999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 99.72833333333331,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 98.64499999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 99.72833333333331,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 20,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 99.29499999999996,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 99.29499999999996,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 21,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 99.35999999999996,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 99.35999999999996,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 50,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 100.0,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 100.0,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 239,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 235,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 238,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 238,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 300,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 234,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 238,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 236,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 238,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 900,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 220
+              },
+              "facing": 0.0,
+              "strength": 221,
+              "cohesion": 100.0,
+              "reloadLeft": 6.8000000000000185,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 400
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 100.0,
+              "reloadLeft": 6.8000000000000185,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 540,
+                "y": 220
+              },
+              "facing": 3.141592653589793,
+              "strength": 226,
+              "cohesion": 100.0,
+              "reloadLeft": 6.8000000000000185,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 540,
+                "y": 400
+              },
+              "facing": 3.141592653589793,
+              "strength": 234,
+              "cohesion": 100.0,
+              "reloadLeft": 6.8000000000000185,
+              "combatState": "idle"
+            }
+          ]
+        }
+      ],
+      "draws": 3163
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "flank-attack",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1000,
+      "height": 650,
+      "duration": 30,
+      "sampleTicks": [
+        0,
+        1,
+        2,
+        10,
+        20,
+        21,
+        50,
+        100,
+        200,
+        300
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 400,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 170
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 1,
+          "name": "Red Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 438,
+            "y": 300
+          },
+          "facing": 1.5707963267948966,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null
+    },
+    "expected": {
+      "name": "flank-attack",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 1,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 234,
+              "cohesion": 96.19,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 2,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 234,
+              "cohesion": 96.19,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 234,
+              "cohesion": 96.19,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 20,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 234,
+              "cohesion": 96.19,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 21,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 235,
+              "cohesion": 96.59166666666667,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 229,
+              "cohesion": 92.92166666666667,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 50,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 233,
+              "cohesion": 95.15833333333333,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 225,
+              "cohesion": 90.195,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 227,
+              "cohesion": 91.20833333333334,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 218,
+              "cohesion": 85.28333333333333,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 219,
+              "cohesion": 85.125,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 192,
+              "cohesion": 68.4,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 300,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 210,
+              "cohesion": 78.49999999999999,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 330,
+                "y": 170
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 438,
+                "y": 300
+              },
+              "facing": 1.5707963267948966,
+              "strength": 171,
+              "cohesion": 54.225,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        }
+      ],
+      "draws": 30
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "friendly-obstruction",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1000,
+      "height": 650,
+      "duration": 30,
+      "sampleTicks": [
+        0,
+        1,
+        2,
+        10,
+        20,
+        21,
+        50,
+        100,
+        200,
+        300
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 360,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 400,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 400,
+            "y": 405
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 1,
+          "name": "Red Line 4",
+          "archetype": "infantry",
+          "position": {
+            "x": 500,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null
+    },
+    "expected": {
+      "name": "friendly-obstruction",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 1,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 91.56,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.04225000000000001,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 227,
+              "cohesion": 92.64333333333333,
+              "reloadLeft": 12.0,
+              "combatState": "firing"
+            }
+          ]
+        },
+        {
+          "tick": 2,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 91.625,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.08450000000000002,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 227,
+              "cohesion": 92.70833333333333,
+              "reloadLeft": 11.9,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 92.14499999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.4225000000000001,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 11.400000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 88.57999999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 20,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 92.79499999999996,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 10.400000000000006,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 89.22999999999996,
+              "reloadLeft": 10.100000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 21,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 92.85999999999996,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 10.300000000000006,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 89.29499999999996,
+              "reloadLeft": 10.000000000000007,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 50,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 94.74499999999989,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 7.400000000000016,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 91.1799999999999,
+              "reloadLeft": 7.100000000000017,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 97.99499999999978,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 2.400000000000027,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 219,
+              "cohesion": 94.42999999999978,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 219,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 4.500000000000027,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 203,
+              "cohesion": 91.56833333333287,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 300,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 360,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 400,
+                "y": 300
+              },
+              "facing": 0.0,
+              "strength": 213,
+              "cohesion": 100.0,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 400,
+                "y": 405
+              },
+              "facing": -0.8097835725701669,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 6.600000000000019,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 500,
+                "y": 300
+              },
+              "facing": 3.141592653589793,
+              "strength": 188,
+              "cohesion": 89.24833333333265,
+              "reloadLeft": 6.30000000000002,
+              "combatState": "idle"
+            }
+          ]
+        }
+      ],
+      "draws": 858
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "moving-combat",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1600,
+      "height": 850,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        5,
+        10,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 220,
+            "y": 90
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 720,
+            "y": 90
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 1220,
+            "y": 90
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Line 4",
+          "archetype": "infantry",
+          "position": {
+            "x": 220,
+            "y": 180
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Line 5",
+          "archetype": "infantry",
+          "position": {
+            "x": 720,
+            "y": 180
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Line 6",
+          "archetype": "infantry",
+          "position": {
+            "x": 1220,
+            "y": 180
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 1,
+          "name": "Red Line 7",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 90
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 1,
+          "name": "Red Line 8",
+          "archetype": "infantry",
+          "position": {
+            "x": 732,
+            "y": 90
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 1,
+          "name": "Red Line 9",
+          "archetype": "infantry",
+          "position": {
+            "x": 1350,
+            "y": 90
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 1,
+          "name": "Red Line 10",
+          "archetype": "infantry",
+          "position": {
+            "x": 232,
+            "y": 180
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 1,
+          "name": "Red Line 11",
+          "archetype": "infantry",
+          "position": {
+            "x": 850,
+            "y": 180
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 1,
+          "name": "Red Line 12",
+          "archetype": "infantry",
+          "position": {
+            "x": 1232,
+            "y": 180
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 5,
+          "regimentId": 0,
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 265,
+              "y": 90
+            },
+            "facing": null
+          }
+        },
+        {
+          "tick": 400,
+          "regimentId": 0,
+          "order": {
+            "kind": "hold",
+            "destination": null,
+            "facing": null
+          }
+        },
+        {
+          "tick": 5,
+          "regimentId": 2,
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 1265,
+              "y": 90
+            },
+            "facing": null
+          }
+        },
+        {
+          "tick": 400,
+          "regimentId": 2,
+          "order": {
+            "kind": "hold",
+            "destination": null,
+            "facing": null
+          }
+        },
+        {
+          "tick": 5,
+          "regimentId": 4,
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 765,
+              "y": 180
+            },
+            "facing": null
+          }
+        },
+        {
+          "tick": 400,
+          "regimentId": 4,
+          "order": {
+            "kind": "hold",
+            "destination": null,
+            "facing": null
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 300,
+            "y": 230,
+            "radiusX": 95,
+            "radiusY": 110,
+            "height": 12,
+            "compact": true
+          },
+          {
+            "x": 1220,
+            "y": 550,
+            "radiusX": 90,
+            "radiusY": 90,
+            "height": 18,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 280,
+            "y": 90,
+            "radiusX": 45,
+            "radiusY": 42,
+            "density": 0.5
+          },
+          {
+            "x": 770,
+            "y": 360,
+            "radiusX": 60,
+            "radiusY": 60,
+            "density": 0.45
+          },
+          {
+            "x": 1260,
+            "y": 720,
+            "radiusX": 75,
+            "radiusY": 70,
+            "density": 0.6
+          }
+        ]
+      }
+    },
+    "expected": {
+      "name": "moving-combat",
+      "frames": [
+        {
+          "tick": 0,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 220,
+                "y": 90
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1220,
+                "y": 90
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 720,
+                "y": 180
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 240,
+              "cohesion": 100.0,
+              "reloadLeft": 0.0,
+              "combatState": "idle"
+            }
+          ]
+        },
+        {
+          "tick": 5,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 220,
+                "y": 90
+              },
+              "facing": 0.21125000000000005,
+              "strength": 235,
+              "cohesion": 97.23666666666666,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1220,
+                "y": 90
+              },
+              "facing": 0.21125000000000005,
+              "strength": 235,
+              "cohesion": 97.23666666666666,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 720,
+                "y": 180
+              },
+              "facing": -0.21125000000000005,
+              "strength": 235,
+              "cohesion": 97.23666666666666,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 238,
+              "cohesion": 98.56666666666666,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 236,
+              "cohesion": 97.77833333333332,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 236,
+              "cohesion": 97.48333333333333,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 228,
+              "cohesion": 93.445,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 98.06567056071069,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 230,
+              "cohesion": 94.52833333333332,
+              "reloadLeft": 11.600000000000001,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 238,
+              "cohesion": 98.56666666666666,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 10,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 220.8849011253597,
+                "y": 90.07404857507349
+              },
+              "facing": 0.0,
+              "strength": 235,
+              "cohesion": 97.10180487293684,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1221.0340742514386,
+                "y": 90.08711560140479
+              },
+              "facing": 0.0,
+              "strength": 235,
+              "cohesion": 97.15991666666667,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 237,
+              "cohesion": 98.025,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 721.0340742514388,
+                "y": 179.91288439859522
+              },
+              "facing": 0.0,
+              "strength": 235,
+              "cohesion": 97.15991666666667,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 238,
+              "cohesion": 98.56666666666666,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.1410199525103204,
+              "strength": 236,
+              "cohesion": 98.10333333333331,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 236,
+              "cohesion": 97.48333333333333,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.140918257564426,
+              "strength": 228,
+              "cohesion": 93.76999999999998,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 237,
+              "cohesion": 98.06567056071069,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.1422670496151603,
+              "strength": 230,
+              "cohesion": 94.85333333333331,
+              "reloadLeft": 11.100000000000003,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 238,
+              "cohesion": 98.56666666666666,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 100,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 237.38564415836282,
+                "y": 90.04635156111641
+              },
+              "facing": -0.0016785297419561473,
+              "strength": 235,
+              "cohesion": 96.93458447094315,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 90.125,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1239.9270201266197,
+                "y": 90.04968046694094
+              },
+              "facing": -0.0019814318910413853,
+              "strength": 235,
+              "cohesion": 98.0587278075325,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 223,
+              "cohesion": 89.04166666666669,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 739.92702012662,
+                "y": 179.95031953305906
+              },
+              "facing": 0.001981431891040941,
+              "strength": 235,
+              "cohesion": 98.0587278075325,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 225,
+              "cohesion": 90.125,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.141178992772403,
+              "strength": 236,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 221,
+              "cohesion": 87.95833333333333,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141138400920288,
+              "strength": 228,
+              "cohesion": 99.61999999999978,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 227,
+              "cohesion": 91.41168613688677,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.1420469062592984,
+              "strength": 230,
+              "cohesion": 100.0,
+              "reloadLeft": 2.1000000000000267,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 226,
+              "cohesion": 90.66666666666667,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 200,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 255.28792208930372,
+                "y": 90.0163020269394
+              },
+              "facing": -0.0016785297419552592,
+              "strength": 234,
+              "cohesion": 95.65782069803966,
+              "reloadLeft": 4.210530000000029,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 216,
+              "cohesion": 83.49999999999999,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1260.8469401621767,
+                "y": 90.0082290159773
+              },
+              "facing": -0.001981431891040497,
+              "strength": 224,
+              "cohesion": 92.77539447419969,
+              "reloadLeft": 4.210530000000029,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 209,
+              "cohesion": 79.70833333333334,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 760.846940162177,
+                "y": 179.99177098402268
+              },
+              "facing": 0.00198143189104405,
+              "strength": 225,
+              "cohesion": 93.31706114086634,
+              "reloadLeft": 4.210530000000029,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 211,
+              "cohesion": 80.79166666666669,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.141417777558219,
+              "strength": 232,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 206,
+              "cohesion": 78.08333333333334,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141496483190273,
+              "strength": 225,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 217,
+              "cohesion": 84.44837227377354,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.1416888239893126,
+              "strength": 229,
+              "cohesion": 100.0,
+              "reloadLeft": 4.200000000000028,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 213,
+              "cohesion": 81.875,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 400,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 264.0233159897003,
+                "y": 90.00163939469945
+              },
+              "facing": -0.0016785297419770195,
+              "strength": 226,
+              "cohesion": 98.38024215310583,
+              "reloadLeft": 8.424300000000013,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 199,
+              "cohesion": 70.79166666666664,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1264.040654872557,
+                "y": 90.0019008795177
+              },
+              "facing": -0.001981431891045826,
+              "strength": 205,
+              "cohesion": 92.85372780753282,
+              "reloadLeft": 8.420610000000014,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 188,
+              "cohesion": 64.83333333333334,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 764.0406548725574,
+                "y": 179.99809912048227
+              },
+              "facing": 0.001981431891075136,
+              "strength": 208,
+              "cohesion": 94.47872780753279,
+              "reloadLeft": 8.420610000000014,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 187,
+              "cohesion": 64.2916666666667,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.1415735856911167,
+              "strength": 226,
+              "cohesion": 99.85833333333325,
+              "reloadLeft": 8.400000000000013,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 184,
+              "cohesion": 62.66666666666668,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141570539885756,
+              "strength": 207,
+              "cohesion": 96.60833333333325,
+              "reloadLeft": 8.400000000000013,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 198,
+              "cohesion": 71.06341121421376,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.141614767293831,
+              "strength": 206,
+              "cohesion": 96.06666666666658,
+              "reloadLeft": 8.400000000000013,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 193,
+              "cohesion": 67.54166666666664,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        },
+        {
+          "tick": 700,
+          "units": [
+            {
+              "id": 0,
+              "position": {
+                "x": 264.0233159897003,
+                "y": 90.00163939469945
+              },
+              "facing": -1.9067898676450312e-05,
+              "strength": 221,
+              "cohesion": 100.0,
+              "reloadLeft": 2.6243000000000274,
+              "combatState": "idle"
+            },
+            {
+              "id": 1,
+              "position": {
+                "x": 720,
+                "y": 90
+              },
+              "facing": 0.0,
+              "strength": 179,
+              "cohesion": 54.70833333333331,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 1264.040654872557,
+                "y": 90.0019008795177
+              },
+              "facing": -2.2113704037263204e-05,
+              "strength": 187,
+              "cohesion": 100.0,
+              "reloadLeft": 2.6206100000000285,
+              "combatState": "idle"
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 163,
+              "cohesion": 46.04166666666671,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 4,
+              "position": {
+                "x": 764.0406548725574,
+                "y": 179.99809912048227
+              },
+              "facing": 2.2113704037707294e-05,
+              "strength": 187,
+              "cohesion": 99.29499999999979,
+              "reloadLeft": 2.6206100000000285,
+              "combatState": "idle"
+            },
+            {
+              "id": 5,
+              "position": {
+                "x": 1220,
+                "y": 180
+              },
+              "facing": 0.0,
+              "strength": 161,
+              "cohesion": 44.95833333333341,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 6,
+              "position": {
+                "x": 350,
+                "y": 90
+              },
+              "facing": 3.1415735856911167,
+              "strength": 218,
+              "cohesion": 100.0,
+              "reloadLeft": 2.600000000000027,
+              "combatState": "idle"
+            },
+            {
+              "id": 7,
+              "position": {
+                "x": 732,
+                "y": 90
+              },
+              "facing": 3.141592653589793,
+              "strength": 160,
+              "cohesion": 44.416666666666714,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 8,
+              "position": {
+                "x": 1350,
+                "y": 90
+              },
+              "facing": 3.141570539885756,
+              "strength": 190,
+              "cohesion": 100.0,
+              "reloadLeft": 2.600000000000027,
+              "combatState": "idle"
+            },
+            {
+              "id": 9,
+              "position": {
+                "x": 232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 178,
+              "cohesion": 55.59013629154074,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            },
+            {
+              "id": 10,
+              "position": {
+                "x": 850,
+                "y": 180
+              },
+              "facing": 3.141614767293831,
+              "strength": 191,
+              "cohesion": 100.0,
+              "reloadLeft": 2.600000000000027,
+              "combatState": "idle"
+            },
+            {
+              "id": 11,
+              "position": {
+                "x": 1232,
+                "y": 180
+              },
+              "facing": 3.141592653589793,
+              "strength": 172,
+              "cohesion": 50.916666666666664,
+              "reloadLeft": 0,
+              "combatState": "melee"
+            }
+          ]
+        }
+      ],
+      "draws": 3555
+    }
+  }
+]

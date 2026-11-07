@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Friedrich Wilhelm von Bülow — Disciplined Skirmishers",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 1.5707963267948966,
+      "commander": {
+        "id": "historical-friedrich_wilhelm_von_bulow",
+        "definitionId": "friedrich_wilhelm_von_bulow",
+        "name": "Friedrich Wilhelm von Bülow",
+        "background": "Prussia",
+        "personality": "methodical",
+        "specialization": "disciplined_skirmishers",
+        "biography": "Infantry formation changes −20%, manoeuvre cohesion loss −18%, cohesion recovery +12%.",
+        "nation": ""
+      },
+      "cohesion": 75
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 770,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 500,
+          "y": 360
+        }
+      }
+    },
+    {
+      "tick": 15,
+      "regimentId": 0,
+      "formation": "column"
+    },
+    {
+      "tick": 120,
+      "regimentId": 0,
+      "formation": "line"
+    },
+    {
+      "tick": 220,
+      "regimentId": 0,
+      "order": {
+        "kind": "attack",
+        "targetId": 1
+      }
+    }
+  ]
+}

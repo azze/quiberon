@@ -1,0 +1,1179 @@
+{
+  "version": 1,
+  "name": "Environment performance baseline 60",
+  "width": 1200,
+  "height": 950,
+  "seed": 1796,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    1000,
+    4000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "units": [
+    {
+      "id": 0,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 0",
+      "position": {
+        "x": 220,
+        "y": 70
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 1,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 1",
+      "position": {
+        "x": 220,
+        "y": 150
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 2,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 2",
+      "position": {
+        "x": 220,
+        "y": 230
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 3,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 3",
+      "position": {
+        "x": 220,
+        "y": 310
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 4,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 4",
+      "position": {
+        "x": 220,
+        "y": 390
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 5,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 0,
+      "name": "Blue haudenosaunee_skirmishers 5",
+      "position": {
+        "x": 220,
+        "y": 470
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 6,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 6",
+      "position": {
+        "x": 220,
+        "y": 550
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 7,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 7",
+      "position": {
+        "x": 220,
+        "y": 630
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 8,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 8",
+      "position": {
+        "x": 220,
+        "y": 710
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 9,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 9",
+      "position": {
+        "x": 220,
+        "y": 790
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 790
+        }
+      }
+    },
+    {
+      "id": 10,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 10",
+      "position": {
+        "x": 145,
+        "y": 70
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 11,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 0,
+      "name": "Blue haudenosaunee_skirmishers 11",
+      "position": {
+        "x": 145,
+        "y": 150
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 12,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 12",
+      "position": {
+        "x": 145,
+        "y": 230
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 13,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 13",
+      "position": {
+        "x": 145,
+        "y": 310
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 14,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 14",
+      "position": {
+        "x": 145,
+        "y": 390
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 15,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 15",
+      "position": {
+        "x": 145,
+        "y": 470
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 16,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 16",
+      "position": {
+        "x": 145,
+        "y": 550
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 17,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 0,
+      "name": "Blue haudenosaunee_skirmishers 17",
+      "position": {
+        "x": 145,
+        "y": 630
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 18,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 18",
+      "position": {
+        "x": 145,
+        "y": 710
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 19,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 19",
+      "position": {
+        "x": 145,
+        "y": 790
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 790
+        }
+      }
+    },
+    {
+      "id": 20,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 20",
+      "position": {
+        "x": 70,
+        "y": 70
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 21,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 21",
+      "position": {
+        "x": 70,
+        "y": 150
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 22,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 22",
+      "position": {
+        "x": 70,
+        "y": 230
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 23,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 0,
+      "name": "Blue haudenosaunee_skirmishers 23",
+      "position": {
+        "x": 70,
+        "y": 310
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 24,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 24",
+      "position": {
+        "x": 70,
+        "y": 390
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 25,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 25",
+      "position": {
+        "x": 70,
+        "y": 470
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 26,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 26",
+      "position": {
+        "x": 70,
+        "y": 550
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 27,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 27",
+      "position": {
+        "x": 70,
+        "y": 630
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 28,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 28",
+      "position": {
+        "x": 70,
+        "y": 710
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 29,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 0,
+      "name": "Blue haudenosaunee_skirmishers 29",
+      "position": {
+        "x": 70,
+        "y": 790
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 790
+        }
+      }
+    },
+    {
+      "id": 30,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 30",
+      "position": {
+        "x": 980,
+        "y": 70
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 31,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 31",
+      "position": {
+        "x": 980,
+        "y": 150
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 32,
+      "archetype": "cavalry",
+      "army": 1,
+      "name": "Red cavalry 32",
+      "position": {
+        "x": 980,
+        "y": 230
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 33,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 33",
+      "position": {
+        "x": 980,
+        "y": 310
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 34,
+      "archetype": "revolutionary_rifles",
+      "army": 1,
+      "name": "Red revolutionary_rifles 34",
+      "position": {
+        "x": 980,
+        "y": 390
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 35,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 1,
+      "name": "Red haudenosaunee_skirmishers 35",
+      "position": {
+        "x": 980,
+        "y": 470
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 36,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 36",
+      "position": {
+        "x": 980,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 37,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 37",
+      "position": {
+        "x": 980,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 38,
+      "archetype": "cavalry",
+      "army": 1,
+      "name": "Red cavalry 38",
+      "position": {
+        "x": 980,
+        "y": 710
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 39,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 39",
+      "position": {
+        "x": 980,
+        "y": 790
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 790
+        }
+      }
+    },
+    {
+      "id": 40,
+      "archetype": "revolutionary_rifles",
+      "army": 1,
+      "name": "Red revolutionary_rifles 40",
+      "position": {
+        "x": 1055,
+        "y": 70
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 41,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 1,
+      "name": "Red haudenosaunee_skirmishers 41",
+      "position": {
+        "x": 1055,
+        "y": 150
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 42,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 42",
+      "position": {
+        "x": 1055,
+        "y": 230
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 43,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 43",
+      "position": {
+        "x": 1055,
+        "y": 310
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 44,
+      "archetype": "cavalry",
+      "army": 1,
+      "name": "Red cavalry 44",
+      "position": {
+        "x": 1055,
+        "y": 390
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 45,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 45",
+      "position": {
+        "x": 1055,
+        "y": 470
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 46,
+      "archetype": "revolutionary_rifles",
+      "army": 1,
+      "name": "Red revolutionary_rifles 46",
+      "position": {
+        "x": 1055,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 47,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 1,
+      "name": "Red haudenosaunee_skirmishers 47",
+      "position": {
+        "x": 1055,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 48,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 48",
+      "position": {
+        "x": 1055,
+        "y": 710
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 49,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 49",
+      "position": {
+        "x": 1055,
+        "y": 790
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 790
+        }
+      }
+    },
+    {
+      "id": 50,
+      "archetype": "cavalry",
+      "army": 1,
+      "name": "Red cavalry 50",
+      "position": {
+        "x": 1130,
+        "y": 70
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 70
+        }
+      }
+    },
+    {
+      "id": 51,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 51",
+      "position": {
+        "x": 1130,
+        "y": 150
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 150
+        }
+      }
+    },
+    {
+      "id": 52,
+      "archetype": "revolutionary_rifles",
+      "army": 1,
+      "name": "Red revolutionary_rifles 52",
+      "position": {
+        "x": 1130,
+        "y": 230
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 230
+        }
+      }
+    },
+    {
+      "id": 53,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 1,
+      "name": "Red haudenosaunee_skirmishers 53",
+      "position": {
+        "x": 1130,
+        "y": 310
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 310
+        }
+      }
+    },
+    {
+      "id": 54,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 54",
+      "position": {
+        "x": 1130,
+        "y": 390
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 390
+        }
+      }
+    },
+    {
+      "id": 55,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 55",
+      "position": {
+        "x": 1130,
+        "y": 470
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 470
+        }
+      }
+    },
+    {
+      "id": 56,
+      "archetype": "cavalry",
+      "army": 1,
+      "name": "Red cavalry 56",
+      "position": {
+        "x": 1130,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 57,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 57",
+      "position": {
+        "x": 1130,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 630
+        }
+      }
+    },
+    {
+      "id": 58,
+      "archetype": "revolutionary_rifles",
+      "army": 1,
+      "name": "Red revolutionary_rifles 58",
+      "position": {
+        "x": 1130,
+        "y": 710
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 710
+        }
+      }
+    },
+    {
+      "id": 59,
+      "archetype": "haudenosaunee_skirmishers",
+      "army": 1,
+      "name": "Red haudenosaunee_skirmishers 59",
+      "position": {
+        "x": 1130,
+        "y": 790
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 250,
+          "y": 790
+        }
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [],
+    "environment": {
+      "version": 1,
+      "rivers": [],
+      "crossings": [],
+      "roads": [],
+      "defences": [],
+      "weather": {
+        "type": "clear",
+        "visibilityLimit": 180
+      }
+    }
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "version": 1,
+  "name": "Dynamics Benchmark 24",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 2100,
+  "height": 800,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Cavalry 1",
+      "archetype": "cavalry",
+      "position": {
+        "x": 250,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 320,
+        "y": 120
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 180
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 150,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 580,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 5,
+      "army": 1,
+      "name": "Red Line 6",
+      "archetype": "infantry",
+      "position": {
+        "x": 980,
+        "y": 120
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "name": "Blue Line 7",
+      "archetype": "infantry",
+      "position": {
+        "x": 750,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "name": "Red Line 8",
+      "archetype": "infantry",
+      "position": {
+        "x": 1180,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "name": "Blue Cavalry 9",
+      "archetype": "cavalry",
+      "position": {
+        "x": 1450,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "name": "Red Line 10",
+      "archetype": "infantry",
+      "position": {
+        "x": 1520,
+        "y": 120
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 180
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "name": "Blue Line 11",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "name": "Red Line 12",
+      "archetype": "infantry",
+      "position": {
+        "x": 1780,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 12,
+      "army": 0,
+      "name": "Blue Line 13",
+      "archetype": "infantry",
+      "position": {
+        "x": 250,
+        "y": 310
+      },
+      "facing": 0.0,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 13,
+      "army": 1,
+      "name": "Red Line 14",
+      "archetype": "infantry",
+      "position": {
+        "x": 380,
+        "y": 310
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 14,
+      "army": 0,
+      "name": "Blue Line 15",
+      "archetype": "infantry",
+      "position": {
+        "x": 150,
+        "y": 410
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 15,
+      "army": 1,
+      "name": "Red Line 16",
+      "archetype": "infantry",
+      "position": {
+        "x": 580,
+        "y": 410
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 16,
+      "army": 0,
+      "name": "Blue Cavalry 17",
+      "archetype": "cavalry",
+      "position": {
+        "x": 850,
+        "y": 310
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 17,
+      "army": 1,
+      "name": "Red Line 18",
+      "archetype": "infantry",
+      "position": {
+        "x": 920,
+        "y": 310
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 180
+    },
+    {
+      "id": 18,
+      "army": 0,
+      "name": "Blue Line 19",
+      "archetype": "infantry",
+      "position": {
+        "x": 750,
+        "y": 410
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 19,
+      "army": 1,
+      "name": "Red Line 20",
+      "archetype": "infantry",
+      "position": {
+        "x": 1180,
+        "y": 410
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 20,
+      "army": 0,
+      "name": "Blue Line 21",
+      "archetype": "infantry",
+      "position": {
+        "x": 1450,
+        "y": 310
+      },
+      "facing": 0.0,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 21,
+      "army": 1,
+      "name": "Red Line 22",
+      "archetype": "infantry",
+      "position": {
+        "x": 1580,
+        "y": 310
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 22,
+      "army": 0,
+      "name": "Blue Line 23",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 410
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 23,
+      "army": 1,
+      "name": "Red Line 24",
+      "archetype": "infantry",
+      "position": {
+        "x": 1780,
+        "y": 410
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 4,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 890,
+          "y": 120
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 300,
+      "regimentId": 4,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 8,
+      "order": {
+        "kind": "charge",
+        "targetId": 9
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 12,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 290,
+          "y": 310
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 300,
+      "regimentId": 12,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 16,
+      "order": {
+        "kind": "charge",
+        "targetId": 17
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 20,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1490,
+          "y": 310
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 300,
+      "regimentId": 20,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 900,
+        "y": 500,
+        "radiusX": 110,
+        "radiusY": 120,
+        "height": 12,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 950,
+        "y": 600,
+        "radiusX": 90,
+        "radiusY": 80,
+        "density": 0.4
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true
+}

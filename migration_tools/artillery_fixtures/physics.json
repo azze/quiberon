@@ -1,0 +1,6986 @@
+[
+  {
+    "name": "flat",
+    "input": {
+      "version": 1,
+      "name": "flat",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 550,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "initial": {
+      "position": {
+        "x": 320,
+        "y": 300
+      },
+      "velocity": {
+        "x": 100,
+        "y": 0
+      },
+      "height": 1.2,
+      "verticalSpeed": 2,
+      "energy": 1
+    },
+    "frames": [
+      {
+        "tick": 1,
+        "projectile": {
+          "position": {
+            "x": 330.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3509499999999999,
+          "verticalSpeed": 1.019,
+          "energy": 1.0,
+          "age": 0.1,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 2,
+        "projectile": {
+          "position": {
+            "x": 340.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.4037999999999997,
+          "verticalSpeed": 0.03799999999999981,
+          "energy": 1.0,
+          "age": 0.2,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 3,
+        "projectile": {
+          "position": {
+            "x": 350.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3585499999999997,
+          "verticalSpeed": -0.9430000000000003,
+          "energy": 1.0,
+          "age": 0.30000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 4,
+        "projectile": {
+          "position": {
+            "x": 360.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.2151999999999996,
+          "verticalSpeed": -1.9240000000000004,
+          "energy": 1.0,
+          "age": 0.4,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 5,
+        "projectile": {
+          "position": {
+            "x": 370.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.9737499999999994,
+          "verticalSpeed": -2.9050000000000002,
+          "energy": 1.0,
+          "age": 0.5,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 6,
+        "projectile": {
+          "position": {
+            "x": 380.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.6341999999999994,
+          "verticalSpeed": -3.886,
+          "energy": 1.0,
+          "age": 0.6,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 7,
+        "projectile": {
+          "position": {
+            "x": 390.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.19654999999999936,
+          "verticalSpeed": -4.867,
+          "energy": 1.0,
+          "age": 0.7,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 8,
+        "projectile": {
+          "position": {
+            "x": 400.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 2.8070399999999998,
+          "energy": 0.72,
+          "age": 0.7999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 9,
+        "projectile": {
+          "position": {
+            "x": 407.8,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.231654,
+          "verticalSpeed": 1.8260399999999997,
+          "energy": 0.72,
+          "age": 0.8999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 10,
+        "projectile": {
+          "position": {
+            "x": 415.6,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.365208,
+          "verticalSpeed": 0.8450399999999996,
+          "energy": 0.72,
+          "age": 0.9999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 11,
+        "projectile": {
+          "position": {
+            "x": 423.40000000000003,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.40066199999999996,
+          "verticalSpeed": -0.13596000000000052,
+          "energy": 0.72,
+          "age": 1.0999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 12,
+        "projectile": {
+          "position": {
+            "x": 431.20000000000005,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.33801599999999987,
+          "verticalSpeed": -1.1169600000000006,
+          "energy": 0.54,
+          "age": 1.2,
+          "bounces": 1,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 13,
+        "projectile": {
+          "position": {
+            "x": 439.00000000000006,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.1772699999999998,
+          "verticalSpeed": -2.0979600000000005,
+          "energy": 0.54,
+          "age": 1.3,
+          "bounces": 1,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 14,
+        "projectile": {
+          "position": {
+            "x": 446.80000000000007,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 1.4779008,
+          "energy": 0.38880000000000003,
+          "age": 1.4000000000000001,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 15,
+        "projectile": {
+          "position": {
+            "x": 452.88400000000007,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.09874008000000001,
+          "verticalSpeed": 0.4969007999999999,
+          "energy": 0.38880000000000003,
+          "age": 1.5000000000000002,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 16,
+        "projectile": {
+          "position": {
+            "x": 458.9680000000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.09938016,
+          "verticalSpeed": -0.4840992000000002,
+          "energy": 0.38880000000000003,
+          "age": 1.6000000000000003,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 17,
+        "projectile": {
+          "position": {
+            "x": 465.0520000000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.001920239999999962,
+          "verticalSpeed": -1.4650992000000003,
+          "energy": 0.38880000000000003,
+          "age": 1.7000000000000004,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 18,
+        "projectile": {
+          "position": {
+            "x": 471.1360000000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 1.174127616,
+          "energy": 0.279936,
+          "age": 1.8000000000000005,
+          "bounces": 3,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 19,
+        "projectile": {
+          "position": {
+            "x": 475.8815200000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.0683627616,
+          "verticalSpeed": 0.19312761599999995,
+          "energy": 0.279936,
+          "age": 1.9000000000000006,
+          "bounces": 3,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 20,
+        "projectile": {
+          "position": {
+            "x": 480.6270400000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.038625523199999984,
+          "verticalSpeed": -0.7878723840000001,
+          "energy": 0.279936,
+          "age": 2.0000000000000004,
+          "bounces": 3,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 21,
+        "projectile": {
+          "position": {
+            "x": 485.3725600000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.84905874432,
+          "energy": 0.20155392,
+          "age": 2.1000000000000005,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 22,
+        "projectile": {
+          "position": {
+            "x": 489.0740656000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.03585587443199999,
+          "verticalSpeed": -0.13194125568000015,
+          "energy": 0.20155392,
+          "age": 2.2000000000000006,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 23,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 24,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 25,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 26,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 27,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 28,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 29,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 30,
+        "projectile": {
+          "position": {
+            "x": 492.7755712000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5342118027264,
+          "energy": 0.14511882239999999,
+          "age": 2.3000000000000007,
+          "bounces": 5,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          234
+        ],
+        "morale": [
+          85.15,
+          85.0,
+          79.025
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          95.49
+        ],
+        "draws": 1
+      }
+    ]
+  },
+  {
+    "name": "hill",
+    "input": {
+      "version": 1,
+      "name": "hill",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 550,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": {
+        "hills": [
+          {
+            "x": 445,
+            "y": 300,
+            "radiusX": 12,
+            "radiusY": 60,
+            "height": 20,
+            "compact": true
+          }
+        ],
+        "forests": []
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "initial": {
+      "position": {
+        "x": 320,
+        "y": 300
+      },
+      "velocity": {
+        "x": 100,
+        "y": 0
+      },
+      "height": 1.2,
+      "verticalSpeed": 2,
+      "energy": 1
+    },
+    "frames": [
+      {
+        "tick": 1,
+        "projectile": {
+          "position": {
+            "x": 330.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3509499999999999,
+          "verticalSpeed": 1.0190000000000003,
+          "energy": 1.0,
+          "age": 0.1,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 2,
+        "projectile": {
+          "position": {
+            "x": 340.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.4037999999999997,
+          "verticalSpeed": 0.0380000000000002,
+          "energy": 1.0,
+          "age": 0.2,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 3,
+        "projectile": {
+          "position": {
+            "x": 350.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3585499999999997,
+          "verticalSpeed": -0.943,
+          "energy": 1.0,
+          "age": 0.30000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 4,
+        "projectile": {
+          "position": {
+            "x": 360.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.2151999999999996,
+          "verticalSpeed": -1.9239999999999997,
+          "energy": 1.0,
+          "age": 0.4,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 5,
+        "projectile": {
+          "position": {
+            "x": 370.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.9737499999999997,
+          "verticalSpeed": -2.9050000000000002,
+          "energy": 1.0,
+          "age": 0.5,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 6,
+        "projectile": {
+          "position": {
+            "x": 380.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.6341999999999995,
+          "verticalSpeed": -3.886000000000001,
+          "energy": 1.0,
+          "age": 0.6,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 7,
+        "projectile": {
+          "position": {
+            "x": 390.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.1965499999999993,
+          "verticalSpeed": -4.867000000000002,
+          "energy": 1.0,
+          "age": 0.7,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 8,
+        "projectile": {
+          "position": {
+            "x": 398.56623046875,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.14349128921875007,
+          "verticalSpeed": 1.9305548203125007,
+          "energy": 0.72,
+          "age": 0.7999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 9,
+        "projectile": {
+          "position": {
+            "x": 406.36623046874996,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.2874967712500001,
+          "verticalSpeed": 0.9495548203125008,
+          "energy": 0.72,
+          "age": 0.8999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 10,
+        "projectile": {
+          "position": {
+            "x": 414.1662304687499,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.3334022532812501,
+          "verticalSpeed": -0.031445179687499214,
+          "energy": 0.72,
+          "age": 0.9999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 11,
+        "projectile": {
+          "position": {
+            "x": 419.0713209908508,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 58.21869276623549,
+            "y": 0.0
+          },
+          "height": 1.1168216013187569,
+          "verticalSpeed": 15.303274667449518,
+          "energy": 0.5184,
+          "age": 1.0999999999999999,
+          "bounces": 2,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 12,
+        "projectile": {
+          "position": {
+            "x": 422.32668689722624,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 30.880970839652562,
+            "y": 0.0
+          },
+          "height": 2.6807092475518424,
+          "verticalSpeed": 18.73032421399646,
+          "energy": 0.26873855999999996,
+          "age": 1.2,
+          "bounces": 4,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 13,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 14,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 15,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 16,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 17,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 18,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 19,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 20,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 21,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 22,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 23,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 24,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 25,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 26,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 27,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 28,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 29,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 30,
+        "projectile": {
+          "position": {
+            "x": 423.0666220246296,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 22.74775855949297,
+            "y": 0.0
+          },
+          "height": 3.1366888834877336,
+          "verticalSpeed": 16.41582929467484,
+          "energy": 0.19349176319999997,
+          "age": 1.3,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      }
+    ]
+  },
+  {
+    "name": "forest",
+    "input": {
+      "version": 1,
+      "name": "forest",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 550,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": {
+        "hills": [],
+        "forests": [
+          {
+            "x": 470,
+            "y": 300,
+            "radiusX": 100,
+            "radiusY": 70,
+            "density": 0.7
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "initial": {
+      "position": {
+        "x": 320,
+        "y": 300
+      },
+      "velocity": {
+        "x": 100,
+        "y": 0
+      },
+      "height": 1.2,
+      "verticalSpeed": 2,
+      "energy": 1
+    },
+    "frames": [
+      {
+        "tick": 1,
+        "projectile": {
+          "position": {
+            "x": 330.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3509499999999999,
+          "verticalSpeed": 1.0190000000000003,
+          "energy": 1.0,
+          "age": 0.1,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 2,
+        "projectile": {
+          "position": {
+            "x": 340.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.4037999999999997,
+          "verticalSpeed": 0.0380000000000002,
+          "energy": 1.0,
+          "age": 0.2,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 3,
+        "projectile": {
+          "position": {
+            "x": 350.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.3585499999999997,
+          "verticalSpeed": -0.943,
+          "energy": 1.0,
+          "age": 0.30000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 4,
+        "projectile": {
+          "position": {
+            "x": 360.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.2151999999999996,
+          "verticalSpeed": -1.9239999999999997,
+          "energy": 1.0,
+          "age": 0.4,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 5,
+        "projectile": {
+          "position": {
+            "x": 370.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.9737499999999997,
+          "verticalSpeed": -2.9050000000000002,
+          "energy": 1.0,
+          "age": 0.5,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 6,
+        "projectile": {
+          "position": {
+            "x": 380.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.6341999999999995,
+          "verticalSpeed": -3.886000000000001,
+          "energy": 0.9896242038376452,
+          "age": 0.6,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 7,
+        "projectile": {
+          "position": {
+            "x": 390.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 0.1965499999999993,
+          "verticalSpeed": -4.867000000000002,
+          "energy": 0.9455391358903963,
+          "age": 0.7,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 8,
+        "projectile": {
+          "position": {
+            "x": 398.56623046875,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.14349128921875007,
+          "verticalSpeed": 1.9305548203125007,
+          "energy": 0.6489011029738896,
+          "age": 0.7999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 9,
+        "projectile": {
+          "position": {
+            "x": 406.36623046874996,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.2874967712500001,
+          "verticalSpeed": 0.9495548203125008,
+          "energy": 0.6211672202095861,
+          "age": 0.8999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 10,
+        "projectile": {
+          "position": {
+            "x": 414.1662304687499,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.3334022532812501,
+          "verticalSpeed": -0.031445179687499214,
+          "energy": 0.5946186771675595,
+          "age": 0.9999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 11,
+        "projectile": {
+          "position": {
+            "x": 421.96623046874987,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.28120773531250015,
+          "verticalSpeed": -1.0124451796874991,
+          "energy": 0.5692048127027709,
+          "age": 1.0999999999999999,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 12,
+        "projectile": {
+          "position": {
+            "x": 429.7662304687498,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.13091321734375022,
+          "verticalSpeed": -1.993445179687499,
+          "energy": 0.4086578481868353,
+          "age": 1.2,
+          "bounces": 1,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 13,
+        "projectile": {
+          "position": {
+            "x": 435.77446801757793,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.037627994133789054,
+          "verticalSpeed": 0.9824947653515621,
+          "energy": 0.28449852006940496,
+          "age": 1.3,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 14,
+        "projectile": {
+          "position": {
+            "x": 441.858468017578,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.08682747066894526,
+          "verticalSpeed": 0.0014947653515620662,
+          "energy": 0.2749688041254075,
+          "age": 1.4000000000000001,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 15,
+        "projectile": {
+          "position": {
+            "x": 447.94246801757805,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.03792694720410146,
+          "verticalSpeed": -0.9795052346484381,
+          "energy": 0.2657583006889166,
+          "age": 1.5000000000000002,
+          "bounces": 2,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 16,
+        "projectile": {
+          "position": {
+            "x": 452.33516689086906,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.029062430502167974,
+          "verticalSpeed": 0.13599861004335956,
+          "energy": 0.18669645655681386,
+          "age": 1.6000000000000003,
+          "bounces": 3,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 17,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 18,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 19,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 20,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 21,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 22,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 23,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 24,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 25,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 26,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 27,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 28,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 29,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      },
+      {
+        "tick": 30,
+        "projectile": {
+          "position": {
+            "x": 456.70467524871816,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.01,
+          "verticalSpeed": 0.3682904541664921,
+          "energy": 0.13117217290444527,
+          "age": 1.7000000000000004,
+          "bounces": 4,
+          "hitIds": [
+            2
+          ]
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          235
+        ],
+        "morale": [
+          85.125,
+          85.0,
+          80.20571877951673
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          96.30637657283086
+        ],
+        "draws": 1
+      }
+    ]
+  },
+  {
+    "name": "overflight",
+    "input": {
+      "version": 1,
+      "name": "overflight",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 550,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "initial": {
+      "position": {
+        "x": 320,
+        "y": 300
+      },
+      "velocity": {
+        "x": 100,
+        "y": 0
+      },
+      "height": 30,
+      "verticalSpeed": 0,
+      "energy": 1
+    },
+    "frames": [
+      {
+        "tick": 1,
+        "projectile": {
+          "position": {
+            "x": 330.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 29.95095,
+          "verticalSpeed": -0.9810000000000001,
+          "energy": 1.0,
+          "age": 0.1,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 2,
+        "projectile": {
+          "position": {
+            "x": 340.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 29.8038,
+          "verticalSpeed": -1.9620000000000002,
+          "energy": 1.0,
+          "age": 0.2,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 3,
+        "projectile": {
+          "position": {
+            "x": 350.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 29.558549999999997,
+          "verticalSpeed": -2.9430000000000005,
+          "energy": 1.0,
+          "age": 0.30000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 4,
+        "projectile": {
+          "position": {
+            "x": 360.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 29.215199999999996,
+          "verticalSpeed": -3.9240000000000004,
+          "energy": 1.0,
+          "age": 0.4,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 5,
+        "projectile": {
+          "position": {
+            "x": 370.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 28.773749999999996,
+          "verticalSpeed": -4.905,
+          "energy": 1.0,
+          "age": 0.5,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 6,
+        "projectile": {
+          "position": {
+            "x": 380.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 28.234199999999994,
+          "verticalSpeed": -5.886,
+          "energy": 1.0,
+          "age": 0.6,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 7,
+        "projectile": {
+          "position": {
+            "x": 390.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 27.596549999999993,
+          "verticalSpeed": -6.867,
+          "energy": 1.0,
+          "age": 0.7,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 8,
+        "projectile": {
+          "position": {
+            "x": 400.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 26.86079999999999,
+          "verticalSpeed": -7.848,
+          "energy": 1.0,
+          "age": 0.7999999999999999,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 9,
+        "projectile": {
+          "position": {
+            "x": 410.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 26.02694999999999,
+          "verticalSpeed": -8.829,
+          "energy": 1.0,
+          "age": 0.8999999999999999,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 10,
+        "projectile": {
+          "position": {
+            "x": 420.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 25.094999999999988,
+          "verticalSpeed": -9.81,
+          "energy": 1.0,
+          "age": 0.9999999999999999,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 11,
+        "projectile": {
+          "position": {
+            "x": 430.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 24.064949999999985,
+          "verticalSpeed": -10.791,
+          "energy": 1.0,
+          "age": 1.0999999999999999,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 12,
+        "projectile": {
+          "position": {
+            "x": 440.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 22.936799999999984,
+          "verticalSpeed": -11.772,
+          "energy": 1.0,
+          "age": 1.2,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 13,
+        "projectile": {
+          "position": {
+            "x": 450.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 21.710549999999984,
+          "verticalSpeed": -12.753,
+          "energy": 1.0,
+          "age": 1.3,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 14,
+        "projectile": {
+          "position": {
+            "x": 460.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 20.38619999999998,
+          "verticalSpeed": -13.734,
+          "energy": 1.0,
+          "age": 1.4000000000000001,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 15,
+        "projectile": {
+          "position": {
+            "x": 470.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 18.96374999999998,
+          "verticalSpeed": -14.715,
+          "energy": 1.0,
+          "age": 1.5000000000000002,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 16,
+        "projectile": {
+          "position": {
+            "x": 480.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 17.44319999999998,
+          "verticalSpeed": -15.696,
+          "energy": 1.0,
+          "age": 1.6000000000000003,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 17,
+        "projectile": {
+          "position": {
+            "x": 490.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 15.82454999999998,
+          "verticalSpeed": -16.677,
+          "energy": 1.0,
+          "age": 1.7000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 18,
+        "projectile": {
+          "position": {
+            "x": 500.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 14.107799999999981,
+          "verticalSpeed": -17.658,
+          "energy": 1.0,
+          "age": 1.8000000000000005,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 19,
+        "projectile": {
+          "position": {
+            "x": 510.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 12.292949999999982,
+          "verticalSpeed": -18.639000000000003,
+          "energy": 1.0,
+          "age": 1.9000000000000006,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 20,
+        "projectile": {
+          "position": {
+            "x": 520.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 10.379999999999981,
+          "verticalSpeed": -19.620000000000005,
+          "energy": 1.0,
+          "age": 2.0000000000000004,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 21,
+        "projectile": {
+          "position": {
+            "x": 530.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 8.368949999999982,
+          "verticalSpeed": -20.601000000000006,
+          "energy": 1.0,
+          "age": 2.1000000000000005,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 22,
+        "projectile": {
+          "position": {
+            "x": 540.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 6.259799999999982,
+          "verticalSpeed": -21.582000000000008,
+          "energy": 1.0,
+          "age": 2.2000000000000006,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 23,
+        "projectile": {
+          "position": {
+            "x": 550.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 4.052549999999981,
+          "verticalSpeed": -22.56300000000001,
+          "energy": 1.0,
+          "age": 2.3000000000000007,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 24,
+        "projectile": {
+          "position": {
+            "x": 560.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 100,
+            "y": 0
+          },
+          "height": 1.7471999999999797,
+          "verticalSpeed": -23.54400000000001,
+          "energy": 1.0,
+          "age": 2.400000000000001,
+          "bounces": 0,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 25,
+        "projectile": {
+          "position": {
+            "x": 570.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 11.772000000000006,
+          "energy": 0.72,
+          "age": 2.500000000000001,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 26,
+        "projectile": {
+          "position": {
+            "x": 577.8,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 1.1281500000000007,
+          "verticalSpeed": 10.791000000000006,
+          "energy": 0.72,
+          "age": 2.600000000000001,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 27,
+        "projectile": {
+          "position": {
+            "x": 585.5999999999999,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 2.1582000000000012,
+          "verticalSpeed": 9.810000000000006,
+          "energy": 0.72,
+          "age": 2.700000000000001,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 28,
+        "projectile": {
+          "position": {
+            "x": 593.3999999999999,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 3.090150000000002,
+          "verticalSpeed": 8.829000000000006,
+          "energy": 0.72,
+          "age": 2.800000000000001,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 29,
+        "projectile": {
+          "position": {
+            "x": 601.1999999999998,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 3.924000000000003,
+          "verticalSpeed": 7.848000000000006,
+          "energy": 0.72,
+          "age": 2.9000000000000012,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 30,
+        "projectile": {
+          "position": {
+            "x": 608.9999999999998,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 4.659750000000003,
+          "verticalSpeed": 6.867000000000006,
+          "energy": 0.72,
+          "age": 3.0000000000000013,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      }
+    ]
+  },
+  {
+    "name": "ricochet",
+    "input": {
+      "version": 1,
+      "name": "ricochet",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 550,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Line 3",
+          "archetype": "infantry",
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "initial": {
+      "position": {
+        "x": 320,
+        "y": 300
+      },
+      "velocity": {
+        "x": 100,
+        "y": 0
+      },
+      "height": 0.5,
+      "verticalSpeed": -5,
+      "energy": 1
+    },
+    "frames": [
+      {
+        "tick": 1,
+        "projectile": {
+          "position": {
+            "x": 330.0,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 2.8708799999999997,
+          "energy": 0.72,
+          "age": 0.1,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 2,
+        "projectile": {
+          "position": {
+            "x": 337.8,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.23803799999999994,
+          "verticalSpeed": 1.8898799999999996,
+          "energy": 0.72,
+          "age": 0.2,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 3,
+        "projectile": {
+          "position": {
+            "x": 345.6,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.37797599999999987,
+          "verticalSpeed": 0.9088799999999995,
+          "energy": 0.72,
+          "age": 0.30000000000000004,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 4,
+        "projectile": {
+          "position": {
+            "x": 353.40000000000003,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.4198139999999998,
+          "verticalSpeed": -0.07212000000000063,
+          "energy": 0.72,
+          "age": 0.4,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 5,
+        "projectile": {
+          "position": {
+            "x": 361.20000000000005,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.36355199999999976,
+          "verticalSpeed": -1.0531200000000007,
+          "energy": 0.72,
+          "age": 0.5,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 6,
+        "projectile": {
+          "position": {
+            "x": 369.00000000000006,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 78.0,
+            "y": 0.0
+          },
+          "height": 0.20918999999999968,
+          "verticalSpeed": -2.0341200000000006,
+          "energy": 0.72,
+          "age": 0.6,
+          "bounces": 1,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 7,
+        "projectile": {
+          "position": {
+            "x": 376.80000000000007,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 1.4472576,
+          "energy": 0.5184,
+          "age": 0.7,
+          "bounces": 2,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 8,
+        "projectile": {
+          "position": {
+            "x": 382.88400000000007,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.09567576,
+          "verticalSpeed": 0.4662575999999998,
+          "energy": 0.5184,
+          "age": 0.7999999999999999,
+          "bounces": 2,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 9,
+        "projectile": {
+          "position": {
+            "x": 388.9680000000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 60.84,
+            "y": 0.0
+          },
+          "height": 0.09325151999999998,
+          "verticalSpeed": -0.5147424000000003,
+          "energy": 0.5184,
+          "age": 0.8999999999999999,
+          "bounces": 2,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 10,
+        "projectile": {
+          "position": {
+            "x": 395.0520000000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.7179563520000001,
+          "energy": 0.37324799999999997,
+          "age": 0.9999999999999999,
+          "bounces": 3,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 11,
+        "projectile": {
+          "position": {
+            "x": 399.7975200000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 47.455200000000005,
+            "y": 0.0
+          },
+          "height": 0.022745635200000003,
+          "verticalSpeed": -0.263043648,
+          "energy": 0.37324799999999997,
+          "age": 1.0999999999999999,
+          "bounces": 3,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 12,
+        "projectile": {
+          "position": {
+            "x": 404.5430400000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.5971409510400001,
+          "energy": 0.26873855999999996,
+          "age": 1.2,
+          "bounces": 4,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 13,
+        "projectile": {
+          "position": {
+            "x": 408.2445456000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 37.01505600000001,
+            "y": 0.0
+          },
+          "height": 0.010664095104000001,
+          "verticalSpeed": -0.38385904896,
+          "energy": 0.26873855999999996,
+          "age": 1.3,
+          "bounces": 4,
+          "hitIds": []
+        },
+        "active": true,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 14,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 15,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 16,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 17,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 18,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 19,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 20,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 21,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 22,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 23,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 24,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 25,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 26,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 27,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 28,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 29,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 30,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 31,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 32,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 33,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 34,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 35,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 36,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 37,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 38,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 39,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 40,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 41,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 42,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 43,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 44,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 45,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 46,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 47,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 48,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 49,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 50,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 51,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 52,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 53,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 54,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 55,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 56,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 57,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 58,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 59,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      },
+      {
+        "tick": 60,
+        "projectile": {
+          "position": {
+            "x": 411.9460512000001,
+            "y": 300.0
+          },
+          "velocity": {
+            "x": 28.87174368000001,
+            "y": 0.0
+          },
+          "height": 0.0,
+          "verticalSpeed": 0.6551323435008001,
+          "energy": 0.19349176319999997,
+          "age": 1.4000000000000001,
+          "bounces": 5,
+          "hitIds": []
+        },
+        "active": false,
+        "strengths": [
+          48,
+          240,
+          240
+        ],
+        "morale": [
+          85.0,
+          85.0,
+          85.0
+        ],
+        "cohesion": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "draws": 0
+      }
+    ]
+  }
+]

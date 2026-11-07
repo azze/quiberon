@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "name": "Cavalry Assault",
+  "width": 1000,
+  "height": 600,
+  "blue": {
+    "infantry": 6,
+    "cavalry": 0,
+    "artillery": 0
+  },
+  "red": {
+    "infantry": 2,
+    "cavalry": 4,
+    "artillery": 0
+  },
+  "seed": null,
+  "symmetric": false,
+  "max_per_type": 12,
+  "max_total": 48,
+  "ai_armies": [
+    1
+  ],
+  "placements": []
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "name": "stationary-separation",
+  "seed": 17,
+  "width": 1000,
+  "height": 600,
+  "duration": 100,
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Movement Regiment 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Movement Regiment 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 1,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    }
+  ],
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    30,
+    70,
+    80,
+    100,
+    200,
+    400,
+    700,
+    1000
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "name": "Difficult Terrain Charge",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 60,
+  "sampleTicks": [
+    0,
+    1,
+    2,
+    10,
+    20,
+    21,
+    50,
+    100,
+    600
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Cavalry 1",
+      "archetype": "cavalry",
+      "position": {
+        "x": 400,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 490,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 120,
+        "y": 650
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 1250,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 520,
+        "y": 300,
+        "radiusX": 90,
+        "radiusY": 110,
+        "height": 22,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 450,
+        "y": 300,
+        "radiusX": 140,
+        "radiusY": 110,
+        "density": 0.85
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true
+}

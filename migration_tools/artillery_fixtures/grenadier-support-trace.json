@@ -1,0 +1,487 @@
+{
+  "input": {
+    "version": 1,
+    "name": "Grenadier Morale Support",
+    "seed": 17,
+    "combatEnabled": true,
+    "width": 1400,
+    "height": 800,
+    "duration": 20,
+    "sampleTicks": [
+      0,
+      1,
+      10,
+      50,
+      100,
+      200
+    ],
+    "units": [
+      {
+        "id": 0,
+        "army": 0,
+        "name": "Blue Line 1",
+        "archetype": "infantry",
+        "position": {
+          "x": 430,
+          "y": 300
+        },
+        "facing": 0.0,
+        "cohesion": 100.0,
+        "morale": 42
+      },
+      {
+        "id": 1,
+        "army": 0,
+        "name": "Blue Infantry 2",
+        "archetype": "royal_grenadiers",
+        "position": {
+          "x": 390,
+          "y": 360
+        },
+        "facing": 0.0,
+        "cohesion": 100.0
+      },
+      {
+        "id": 2,
+        "army": 1,
+        "name": "Red Line 3",
+        "archetype": "infantry",
+        "position": {
+          "x": 560,
+          "y": 300
+        },
+        "facing": 3.141592653589793,
+        "cohesion": 100.0
+      },
+      {
+        "id": 3,
+        "army": 0,
+        "name": "Blue Line 4",
+        "archetype": "infantry",
+        "position": {
+          "x": 120,
+          "y": 650
+        },
+        "facing": 0.0,
+        "cohesion": 100.0
+      },
+      {
+        "id": 4,
+        "army": 1,
+        "name": "Red Line 5",
+        "archetype": "infantry",
+        "position": {
+          "x": 1250,
+          "y": 650
+        },
+        "facing": 3.141592653589793,
+        "cohesion": 100.0
+      }
+    ],
+    "commands": [],
+    "terrain": null,
+    "moraleEnabled": true,
+    "cavalryEnabled": true,
+    "artilleryEnabled": true,
+    "specialistsEnabled": true
+  },
+  "frames": [
+    {
+      "tick": 0,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 42,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 96,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 85.0,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 85.0,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 85.0,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    },
+    {
+      "tick": 1,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 227,
+          "morale": 36.25116666666666,
+          "cohesion": 92.64333333333333,
+          "reloadLeft": 12.0
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 96.0645,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 229,
+          "morale": 80.07083333333334,
+          "cohesion": 93.72666666666666,
+          "reloadLeft": 12.0
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 85.035,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 85.035,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    },
+    {
+      "tick": 10,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 227,
+          "morale": 36.44916666666665,
+          "cohesion": 93.22833333333331,
+          "reloadLeft": 11.100000000000003
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 96.64499999999995,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 229,
+          "morale": 80.07083333333334,
+          "cohesion": 94.31166666666664,
+          "reloadLeft": 11.100000000000003
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 85.34999999999997,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 85.34999999999997,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    },
+    {
+      "tick": 50,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 227,
+          "morale": 37.32916666666659,
+          "cohesion": 95.82833333333322,
+          "reloadLeft": 7.100000000000017
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 99.22499999999977,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 229,
+          "morale": 80.07083333333334,
+          "cohesion": 96.91166666666655,
+          "reloadLeft": 7.100000000000017
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 86.74999999999983,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 86.74999999999983,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    },
+    {
+      "tick": 100,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 227,
+          "morale": 38.42916666666651,
+          "cohesion": 99.0783333333331,
+          "reloadLeft": 2.1000000000000267
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 229,
+          "morale": 80.07083333333334,
+          "cohesion": 100.0,
+          "reloadLeft": 2.1000000000000267
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 88.49999999999966,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 88.49999999999966,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    },
+    {
+      "tick": 200,
+      "units": [
+        {
+          "id": 0,
+          "position": {
+            "x": 430,
+            "y": 300
+          },
+          "facing": 0.0,
+          "strength": 220,
+          "morale": 37.058333333333024,
+          "cohesion": 100.0,
+          "reloadLeft": 4.200000000000028
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 360
+          },
+          "facing": 0.0,
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 560,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "strength": 225,
+          "morale": 77.7625,
+          "cohesion": 100.0,
+          "reloadLeft": 4.200000000000028
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 120,
+            "y": 650
+          },
+          "facing": 0.0,
+          "strength": 240,
+          "morale": 91.99999999999932,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 1250,
+            "y": 650
+          },
+          "facing": 3.141592653589793,
+          "strength": 240,
+          "morale": 91.99999999999932,
+          "cohesion": 100.0,
+          "reloadLeft": 0.0
+        }
+      ],
+      "projectiles": []
+    }
+  ],
+  "draws": 388
+}

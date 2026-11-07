@@ -1,0 +1,62 @@
+{
+  "battles": [
+    {
+      "seed": 1,
+      "winner": "army_1",
+      "duration": 524.1,
+      "routs": 11,
+      "rallies": 6,
+      "cascade_shocks": 7,
+      "friendly_fire": 0,
+      "casualties_0": 678,
+      "remaining_0": 430,
+      "casualties_1": 581,
+      "remaining_1": 527
+    },
+    {
+      "seed": 2,
+      "winner": "army_1",
+      "duration": 481.5,
+      "routs": 9,
+      "rallies": 4,
+      "cascade_shocks": 5,
+      "friendly_fire": 0,
+      "casualties_0": 607,
+      "remaining_0": 501,
+      "casualties_1": 526,
+      "remaining_1": 582
+    },
+    {
+      "seed": 3,
+      "winner": "army_0",
+      "duration": 789.9,
+      "routs": 11,
+      "rallies": 12,
+      "cascade_shocks": 8,
+      "friendly_fire": 1,
+      "casualties_0": 762,
+      "remaining_0": 346,
+      "casualties_1": 706,
+      "remaining_1": 402
+    }
+  ],
+  "aggregate": {
+    "runs": 3,
+    "mean_duration": 598.5,
+    "wins": {
+      "army_0": 1,
+      "army_1": 2
+    },
+    "means": {
+      "duration": 598.5,
+      "routs": 10.333333333333334,
+      "rallies": 7.333333333333333,
+      "cascade_shocks": 6.666666666666667,
+      "friendly_fire": 0.3333333333333333,
+      "casualties_0": 682.3333333333334,
+      "remaining_0": 425.6666666666667,
+      "casualties_1": 604.3333333333334,
+      "remaining_1": 503.6666666666667
+    }
+  }
+}

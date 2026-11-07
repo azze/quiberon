@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Franciszek Ksawery Łaźniński — Cavalry Reserve",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_national_cavalry",
+      "name": "National Cavalry",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-franciszek_ksawery_lazninski",
+        "definitionId": "franciszek_ksawery_lazninski",
+        "name": "Franciszek Ksawery Łaźniński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "cautious",
+        "specialization": "cavalry_reserve",
+        "biography": "While resting/reforming: cohesion recovery +25%, fatigue recovery 0.25/s; charge cooldown −15%, clearance/reform time −20%. Genuine separation is still required.",
+        "nation": ""
+      },
+      "fatigue": 50,
+      "cohesion": 55
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "cohesion": 35,
+      "morale": 45,
+      "state": "shaken"
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 440,
+          "y": 380
+        }
+      }
+    },
+    {
+      "tick": 100,
+      "regimentId": 0,
+      "order": {
+        "kind": "reform"
+      }
+    },
+    {
+      "tick": 320,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      }
+    }
+  ]
+}

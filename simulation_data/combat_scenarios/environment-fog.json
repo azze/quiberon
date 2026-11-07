@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "name": "Environment G — Fog, forest and target acquisition",
+  "width": 1200,
+  "height": 900,
+  "seed": 1796,
+  "duration": 400,
+  "sampleTicks": [
+    0,
+    100,
+    1000,
+    4000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "units": [
+    {
+      "id": 0,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 0",
+      "position": {
+        "x": 250,
+        "y": 300
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 560,
+          "y": 300
+        }
+      }
+    },
+    {
+      "id": 1,
+      "archetype": "revolutionary_rifles",
+      "army": 0,
+      "name": "Blue revolutionary_rifles 1",
+      "position": {
+        "x": 250,
+        "y": 550
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 560,
+          "y": 550
+        }
+      }
+    },
+    {
+      "id": 2,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 2",
+      "position": {
+        "x": 850,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 650,
+          "y": 300
+        }
+      }
+    },
+    {
+      "id": 3,
+      "archetype": "artillery",
+      "army": 1,
+      "name": "Red artillery 3",
+      "position": {
+        "x": 900,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 690,
+          "y": 550
+        }
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [
+      {
+        "x": 610,
+        "y": 560,
+        "radiusX": 55,
+        "radiusY": 95,
+        "density": 0.45
+      }
+    ],
+    "environment": {
+      "version": 1,
+      "rivers": [],
+      "crossings": [],
+      "roads": [],
+      "defences": [],
+      "weather": {
+        "type": "fog",
+        "visibilityLimit": 180
+      }
+    }
+  }
+}

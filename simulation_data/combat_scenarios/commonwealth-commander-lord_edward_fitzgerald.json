@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Lord Edward FitzGerald — Brotherhood of Nations",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "revolutionary_line",
+      "name": "Revolutionary Line Infantry",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-lord_edward_fitzgerald",
+        "definitionId": "lord_edward_fitzgerald",
+        "name": "Lord Edward FitzGerald",
+        "background": "Revolutionary Britain",
+        "personality": "stalwart",
+        "specialization": "brotherhood_of_nations",
+        "biography": "With a visible, steady allied regiment of a different faction within 110 m: both recover cohesion 12% faster and up to 0.12 morale/s. Strongest coordination source only.",
+        "nation": "Ireland"
+      },
+      "cohesion": 65,
+      "morale": 65
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 420,
+        "y": 410
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "cohesion": 65,
+      "morale": 65
+    }
+  ]
+}

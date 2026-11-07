@@ -1,0 +1,1096 @@
+{
+  "version": 1,
+  "name": "Combat Benchmark 60",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1600,
+  "height": 1000,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Line 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 90
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue Line 6",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 180
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "name": "Blue Line 7",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 270
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 0,
+      "name": "Blue Line 8",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 270
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "name": "Blue Line 9",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 270
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 0,
+      "name": "Blue Line 10",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 360
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "name": "Blue Line 11",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 360
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 0,
+      "name": "Blue Line 12",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 360
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 12,
+      "army": 0,
+      "name": "Blue Line 13",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 450
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 13,
+      "army": 0,
+      "name": "Blue Line 14",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 450
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 14,
+      "army": 0,
+      "name": "Blue Line 15",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 450
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 15,
+      "army": 0,
+      "name": "Blue Line 16",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 540
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 16,
+      "army": 0,
+      "name": "Blue Line 17",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 540
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 17,
+      "army": 0,
+      "name": "Blue Line 18",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 540
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 18,
+      "army": 0,
+      "name": "Blue Line 19",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 630
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 19,
+      "army": 0,
+      "name": "Blue Line 20",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 630
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 20,
+      "army": 0,
+      "name": "Blue Line 21",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 630
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 21,
+      "army": 0,
+      "name": "Blue Line 22",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 720
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 22,
+      "army": 0,
+      "name": "Blue Line 23",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 720
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 23,
+      "army": 0,
+      "name": "Blue Line 24",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 720
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 24,
+      "army": 0,
+      "name": "Blue Line 25",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 810
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 25,
+      "army": 0,
+      "name": "Blue Line 26",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 810
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 26,
+      "army": 0,
+      "name": "Blue Line 27",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 810
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 27,
+      "army": 0,
+      "name": "Blue Line 28",
+      "archetype": "infantry",
+      "position": {
+        "x": 220,
+        "y": 900
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 28,
+      "army": 0,
+      "name": "Blue Line 29",
+      "archetype": "infantry",
+      "position": {
+        "x": 720,
+        "y": 900
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 29,
+      "army": 0,
+      "name": "Blue Line 30",
+      "archetype": "infantry",
+      "position": {
+        "x": 1220,
+        "y": 900
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 30,
+      "army": 1,
+      "name": "Red Line 31",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 31,
+      "army": 1,
+      "name": "Red Line 32",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 32,
+      "army": 1,
+      "name": "Red Line 33",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 90
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 33,
+      "army": 1,
+      "name": "Red Line 34",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 34,
+      "army": 1,
+      "name": "Red Line 35",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 35,
+      "army": 1,
+      "name": "Red Line 36",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 180
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 36,
+      "army": 1,
+      "name": "Red Line 37",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 270
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 37,
+      "army": 1,
+      "name": "Red Line 38",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 270
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 38,
+      "army": 1,
+      "name": "Red Line 39",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 270
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 39,
+      "army": 1,
+      "name": "Red Line 40",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 360
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 40,
+      "army": 1,
+      "name": "Red Line 41",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 360
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 41,
+      "army": 1,
+      "name": "Red Line 42",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 360
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 42,
+      "army": 1,
+      "name": "Red Line 43",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 450
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 43,
+      "army": 1,
+      "name": "Red Line 44",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 450
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 44,
+      "army": 1,
+      "name": "Red Line 45",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 450
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 45,
+      "army": 1,
+      "name": "Red Line 46",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 540
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 46,
+      "army": 1,
+      "name": "Red Line 47",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 540
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 47,
+      "army": 1,
+      "name": "Red Line 48",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 540
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 48,
+      "army": 1,
+      "name": "Red Line 49",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 49,
+      "army": 1,
+      "name": "Red Line 50",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 50,
+      "army": 1,
+      "name": "Red Line 51",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 630
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 51,
+      "army": 1,
+      "name": "Red Line 52",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 720
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 52,
+      "army": 1,
+      "name": "Red Line 53",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 720
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 53,
+      "army": 1,
+      "name": "Red Line 54",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 720
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 54,
+      "army": 1,
+      "name": "Red Line 55",
+      "archetype": "infantry",
+      "position": {
+        "x": 350,
+        "y": 810
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 55,
+      "army": 1,
+      "name": "Red Line 56",
+      "archetype": "infantry",
+      "position": {
+        "x": 732,
+        "y": 810
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 56,
+      "army": 1,
+      "name": "Red Line 57",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 810
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 57,
+      "army": 1,
+      "name": "Red Line 58",
+      "archetype": "infantry",
+      "position": {
+        "x": 232,
+        "y": 900
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 58,
+      "army": 1,
+      "name": "Red Line 59",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 900
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 59,
+      "army": 1,
+      "name": "Red Line 60",
+      "archetype": "infantry",
+      "position": {
+        "x": 1232,
+        "y": 900
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 5,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 90
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 0,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 2,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 90
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 2,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 4,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 180
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 4,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 6,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 270
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 6,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 8,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 270
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 8,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 10,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 360
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 10,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 12,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 450
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 12,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 14,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 450
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 14,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 16,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 540
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 16,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 18,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 630
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 18,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 20,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 630
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 20,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 22,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 720
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 22,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 24,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 265,
+          "y": 810
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 24,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 26,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1265,
+          "y": 810
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 26,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 28,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 765,
+          "y": 900
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 400,
+      "regimentId": 28,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 300,
+        "y": 230,
+        "radiusX": 95,
+        "radiusY": 110,
+        "height": 12,
+        "compact": true
+      },
+      {
+        "x": 1220,
+        "y": 550,
+        "radiusX": 90,
+        "radiusY": 90,
+        "height": 18,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 280,
+        "y": 90,
+        "radiusX": 45,
+        "radiusY": 42,
+        "density": 0.5
+      },
+      {
+        "x": 770,
+        "y": 360,
+        "radiusX": 60,
+        "radiusY": 60,
+        "density": 0.45
+      },
+      {
+        "x": 1260,
+        "y": 720,
+        "radiusX": 75,
+        "radiusY": 70,
+        "density": 0.6
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Joseph Louis Cook — Veteran of Two Worlds",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "haudenosaunee_skirmishers",
+      "name": "War Party",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-joseph_louis_cook",
+        "definitionId": "joseph_louis_cook",
+        "name": "Joseph Louis Cook",
+        "background": "Haudenosaunee Confederacy",
+        "personality": "opportunistic",
+        "specialization": "veteran_of_two_worlds",
+        "biography": "With a visible allied conventional regiment and a Haudenosaunee detachment within 110 m: both gain 15% cohesion recovery, 10% less manoeuvre disorder, and up to 0.12 morale/s.",
+        "nation": "Mohawk"
+      },
+      "cohesion": 65,
+      "morale": 65
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 420,
+        "y": 410
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "cohesion": 65,
+      "morale": 65
+    }
+  ]
+}

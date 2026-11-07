@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "name": "Autonomous Combined Arms 24",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 1440,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Prussian Line Infantry 1",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 110
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Haudenosaunee Woodland Skirmishers 2",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 220
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue French Royal Grenadiers 3",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 330
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Polish-Lithuanian Uhlans 4",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 440
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue British Revolutionary Riflemen 5",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 550
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue French Horse Artillery 6",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 660
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "name": "Blue Prussian Line Infantry 7",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 770
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 0,
+      "name": "Blue Haudenosaunee Woodland Skirmishers 8",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 390,
+        "y": 880
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "name": "Blue French Royal Grenadiers 9",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 990
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 0,
+      "name": "Blue Polish-Lithuanian Uhlans 10",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 1100
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "name": "Blue British Revolutionary Riflemen 11",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 390,
+        "y": 1210
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 0,
+      "name": "Blue French Horse Artillery 12",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 1320
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 12,
+      "army": 1,
+      "name": "Red Prussian Line Infantry 13",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 110
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 13,
+      "army": 1,
+      "name": "Red Haudenosaunee Woodland Skirmishers 14",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 14,
+      "army": 1,
+      "name": "Red French Royal Grenadiers 15",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 15,
+      "army": 1,
+      "name": "Red Polish-Lithuanian Uhlans 16",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 440
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 16,
+      "army": 1,
+      "name": "Red British Revolutionary Riflemen 17",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 17,
+      "army": 1,
+      "name": "Red French Horse Artillery 18",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 660
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 18,
+      "army": 1,
+      "name": "Red Prussian Line Infantry 19",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 770
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 19,
+      "army": 1,
+      "name": "Red Haudenosaunee Woodland Skirmishers 20",
+      "archetype": "haudenosaunee_skirmishers",
+      "position": {
+        "x": 610,
+        "y": 880
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 20,
+      "army": 1,
+      "name": "Red French Royal Grenadiers 21",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 990
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 21,
+      "army": 1,
+      "name": "Red Polish-Lithuanian Uhlans 22",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 1100
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 22,
+      "army": 1,
+      "name": "Red British Revolutionary Riflemen 23",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 610,
+        "y": 1210
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 23,
+      "army": 1,
+      "name": "Red French Horse Artillery 24",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 1320
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [],
+  "terrain": {
+    "hills": [
+      {
+        "x": 530,
+        "y": 120,
+        "radiusX": 50,
+        "radiusY": 65,
+        "height": 8,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 460,
+        "y": 220,
+        "radiusX": 70,
+        "radiusY": 75,
+        "density": 0.6
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "commanderSeed": 1729,
+  "aiArmies": [
+    0,
+    1
+  ]
+}

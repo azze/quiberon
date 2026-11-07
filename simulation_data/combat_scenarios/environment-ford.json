@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "name": "Environment C — Bridge and restricted ford",
+  "width": 1200,
+  "height": 900,
+  "seed": 1796,
+  "duration": 400,
+  "sampleTicks": [
+    0,
+    100,
+    1000,
+    4000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "units": [
+    {
+      "id": 0,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 0",
+      "position": {
+        "x": 280,
+        "y": 300
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 940,
+          "y": 300
+        }
+      }
+    },
+    {
+      "id": 1,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 1",
+      "position": {
+        "x": 240,
+        "y": 500
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 940,
+          "y": 650
+        },
+        "viaCrossing": "south_ford"
+      }
+    },
+    {
+      "id": 2,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 2",
+      "position": {
+        "x": 240,
+        "y": 650
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 940,
+          "y": 650
+        }
+      }
+    },
+    {
+      "id": 3,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 3",
+      "position": {
+        "x": 940,
+        "y": 400
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered"
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [],
+    "environment": {
+      "version": 1,
+      "rivers": [
+        {
+          "id": "vistula",
+          "name": "River laboratory",
+          "points": [
+            {
+              "x": 600,
+              "y": -100
+            },
+            {
+              "x": 600,
+              "y": 1100
+            }
+          ],
+          "width": 70,
+          "waterHeight": -0.4,
+          "depth": 2
+        }
+      ],
+      "crossings": [
+        {
+          "id": "main_bridge",
+          "riverId": "vistula",
+          "position": {
+            "x": 600,
+            "y": 400
+          },
+          "facing": 0,
+          "length": 112,
+          "width": 26,
+          "kind": "bridge",
+          "fordDepth": "shallow",
+          "speed": 0.85
+        },
+        {
+          "id": "south_ford",
+          "riverId": "vistula",
+          "position": {
+            "x": 600,
+            "y": 650
+          },
+          "facing": 0,
+          "length": 112,
+          "width": 42,
+          "kind": "ford",
+          "fordDepth": "moderate",
+          "speed": 0.45
+        }
+      ],
+      "roads": [],
+      "defences": [],
+      "weather": {
+        "type": "clear",
+        "visibilityLimit": 180
+      }
+    }
+  }
+}

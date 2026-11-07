@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Matvei Platov — Cossack Screen",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "russian_cossacks",
+      "name": "Russian Cossacks",
+      "position": {
+        "x": 460,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-matvei_platov",
+        "definitionId": "matvei_platov",
+        "name": "Matvei Platov",
+        "background": "Russia",
+        "personality": "opportunistic",
+        "specialization": "cossack_screen",
+        "biography": "Light cavalry manoeuvre speed +6%, pursuit +15%, disruption −10%, terrain sight opacity −10%; avoids prepared fronts.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 555,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "state": "routing",
+      "cohesion": 20,
+      "morale": 12
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Stationary reserve (keeps pursuit laboratory active)",
+      "position": {
+        "x": 1000,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "hold"
+    }
+  ]
+}

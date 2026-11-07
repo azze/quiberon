@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "name": "Combined Movement and Combat",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1000,
+  "height": 650,
+  "duration": 900,
+  "sampleTicks": [
+    0,
+    1,
+    2,
+    10,
+    20,
+    21,
+    50,
+    100,
+    9000
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Line 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 110
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 330
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 440
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Cavalry 5",
+      "archetype": "cavalry",
+      "position": {
+        "x": 260,
+        "y": 65
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue Battery 6",
+      "archetype": "artillery",
+      "position": {
+        "x": 280,
+        "y": 590
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 1,
+      "name": "Red Line 7",
+      "archetype": "infantry",
+      "position": {
+        "x": 650,
+        "y": 110
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "name": "Red Line 8",
+      "archetype": "infantry",
+      "position": {
+        "x": 650,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 1,
+      "name": "Red Line 9",
+      "archetype": "infantry",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "name": "Red Line 10",
+      "archetype": "infantry",
+      "position": {
+        "x": 650,
+        "y": 440
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 1,
+      "name": "Red Cavalry 11",
+      "archetype": "cavalry",
+      "position": {
+        "x": 810,
+        "y": 65
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "name": "Red Battery 12",
+      "archetype": "artillery",
+      "position": {
+        "x": 800,
+        "y": 590
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 6,
+      "order": {
+        "kind": "attack",
+        "targetId": 0
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 7,
+      "order": {
+        "kind": "attack",
+        "targetId": 1
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 8,
+      "order": {
+        "kind": "attack",
+        "targetId": 2
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 9,
+      "order": {
+        "kind": "attack",
+        "targetId": 3
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 550,
+        "y": 320,
+        "radiusX": 100,
+        "radiusY": 130,
+        "height": 12,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 610,
+        "y": 500,
+        "radiusX": 80,
+        "radiusY": 80,
+        "density": 0.4
+      }
+    ]
+  }
+}

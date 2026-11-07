@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Gebhard Leberecht von Blücher — Vorwärts!",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "prussian_cuirassiers",
+      "name": "Prussian Cuirassiers",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-gebhard_leberecht_von_blucher",
+        "definitionId": "gebhard_leberecht_von_blucher",
+        "name": "Gebhard Leberecht von Blücher",
+        "background": "Prussia",
+        "personality": "aggressive",
+        "specialization": "vorwarts",
+        "biography": "Aggressive common AI policy; exposed charge shock +15%, but charging adds 0.10 fatigue/s and up to 2 cohesion loss on impact.",
+        "nation": ""
+      },
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      },
+      "autonomy": "ordered"
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 950,
+          "y": 330
+        }
+      }
+    }
+  ]
+}

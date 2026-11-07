@@ -1,0 +1,227 @@
+[
+  {
+    "id": "infantry",
+    "reload": 12.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.79,
+      "loss_per_metre": 0.06,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "cavalry",
+    "reload": 5.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.61,
+      "loss_per_metre": 0.15,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "artillery",
+    "reload": 19.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.55,
+      "loss_per_metre": 0.108,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 6
+  },
+  {
+    "id": "prussian_line",
+    "reload": 9.3,
+    "formation": 4.4799999999999995,
+    "manoeuvre": 0.55,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.7375,
+      "loss_per_metre": 0.09,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "haudenosaunee_skirmishers",
+    "reload": 11.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.5189228801589405,
+      "vegetation": 39.359999999999985,
+      "reason": "forest"
+    },
+    "forestPower": 4.5,
+    "forestShock": 2.4,
+    "outgoing": 1.8874414638223584,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.976375,
+      "loss_per_metre": 0.00486,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "royal_grenadiers",
+    "reload": 12.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.79,
+      "loss_per_metre": 0.06,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "commonwealth_uhlans",
+    "reload": 5.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.571,
+      "loss_per_metre": 0.1875,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "revolutionary_rifles",
+    "reload": 22.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0632093408018684,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.9244,
+      "loss_per_metre": 0.02025,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 0
+  },
+  {
+    "id": "french_horse_artillery",
+    "reload": 17.0,
+    "formation": 7.0,
+    "manoeuvre": 1.0,
+    "aimed": 1.0,
+    "visibility": {
+      "visible": true,
+      "transmission": 0.44932896411722173,
+      "vegetation": 47.999999999999986,
+      "reason": "forest"
+    },
+    "forestPower": 1.0,
+    "forestShock": 1.0,
+    "outgoing": 0.32801014380557186,
+    "protection": 0.64,
+    "movement": {
+      "speed": 0.55,
+      "loss_per_metre": 0.108,
+      "forest": 0.6,
+      "slope": 0.0,
+      "grade": 0.0
+    },
+    "guns": 4
+  }
+]

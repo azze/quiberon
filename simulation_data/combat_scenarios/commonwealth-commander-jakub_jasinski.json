@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Jakub Jasiński — Revolutionary Fervour",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-jakub_jasinski",
+        "definitionId": "jakub_jasinski",
+        "name": "Jakub Jasiński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "aggressive",
+        "specialization": "revolutionary_fervour",
+        "biography": "Citizen formations locally outnumbered within 130 m take 18% less direct shock, 12% less casualty morale loss, and gain 10% melee power.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 530,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 510,
+        "y": 410
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ]
+}

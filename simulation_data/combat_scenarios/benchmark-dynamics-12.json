@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "name": "Dynamics Benchmark 12",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 2100,
+  "height": 800,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Cavalry 1",
+      "archetype": "cavalry",
+      "position": {
+        "x": 250,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "name": "Red Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 320,
+        "y": 120
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 180
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 150,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 580,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 850,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 5,
+      "army": 1,
+      "name": "Red Line 6",
+      "archetype": "infantry",
+      "position": {
+        "x": 980,
+        "y": 120
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 65,
+      "morale": 26
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "name": "Blue Line 7",
+      "archetype": "infantry",
+      "position": {
+        "x": 750,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "name": "Red Line 8",
+      "archetype": "infantry",
+      "position": {
+        "x": 1180,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "name": "Blue Cavalry 9",
+      "archetype": "cavalry",
+      "position": {
+        "x": 1450,
+        "y": 120
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "name": "Red Line 10",
+      "archetype": "infantry",
+      "position": {
+        "x": 1520,
+        "y": 120
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 180
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "name": "Blue Line 11",
+      "archetype": "infantry",
+      "position": {
+        "x": 1350,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "name": "Red Line 12",
+      "archetype": "infantry",
+      "position": {
+        "x": 1780,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 1
+      }
+    },
+    {
+      "tick": 5,
+      "regimentId": 4,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 890,
+          "y": 120
+        },
+        "facing": null
+      }
+    },
+    {
+      "tick": 300,
+      "regimentId": 4,
+      "order": {
+        "kind": "hold",
+        "destination": null,
+        "facing": null
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 8,
+      "order": {
+        "kind": "charge",
+        "targetId": 9
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 900,
+        "y": 500,
+        "radiusX": 110,
+        "radiusY": 120,
+        "height": 12,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 950,
+        "y": 600,
+        "radiusX": 90,
+        "radiusY": 80,
+        "density": 0.4
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true
+}

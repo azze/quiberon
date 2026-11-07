@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "hold_the_line",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Citizen defensive line",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 440,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-0",
+        "name": "Laboratory Officer 1",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 680,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ]
+}

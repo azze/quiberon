@@ -1,0 +1,284 @@
+{
+  "names": {
+    "Prussia": [
+      [
+        "Friedrich",
+        "Karl",
+        "Johann",
+        "Heinrich",
+        "Otto",
+        "Wilhelm",
+        "Ernst",
+        "Ludwig"
+      ],
+      [
+        "von Arnsberg",
+        "Adler",
+        "Winterfeld",
+        "Bergmann",
+        "Seidel",
+        "Voss",
+        "Falkenberg",
+        "Brandt"
+      ]
+    ],
+    "Bourbon France": [
+      [
+        "Étienne",
+        "Armand",
+        "Louis",
+        "Henri",
+        "Antoine",
+        "Charles",
+        "Pierre",
+        "Lucien"
+      ],
+      [
+        "Morel",
+        "de Valcourt",
+        "Dupré",
+        "Beaumont",
+        "Deschamps",
+        "Lemaire",
+        "Vautrin",
+        "Marchand"
+      ]
+    ],
+    "Revolutionary Britain": [
+      [
+        "Thomas",
+        "Edward",
+        "Elias",
+        "Samuel",
+        "William",
+        "James",
+        "Robert",
+        "Henry"
+      ],
+      [
+        "Mercer",
+        "Harrow",
+        "Fenwick",
+        "Ashford",
+        "Bennett",
+        "Whitfield",
+        "Hale",
+        "Collier"
+      ]
+    ],
+    "Polish-Lithuanian Commonwealth": [
+      [
+        "Jan",
+        "Michał",
+        "Kazimierz",
+        "Aleksander",
+        "Antoni",
+        "Tomasz",
+        "Stanisław",
+        "Józef"
+      ],
+      [
+        "Wysocki",
+        "Lipski",
+        "Dąbrowski",
+        "Zaleski",
+        "Kalinowski",
+        "Radzik",
+        "Sokołowski",
+        "Korsak"
+      ]
+    ],
+    "Haudenosaunee Confederacy": [
+      [
+        "Tyorhansera",
+        "Akiatonharónkwen",
+        "Tekarihoga",
+        "Thayendanegea",
+        "Sagoyewatha",
+        "Skenandoah",
+        "Tewahongalahkon",
+        "Tyonajanegen",
+        "Atayataghlonghta"
+      ],
+      []
+    ],
+    "Generic": [
+      [
+        "Johann",
+        "Edward",
+        "Henri",
+        "Anton",
+        "Thomas",
+        "Karl",
+        "Louis",
+        "Matthias"
+      ],
+      [
+        "Adler",
+        "Fenwick",
+        "Morel",
+        "Voss",
+        "Mercer",
+        "Weber",
+        "Beaumont",
+        "Keller"
+      ]
+    ]
+  },
+  "personalities": {
+    "aggressive": {
+      "name": "Aggressive",
+      "benefit": "Commits quickly; exploits broken enemies.",
+      "drawback": "Overextends and disengages late.",
+      "policy": {
+        "commitment": 0.65,
+        "pursuit_distance": 320,
+        "disengage_seconds": 18,
+        "overmatch": 2.4,
+        "firing_distance": 0.78
+      }
+    },
+    "cautious": {
+      "name": "Cautious",
+      "benefit": "Keeps distance; breaks off unfavourable fights early.",
+      "drawback": "Slower commitment and shorter pursuit.",
+      "policy": {
+        "commitment": 1.35,
+        "pursuit_distance": 120,
+        "disengage_seconds": 6,
+        "overmatch": 1.15,
+        "firing_distance": 0.95
+      }
+    },
+    "methodical": {
+      "name": "Methodical",
+      "benefit": "Preserves cohesion; briefly reforms before weak attacks.",
+      "drawback": "Slower exploitation of opportunities.",
+      "policy": {
+        "commitment": 1.2,
+        "pursuit_distance": 180,
+        "disengage_seconds": 12,
+        "overmatch": 1.65,
+        "firing_distance": 0.85
+      }
+    },
+    "opportunistic": {
+      "name": "Opportunistic",
+      "benefit": "Prefers exposed or broken enemies; commits quickly.",
+      "drawback": "May divert from an autonomous objective.",
+      "policy": {
+        "commitment": 0.5,
+        "pursuit_distance": 280,
+        "disengage_seconds": 12,
+        "overmatch": 1.6,
+        "firing_distance": 0.85
+      }
+    },
+    "stalwart": {
+      "name": "Stalwart",
+      "benefit": "Resists shock and steadies defensive positions.",
+      "drawback": "Stays in losing fights longer.",
+      "policy": {
+        "commitment": 1.0,
+        "pursuit_distance": 140,
+        "disengage_seconds": 24,
+        "overmatch": 2.7,
+        "firing_distance": 0.85
+      }
+    }
+  },
+  "specializations": {
+    "drillmaster": {
+      "name": "Drillmaster",
+      "categories": [
+        "infantry",
+        "cavalry"
+      ],
+      "benefit": "High cohesion: formation time -15%, manoeuvre loss -10%, quiet recovery +10%.",
+      "drawback": "Bonuses fade to zero at 40 cohesion."
+    },
+    "firebrand": {
+      "name": "Firebrand",
+      "categories": [
+        "infantry",
+        "cavalry"
+      ],
+      "benefit": "Exposed charge morale shock +12% with momentum above 25%.",
+      "drawback": "Up to 3 extra cohesion lost after impact; autonomous cavalry pursuit +15%."
+    },
+    "pathfinder": {
+      "name": "Pathfinder",
+      "categories": [
+        "infantry",
+        "cavalry",
+        "artillery"
+      ],
+      "benefit": "Forest slowdown -20%, uphill sensitivity -10%, terrain disruption -15%.",
+      "drawback": "Little benefit on flat open ground."
+    },
+    "sharpshooter": {
+      "name": "Sharpshooter",
+      "categories": [
+        "infantry"
+      ],
+      "benefit": "Stationary, cohesion >=50: accuracy up to +12%, fading with obscuration.",
+      "drawback": "Reload time +8%, even when the aim bonus is inactive."
+    },
+    "artillerist": {
+      "name": "Artillerist",
+      "categories": [
+        "artillery"
+      ],
+      "benefit": "Deployed battery aim scatter -12%; physical projectile rules unchanged.",
+      "drawback": "Limbering and setup time +10%."
+    },
+    "inspirer": {
+      "name": "Inspirer",
+      "categories": [
+        "infantry",
+        "cavalry",
+        "artillery"
+      ],
+      "benefit": "Visible allies within 125 m: morale +0.12/s, rally +0.18/s; reduced rout shock.",
+      "drawback": "No offensive bonus; unsteady sources inactive; strongest aura only."
+    },
+    "pursuit_specialist": {
+      "name": "Pursuit Specialist",
+      "categories": [
+        "cavalry"
+      ],
+      "benefit": "Pursuit power +12%, contact gap +10%, pursuit congestion disruption -10%.",
+      "drawback": "Frontal combat against steady targets -10%."
+    },
+    "defensive_tactician": {
+      "name": "Defensive Tactician",
+      "categories": [
+        "infantry"
+      ],
+      "benefit": "Prepared frontal charge impact/cohesion loss -10%; quiet defensive recovery +10%.",
+      "drawback": "Aggressive advance speed -5%; resistance requires holding steady at cohesion >=60."
+    }
+  },
+  "tuning": {
+    "drill_formation": 0.15,
+    "drill_manoeuvre": 0.1,
+    "drill_recovery": 0.1,
+    "methodical_manoeuvre": 0.08,
+    "stalwart_shock": 0.1,
+    "firebrand_shock": 0.12,
+    "firebrand_disorder": 3.0,
+    "pathfinder_forest": 0.2,
+    "pathfinder_uphill": 0.1,
+    "pathfinder_disruption": 0.15,
+    "sharpshooter_accuracy": 0.12,
+    "sharpshooter_reload": 0.08,
+    "artillerist_scatter": 0.12,
+    "artillerist_redeploy": 0.1,
+    "inspirer_morale": 0.12,
+    "inspirer_rally": 0.18,
+    "pursuit_power": 0.12,
+    "pursuit_disruption": 0.1,
+    "defensive_resistance": 0.1,
+    "defensive_advance": 0.05
+  }
+}

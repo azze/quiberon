@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "name": "Forest Engagement",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1000,
+  "height": 650,
+  "duration": 900,
+  "sampleTicks": [
+    0,
+    1,
+    2,
+    10,
+    20,
+    21,
+    50,
+    100,
+    9000
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Line 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 400,
+        "y": 400
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 1,
+      "name": "Red Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 540,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 540,
+        "y": 400
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 2,
+      "order": {
+        "kind": "attack",
+        "targetId": 0
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 3,
+      "order": {
+        "kind": "attack",
+        "targetId": 1
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [
+      {
+        "x": 420,
+        "y": 220,
+        "radiusX": 80,
+        "radiusY": 60,
+        "density": 0.5
+      },
+      {
+        "x": 535,
+        "y": 400,
+        "radiusX": 95,
+        "radiusY": 75,
+        "density": 0.8
+      }
+    ]
+  }
+}

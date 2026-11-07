@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "name": "Environment E — Directional earthworks and barricades",
+  "width": 1200,
+  "height": 900,
+  "seed": 1796,
+  "duration": 400,
+  "sampleTicks": [
+    0,
+    100,
+    1000,
+    4000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "units": [
+    {
+      "id": 0,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 0",
+      "position": {
+        "x": 730,
+        "y": 300
+      },
+      "facing": 0,
+      "autonomy": "ordered"
+    },
+    {
+      "id": 1,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 1",
+      "position": {
+        "x": 730,
+        "y": 500
+      },
+      "facing": 0,
+      "autonomy": "ordered"
+    },
+    {
+      "id": 2,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 2",
+      "position": {
+        "x": 870,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered"
+    },
+    {
+      "id": 3,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 3",
+      "position": {
+        "x": 870,
+        "y": 500
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered"
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [],
+    "environment": {
+      "version": 1,
+      "rivers": [],
+      "crossings": [],
+      "roads": [],
+      "defences": [
+        {
+          "id": "earthwork",
+          "position": {
+            "x": 850,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "width": 90,
+          "depth": 3,
+          "kind": "earthwork",
+          "musketExposure": 0.7,
+          "chargeResistance": 0.65,
+          "protectionDepth": 36
+        },
+        {
+          "id": "barricade",
+          "position": {
+            "x": 850,
+            "y": 500
+          },
+          "facing": 3.141592653589793,
+          "width": 90,
+          "depth": 3,
+          "kind": "barricade",
+          "musketExposure": 0.7,
+          "chargeResistance": 0.65,
+          "protectionDepth": 36
+        }
+      ],
+      "weather": {
+        "type": "clear",
+        "visibilityLimit": 180
+      }
+    }
+  }
+}

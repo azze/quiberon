@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 60,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Physical canister at close range",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 430,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-0",
+        "name": "Laboratory Officer 1",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "order": {
+        "kind": "fireAt",
+        "targetId": 1
+      },
+      "autonomy": "ordered"
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 515,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ]
+}

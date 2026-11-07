@@ -1,0 +1,7138 @@
+[
+  {
+    "name": "artillery-12",
+    "input": {
+      "version": 1,
+      "name": "Artillery Heavy 12",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Battery 3",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 1,
+          "name": "Red Battery 7",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 1,
+          "name": "Red Infantry 8",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 1,
+          "name": "Red Battery 9",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 1,
+          "name": "Red Infantry 10",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 1,
+          "name": "Red Infantry 11",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 1,
+          "name": "Red Infantry 12",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 5,
+          "order": {
+            "kind": "attack",
+            "targetId": 11
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 11,
+          "order": {
+            "kind": "attack",
+            "targetId": 5
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "strength": 196,
+          "morale": 89.14333333334169,
+          "cohesion": 94.87666666666645,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 445.47578199232083,
+            "y": 743.2533836660776
+          },
+          "strength": 50,
+          "morale": 22.95060875000106,
+          "cohesion": 3.7898642560886384,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "strength": 31,
+          "morale": 69.25416666667114,
+          "cohesion": 90.29833333333313,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 618.2399041902768,
+            "y": 442.372971005317
+          },
+          "strength": 113,
+          "morale": 6.3741666666662695,
+          "cohesion": 30.532073651653683,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 646.5536406941695,
+            "y": 730.1845003861393
+          },
+          "strength": 47,
+          "morale": 16.688108750001053,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        }
+      ],
+      "draws": 397
+    }
+  },
+  {
+    "name": "artillery-24",
+    "input": {
+      "version": 1,
+      "name": "Artillery Heavy 24",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 1440,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Battery 3",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Battery 7",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Battery 9",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 1,
+          "name": "Red Battery 13",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 1,
+          "name": "Red Infantry 14",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 1,
+          "name": "Red Battery 15",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 1,
+          "name": "Red Infantry 16",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 1,
+          "name": "Red Infantry 17",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 1,
+          "name": "Red Infantry 18",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 1,
+          "name": "Red Battery 19",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 1,
+          "name": "Red Infantry 20",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 1,
+          "name": "Red Battery 21",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 1,
+          "name": "Red Infantry 22",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 1,
+          "name": "Red Infantry 23",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 1,
+          "name": "Red Infantry 24",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 5,
+          "order": {
+            "kind": "attack",
+            "targetId": 17
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 11,
+          "order": {
+            "kind": "attack",
+            "targetId": 23
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 17,
+          "order": {
+            "kind": "attack",
+            "targetId": 5
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 23,
+          "order": {
+            "kind": "attack",
+            "targetId": 11
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "strength": 17,
+          "morale": 37.29583333333583,
+          "cohesion": 40.24666666666615,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "strength": 180,
+          "morale": 71.83000000000835,
+          "cohesion": 86.08499999999978,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 159,
+          "morale": 93.74677777777735,
+          "cohesion": 93.6316666666664,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 306.76591099255893,
+            "y": 806.1982587827152
+          },
+          "strength": 16,
+          "morale": 39.25000000000027,
+          "cohesion": 23.135000000000044,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "strength": 43,
+          "morale": 99.6011666666684,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "strength": 160,
+          "morale": 52.93333333333813,
+          "cohesion": 74.33166666666558,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 344.9961132458284,
+            "y": 1402.5277878252655
+          },
+          "strength": 49,
+          "morale": 20.59810875000106,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "strength": 18,
+          "morale": 37.90000000000232,
+          "cohesion": 54.74999999999851,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "strength": 155,
+          "morale": 46.45416666666979,
+          "cohesion": 77.71333333333182,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 158,
+          "morale": 94.18659259259216,
+          "cohesion": 94.35388888888863,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 688.4009443742567,
+            "y": 821.2837462353973
+          },
+          "strength": 26,
+          "morale": 39.25000000000027,
+          "cohesion": 23.135000000000044,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "strength": 174,
+          "morale": 64.95500000000047,
+          "cohesion": 92.27499999999849,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 573.8674685710525,
+            "y": 1415.597335247494
+          },
+          "strength": 47,
+          "morale": 20.673108750001067,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        }
+      ],
+      "draws": 804
+    }
+  },
+  {
+    "name": "artillery-36",
+    "input": {
+      "version": 1,
+      "name": "Artillery Heavy 36",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 2100,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Battery 3",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Battery 7",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Battery 9",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 0,
+          "name": "Blue Battery 13",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 1430
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 0,
+          "name": "Blue Infantry 14",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1540
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 0,
+          "name": "Blue Battery 15",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 1650
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 0,
+          "name": "Blue Infantry 16",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 0,
+          "name": "Blue Infantry 17",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 0,
+          "name": "Blue Infantry 18",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1980
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 1,
+          "name": "Red Battery 19",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 1,
+          "name": "Red Infantry 20",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 1,
+          "name": "Red Battery 21",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 1,
+          "name": "Red Infantry 22",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 1,
+          "name": "Red Infantry 23",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 1,
+          "name": "Red Infantry 24",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 24,
+          "army": 1,
+          "name": "Red Battery 25",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 25,
+          "army": 1,
+          "name": "Red Infantry 26",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 26,
+          "army": 1,
+          "name": "Red Battery 27",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 27,
+          "army": 1,
+          "name": "Red Infantry 28",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 28,
+          "army": 1,
+          "name": "Red Infantry 29",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 29,
+          "army": 1,
+          "name": "Red Infantry 30",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 30,
+          "army": 1,
+          "name": "Red Battery 31",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 1430
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 31,
+          "army": 1,
+          "name": "Red Infantry 32",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1540
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 32,
+          "army": 1,
+          "name": "Red Battery 33",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 1650
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 33,
+          "army": 1,
+          "name": "Red Infantry 34",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 34,
+          "army": 1,
+          "name": "Red Infantry 35",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 35,
+          "army": 1,
+          "name": "Red Infantry 36",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1980
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 5,
+          "order": {
+            "kind": "attack",
+            "targetId": 23
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 11,
+          "order": {
+            "kind": "attack",
+            "targetId": 29
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 17,
+          "order": {
+            "kind": "attack",
+            "targetId": 35
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 23,
+          "order": {
+            "kind": "attack",
+            "targetId": 5
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 29,
+          "order": {
+            "kind": "attack",
+            "targetId": 11
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 35,
+          "order": {
+            "kind": "attack",
+            "targetId": 17
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "strength": 35,
+          "morale": 81.09583333333727,
+          "cohesion": 92.00666666666561,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "strength": 162,
+          "morale": 55.705000000004325,
+          "cohesion": 76.66166666666558,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 323.6427838612236,
+            "y": 739.0817962054599
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "strength": 44,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "strength": 136,
+          "morale": 38.93333333333765,
+          "cohesion": 67.42166666666515,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 168,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 395.41170394081024,
+            "y": 1470.192352159302
+          },
+          "strength": 35,
+          "morale": 34.390000000000086,
+          "cohesion": 13.144999999999976,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 280,
+            "y": 1430
+          },
+          "strength": 46,
+          "morale": 97.22818186666717,
+          "cohesion": 98.99461365333316,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 280,
+            "y": 1540
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 280,
+            "y": 1650
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "strength": 166,
+          "morale": 63.04833333333961,
+          "cohesion": 83.21333333333311,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 533.4741739737581,
+            "y": 2056.8897399254492
+          },
+          "strength": 51,
+          "morale": 21.488108750001135,
+          "cohesion": 12.130861035812641,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "strength": 35,
+          "morale": 82.4958333333378,
+          "cohesion": 82.72833333333314,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 617.8202213972661,
+            "y": 442.3686076355427
+          },
+          "strength": 122,
+          "morale": 15.646666666666395,
+          "cohesion": 37.987456121529995,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 171,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 620.465956219142,
+            "y": 822.695566659631
+          },
+          "strength": 8,
+          "morale": 7.649999999999992,
+          "cohesion": 15.724999999999959,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 24,
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 25,
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 26,
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 27,
+          "position": {
+            "x": 617.8202213972661,
+            "y": 1102.3686076355432
+          },
+          "strength": 130,
+          "morale": 19.53333333333338,
+          "cohesion": 42.685670158470245,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 28,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 162,
+          "morale": 93.01108876117449,
+          "cohesion": 96.9293055555553,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 29,
+          "position": {
+            "x": 811.6566663222521,
+            "y": 1467.7997794155272
+          },
+          "strength": 1,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 30,
+          "position": {
+            "x": 720,
+            "y": 1430
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 31,
+          "position": {
+            "x": 720,
+            "y": 1540
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 32,
+          "position": {
+            "x": 720,
+            "y": 1650
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 33,
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "strength": 156,
+          "morale": 54.590000000007,
+          "cohesion": 78.95333333333225,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 34,
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 35,
+          "position": {
+            "x": 705.2527356262457,
+            "y": 2008.2579453685796
+          },
+          "strength": 47,
+          "morale": 18.163108750001058,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        }
+      ],
+      "draws": 1382
+    }
+  },
+  {
+    "name": "artillery-60",
+    "input": {
+      "version": 1,
+      "name": "Artillery Heavy 60",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 3420,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Battery 3",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Battery 7",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Battery 9",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 0,
+          "name": "Blue Battery 13",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 1430
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 0,
+          "name": "Blue Infantry 14",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1540
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 0,
+          "name": "Blue Battery 15",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 1650
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 0,
+          "name": "Blue Infantry 16",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 0,
+          "name": "Blue Infantry 17",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 0,
+          "name": "Blue Infantry 18",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1980
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 0,
+          "name": "Blue Battery 19",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 2090
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 0,
+          "name": "Blue Infantry 20",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 2200
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 0,
+          "name": "Blue Battery 21",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 2310
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 0,
+          "name": "Blue Infantry 22",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 2420
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 0,
+          "name": "Blue Infantry 23",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 2530
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 0,
+          "name": "Blue Infantry 24",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 2640
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 24,
+          "army": 0,
+          "name": "Blue Battery 25",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 2750
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 25,
+          "army": 0,
+          "name": "Blue Infantry 26",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 2860
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 26,
+          "army": 0,
+          "name": "Blue Battery 27",
+          "archetype": "artillery",
+          "position": {
+            "x": 280,
+            "y": 2970
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 27,
+          "army": 0,
+          "name": "Blue Infantry 28",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 3080
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 28,
+          "army": 0,
+          "name": "Blue Infantry 29",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 3190
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 29,
+          "army": 0,
+          "name": "Blue Infantry 30",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 3300
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 30,
+          "army": 1,
+          "name": "Red Battery 31",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 31,
+          "army": 1,
+          "name": "Red Infantry 32",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 32,
+          "army": 1,
+          "name": "Red Battery 33",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 33,
+          "army": 1,
+          "name": "Red Infantry 34",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 34,
+          "army": 1,
+          "name": "Red Infantry 35",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 35,
+          "army": 1,
+          "name": "Red Infantry 36",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 36,
+          "army": 1,
+          "name": "Red Battery 37",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 37,
+          "army": 1,
+          "name": "Red Infantry 38",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 38,
+          "army": 1,
+          "name": "Red Battery 39",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 39,
+          "army": 1,
+          "name": "Red Infantry 40",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 40,
+          "army": 1,
+          "name": "Red Infantry 41",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 41,
+          "army": 1,
+          "name": "Red Infantry 42",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 42,
+          "army": 1,
+          "name": "Red Battery 43",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 1430
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 43,
+          "army": 1,
+          "name": "Red Infantry 44",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1540
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 44,
+          "army": 1,
+          "name": "Red Battery 45",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 1650
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 45,
+          "army": 1,
+          "name": "Red Infantry 46",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 46,
+          "army": 1,
+          "name": "Red Infantry 47",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 47,
+          "army": 1,
+          "name": "Red Infantry 48",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1980
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 48,
+          "army": 1,
+          "name": "Red Battery 49",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 2090
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 49,
+          "army": 1,
+          "name": "Red Infantry 50",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 2200
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 50,
+          "army": 1,
+          "name": "Red Battery 51",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 2310
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 51,
+          "army": 1,
+          "name": "Red Infantry 52",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 2420
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 52,
+          "army": 1,
+          "name": "Red Infantry 53",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 2530
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 53,
+          "army": 1,
+          "name": "Red Infantry 54",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 2640
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 54,
+          "army": 1,
+          "name": "Red Battery 55",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 2750
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 55,
+          "army": 1,
+          "name": "Red Infantry 56",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 2860
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 56,
+          "army": 1,
+          "name": "Red Battery 57",
+          "archetype": "artillery",
+          "position": {
+            "x": 720,
+            "y": 2970
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 57,
+          "army": 1,
+          "name": "Red Infantry 58",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 3080
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 58,
+          "army": 1,
+          "name": "Red Infantry 59",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 3190
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 59,
+          "army": 1,
+          "name": "Red Infantry 60",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 3300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 5,
+          "order": {
+            "kind": "attack",
+            "targetId": 35
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 11,
+          "order": {
+            "kind": "attack",
+            "targetId": 41
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 17,
+          "order": {
+            "kind": "attack",
+            "targetId": 47
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 23,
+          "order": {
+            "kind": "attack",
+            "targetId": 53
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 29,
+          "order": {
+            "kind": "attack",
+            "targetId": 59
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 35,
+          "order": {
+            "kind": "attack",
+            "targetId": 5
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 41,
+          "order": {
+            "kind": "attack",
+            "targetId": 11
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 47,
+          "order": {
+            "kind": "attack",
+            "targetId": 17
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 53,
+          "order": {
+            "kind": "attack",
+            "targetId": 23
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 59,
+          "order": {
+            "kind": "attack",
+            "targetId": 29
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 280,
+            "y": 110
+          },
+          "strength": 43,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 280,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 280,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "strength": 166,
+          "morale": 62.508333333337454,
+          "cohesion": 88.22166666666516,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 167,
+          "morale": 95.5060370370366,
+          "cohesion": 96.52055555555529,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 389.0376529743789,
+            "y": 736.6880097478653
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 280,
+            "y": 770
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 280,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 280,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "strength": 175,
+          "morale": 69.85083333334123,
+          "cohesion": 90.15333333333224,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 149,
+          "morale": 92.42733333333291,
+          "cohesion": 91.46499999999973,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 249.99076214934308,
+            "y": 1535.6581149829353
+          },
+          "strength": 1,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 280,
+            "y": 1430
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 280,
+            "y": 1540
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 99.28229735466815,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 280,
+            "y": 1650
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "strength": 156,
+          "morale": 52.610000000001605,
+          "cohesion": 80.49499999999847,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "strength": 156,
+          "morale": 96.38566666666624,
+          "cohesion": 97.96499999999975,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 372.0610027674896,
+            "y": 2071.0313450806593
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 280,
+            "y": 2090
+          },
+          "strength": 43,
+          "morale": 99.1651666666684,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 280,
+            "y": 2200
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 280,
+            "y": 2310
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 390,
+            "y": 2420
+          },
+          "strength": 141,
+          "morale": 34.61250000000162,
+          "cohesion": 64.29833333333227,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 390,
+            "y": 2530
+          },
+          "strength": 162,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 377.50857816578576,
+            "y": 2802.249440264584
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 24,
+          "position": {
+            "x": 280,
+            "y": 2750
+          },
+          "strength": 42,
+          "morale": 94.56000000000175,
+          "cohesion": 98.50933333333317,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 25,
+          "position": {
+            "x": 280,
+            "y": 2860
+          },
+          "strength": 37,
+          "morale": 93.50800000000017,
+          "cohesion": 94.3849999999998,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 26,
+          "position": {
+            "x": 280,
+            "y": 2970
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 27,
+          "position": {
+            "x": 390,
+            "y": 3080
+          },
+          "strength": 162,
+          "morale": 57.68500000000057,
+          "cohesion": 84.79499999999847,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 28,
+          "position": {
+            "x": 390,
+            "y": 3190
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 29,
+          "position": {
+            "x": 437.6136951130292,
+            "y": 3398.604729626997
+          },
+          "strength": 49,
+          "morale": 22.95310875000107,
+          "cohesion": 0.024015734382620085,
+          "state": "routing",
+          "withdrawn": true
+        },
+        {
+          "id": 30,
+          "position": {
+            "x": 720,
+            "y": 110
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 31,
+          "position": {
+            "x": 720,
+            "y": 220
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 32,
+          "position": {
+            "x": 720,
+            "y": 330
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 33,
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "strength": 152,
+          "morale": 44.0066666666663,
+          "cohesion": 75.59833333333182,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 34,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 170,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 35,
+          "position": {
+            "x": 749.1711791925067,
+            "y": 876.5314834557678
+          },
+          "strength": 1,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 36,
+          "position": {
+            "x": 720,
+            "y": 770
+          },
+          "strength": 46,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 37,
+          "position": {
+            "x": 720,
+            "y": 880
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 99.16514930917243,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 38,
+          "position": {
+            "x": 720,
+            "y": 990
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 39,
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "strength": 148,
+          "morale": 46.92333333333228,
+          "cohesion": 75.18166666666515,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 40,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 175,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 41,
+          "position": {
+            "x": 757.1957529142569,
+            "y": 1521.3588199069532
+          },
+          "strength": 6,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 42,
+          "position": {
+            "x": 720,
+            "y": 1430
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 43,
+          "position": {
+            "x": 720,
+            "y": 1540
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 44,
+          "position": {
+            "x": 720,
+            "y": 1650
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 45,
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "strength": 144,
+          "morale": 40.84000000000538,
+          "cohesion": 66.78666666666557,
+          "state": "wavering",
+          "withdrawn": false
+        },
+        {
+          "id": 46,
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "strength": 154,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 47,
+          "position": {
+            "x": 536.9008985024323,
+            "y": 2003.5512732865327
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 48,
+          "position": {
+            "x": 720,
+            "y": 2090
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 49,
+          "position": {
+            "x": 720,
+            "y": 2200
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 50,
+          "position": {
+            "x": 720,
+            "y": 2310
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 51,
+          "position": {
+            "x": 610,
+            "y": 2420
+          },
+          "strength": 165,
+          "morale": 64.63250000000698,
+          "cohesion": 80.6883333333327,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 52,
+          "position": {
+            "x": 610,
+            "y": 2530
+          },
+          "strength": 152,
+          "morale": 88.32807407407365,
+          "cohesion": 87.31611111111086,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 53,
+          "position": {
+            "x": 674.5393518418105,
+            "y": 2717.9667577976165
+          },
+          "strength": 0,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 54,
+          "position": {
+            "x": 720,
+            "y": 2750
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 55,
+          "position": {
+            "x": 720,
+            "y": 2860
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 56,
+          "position": {
+            "x": 720,
+            "y": 2970
+          },
+          "strength": 48,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 57,
+          "position": {
+            "x": 610,
+            "y": 3080
+          },
+          "strength": 169,
+          "morale": 62.97583333334032,
+          "cohesion": 87.26833333333227,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 58,
+          "position": {
+            "x": 610,
+            "y": 3190
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 59,
+          "position": {
+            "x": 668.5870278277141,
+            "y": 3385.6723829712414
+          },
+          "strength": 47,
+          "morale": 18.113108750001064,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        }
+      ],
+      "draws": 2100
+    }
+  },
+  {
+    "name": "combined-12",
+    "input": {
+      "version": 1,
+      "name": "Combined Arms 12",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Infantry 3",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 1,
+          "name": "Red Infantry 7",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 1,
+          "name": "Red Infantry 8",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 1,
+          "name": "Red Infantry 9",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 1,
+          "name": "Red Infantry 10",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 1,
+          "name": "Red Infantry 11",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 1,
+          "name": "Red Infantry 12",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 9
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 9,
+          "order": {
+            "kind": "attack",
+            "targetId": 3
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "strength": 138,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 276.7846028906323,
+            "y": 445.94360301256177
+          },
+          "strength": 42,
+          "morale": 41.05000000000034,
+          "cohesion": 26.83500000000009,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 117,
+          "morale": 80.15285714285578,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "strength": 174,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 719.4079202331659,
+            "y": 391.4083889451077
+          },
+          "strength": 50,
+          "morale": 41.05000000000034,
+          "cohesion": 26.83500000000009,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 102,
+          "morale": 60.76428571428432,
+          "cohesion": 92.10692857142824,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        }
+      ],
+      "draws": 345
+    }
+  },
+  {
+    "name": "combined-24",
+    "input": {
+      "version": 1,
+      "name": "Combined Arms 24",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 1440,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Infantry 3",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Infantry 7",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Infantry 9",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 1,
+          "name": "Red Infantry 13",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 1,
+          "name": "Red Infantry 14",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 1,
+          "name": "Red Infantry 15",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 1,
+          "name": "Red Infantry 16",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 1,
+          "name": "Red Infantry 17",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 1,
+          "name": "Red Infantry 18",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 1,
+          "name": "Red Infantry 19",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 1,
+          "name": "Red Infantry 20",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 1,
+          "name": "Red Infantry 21",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 1,
+          "name": "Red Infantry 22",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 1,
+          "name": "Red Infantry 23",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 1,
+          "name": "Red Infantry 24",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 15
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 9,
+          "order": {
+            "kind": "attack",
+            "targetId": 21
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 15,
+          "order": {
+            "kind": "attack",
+            "targetId": 3
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 21,
+          "order": {
+            "kind": "attack",
+            "targetId": 9
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "strength": 165,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 348.8043576510022,
+            "y": 428.7375432762293
+          },
+          "strength": 21,
+          "morale": 0.0,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 125,
+          "morale": 90.74142857142718,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "strength": 138,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "strength": 176,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 248.28874526140734,
+            "y": 1037.8533353910996
+          },
+          "strength": 43,
+          "morale": 28.81,
+          "cohesion": 1.6750000000000003,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 103,
+          "morale": 60.84785714285559,
+          "cohesion": 94.3995714285711,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 814.905434727277,
+            "y": 466.0153429283441
+          },
+          "strength": 44,
+          "morale": 30.249999999999996,
+          "cohesion": 4.6350000000000025,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 109,
+          "morale": 66.85428571428517,
+          "cohesion": 93.05592857142824,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "strength": 173,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 680.8462574410277,
+            "y": 1071.0951249038037
+          },
+          "strength": 46,
+          "morale": 29.125,
+          "cohesion": 1.6750000000000003,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 120,
+          "morale": 79.36857142857005,
+          "cohesion": 96.38671428571394,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        }
+      ],
+      "draws": 868
+    }
+  },
+  {
+    "name": "combined-36",
+    "input": {
+      "version": 1,
+      "name": "Combined Arms 36",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 2100,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Infantry 3",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Infantry 7",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Infantry 9",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 0,
+          "name": "Blue Infantry 13",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1430
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 0,
+          "name": "Blue Infantry 14",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 1540
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 0,
+          "name": "Blue Infantry 15",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1650
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 0,
+          "name": "Blue Infantry 16",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 0,
+          "name": "Blue Infantry 17",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 0,
+          "name": "Blue Infantry 18",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1980
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 1,
+          "name": "Red Infantry 19",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 1,
+          "name": "Red Infantry 20",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 1,
+          "name": "Red Infantry 21",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 1,
+          "name": "Red Infantry 22",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 1,
+          "name": "Red Infantry 23",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 1,
+          "name": "Red Infantry 24",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 24,
+          "army": 1,
+          "name": "Red Infantry 25",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 25,
+          "army": 1,
+          "name": "Red Infantry 26",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 26,
+          "army": 1,
+          "name": "Red Infantry 27",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 27,
+          "army": 1,
+          "name": "Red Infantry 28",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 28,
+          "army": 1,
+          "name": "Red Infantry 29",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 29,
+          "army": 1,
+          "name": "Red Infantry 30",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 30,
+          "army": 1,
+          "name": "Red Infantry 31",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1430
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 31,
+          "army": 1,
+          "name": "Red Infantry 32",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 1540
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 32,
+          "army": 1,
+          "name": "Red Infantry 33",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1650
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 33,
+          "army": 1,
+          "name": "Red Infantry 34",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 34,
+          "army": 1,
+          "name": "Red Infantry 35",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 35,
+          "army": 1,
+          "name": "Red Infantry 36",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1980
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 21
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 9,
+          "order": {
+            "kind": "attack",
+            "targetId": 27
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 15,
+          "order": {
+            "kind": "attack",
+            "targetId": 33
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 21,
+          "order": {
+            "kind": "attack",
+            "targetId": 3
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 27,
+          "order": {
+            "kind": "attack",
+            "targetId": 9
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 33,
+          "order": {
+            "kind": "attack",
+            "targetId": 15
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "strength": 172,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 314.5435166951963,
+            "y": 410.71661171186724
+          },
+          "strength": 41,
+          "morale": 40.875,
+          "cohesion": 19.064999999999994,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 109,
+          "morale": 66.76928571428385,
+          "cohesion": 97.74335714285681,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "strength": 174,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 320.3950090092662,
+            "y": 1072.7749786918118
+          },
+          "strength": 26,
+          "morale": 28.75,
+          "cohesion": 1.12,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 124,
+          "morale": 89.02785714285572,
+          "cohesion": 97.57714285714277,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 390,
+            "y": 1430
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 390,
+            "y": 1540
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 390,
+            "y": 1650
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 286.6109203323172,
+            "y": 1705.5384432414342
+          },
+          "strength": 49,
+          "morale": 48.125,
+          "cohesion": 29.795000000000126,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "strength": 102,
+          "morale": 55.46928571428434,
+          "cohesion": 92.26849999999966,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 280,
+            "y": 1980
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "strength": 179,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 746.6041255339437,
+            "y": 381.21759822989475
+          },
+          "strength": 35,
+          "morale": 37.270000000000195,
+          "cohesion": 19.064999999999994,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 98,
+          "morale": 45.96499999999887,
+          "cohesion": 85.96699999999929,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 24,
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 25,
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "strength": 139,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 26,
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "strength": 178,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 27,
+          "position": {
+            "x": 753.7576950191939,
+            "y": 1036.939300999191
+          },
+          "strength": 41,
+          "morale": 28.54,
+          "cohesion": 1.12,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 28,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 118,
+          "morale": 75.92642857142752,
+          "cohesion": 98.9978571428568,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 29,
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 30,
+          "position": {
+            "x": 610,
+            "y": 1430
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 31,
+          "position": {
+            "x": 610,
+            "y": 1540
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 32,
+          "position": {
+            "x": 610,
+            "y": 1650
+          },
+          "strength": 175,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 33,
+          "position": {
+            "x": 716.0334554128123,
+            "y": 1715.5663104612247
+          },
+          "strength": 41,
+          "morale": 48.125,
+          "cohesion": 29.795000000000126,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 34,
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "strength": 104,
+          "morale": 56.77642857142718,
+          "cohesion": 93.74842857142785,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 35,
+          "position": {
+            "x": 720,
+            "y": 1980
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        }
+      ],
+      "draws": 1159
+    }
+  },
+  {
+    "name": "combined-60",
+    "input": {
+      "version": 1,
+      "name": "Combined Arms 60",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 3420,
+      "duration": 70,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "name": "Blue Infantry 2",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 2,
+          "army": 0,
+          "name": "Blue Infantry 3",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 3,
+          "army": 0,
+          "name": "Blue Infantry 4",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 440
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 4,
+          "army": 0,
+          "name": "Blue Infantry 5",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 5,
+          "army": 0,
+          "name": "Blue Infantry 6",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 6,
+          "army": 0,
+          "name": "Blue Infantry 7",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 7,
+          "army": 0,
+          "name": "Blue Infantry 8",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 8,
+          "army": 0,
+          "name": "Blue Infantry 9",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 9,
+          "army": 0,
+          "name": "Blue Infantry 10",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1100
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 10,
+          "army": 0,
+          "name": "Blue Infantry 11",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 11,
+          "army": 0,
+          "name": "Blue Infantry 12",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 12,
+          "army": 0,
+          "name": "Blue Infantry 13",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 1430
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 13,
+          "army": 0,
+          "name": "Blue Infantry 14",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 1540
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 14,
+          "army": 0,
+          "name": "Blue Infantry 15",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 1650
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 15,
+          "army": 0,
+          "name": "Blue Infantry 16",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 1760
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 16,
+          "army": 0,
+          "name": "Blue Infantry 17",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 17,
+          "army": 0,
+          "name": "Blue Infantry 18",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 1980
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 18,
+          "army": 0,
+          "name": "Blue Infantry 19",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 2090
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 19,
+          "army": 0,
+          "name": "Blue Infantry 20",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 2200
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 20,
+          "army": 0,
+          "name": "Blue Infantry 21",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 2310
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 21,
+          "army": 0,
+          "name": "Blue Infantry 22",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 2420
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 22,
+          "army": 0,
+          "name": "Blue Infantry 23",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 2530
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 23,
+          "army": 0,
+          "name": "Blue Infantry 24",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 2640
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 24,
+          "army": 0,
+          "name": "Blue Infantry 25",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 390,
+            "y": 2750
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 25,
+          "army": 0,
+          "name": "Blue Infantry 26",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 390,
+            "y": 2860
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 26,
+          "army": 0,
+          "name": "Blue Infantry 27",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 390,
+            "y": 2970
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 27,
+          "army": 0,
+          "name": "Blue Infantry 28",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 390,
+            "y": 3080
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 28,
+          "army": 0,
+          "name": "Blue Infantry 29",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 390,
+            "y": 3190
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 29,
+          "army": 0,
+          "name": "Blue Infantry 30",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 280,
+            "y": 3300
+          },
+          "facing": 0,
+          "cohesion": 100.0
+        },
+        {
+          "id": 30,
+          "army": 1,
+          "name": "Red Infantry 31",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 31,
+          "army": 1,
+          "name": "Red Infantry 32",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 32,
+          "army": 1,
+          "name": "Red Infantry 33",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 33,
+          "army": 1,
+          "name": "Red Infantry 34",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 440
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 34,
+          "army": 1,
+          "name": "Red Infantry 35",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 35,
+          "army": 1,
+          "name": "Red Infantry 36",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 36,
+          "army": 1,
+          "name": "Red Infantry 37",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 37,
+          "army": 1,
+          "name": "Red Infantry 38",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 38,
+          "army": 1,
+          "name": "Red Infantry 39",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 39,
+          "army": 1,
+          "name": "Red Infantry 40",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1100
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 40,
+          "army": 1,
+          "name": "Red Infantry 41",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 41,
+          "army": 1,
+          "name": "Red Infantry 42",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 42,
+          "army": 1,
+          "name": "Red Infantry 43",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 1430
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 43,
+          "army": 1,
+          "name": "Red Infantry 44",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 1540
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 44,
+          "army": 1,
+          "name": "Red Infantry 45",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 1650
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 45,
+          "army": 1,
+          "name": "Red Infantry 46",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 1760
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 46,
+          "army": 1,
+          "name": "Red Infantry 47",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 47,
+          "army": 1,
+          "name": "Red Infantry 48",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 1980
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 48,
+          "army": 1,
+          "name": "Red Infantry 49",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 2090
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 49,
+          "army": 1,
+          "name": "Red Infantry 50",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 2200
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 50,
+          "army": 1,
+          "name": "Red Infantry 51",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 2310
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 51,
+          "army": 1,
+          "name": "Red Infantry 52",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 2420
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 52,
+          "army": 1,
+          "name": "Red Infantry 53",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 2530
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 53,
+          "army": 1,
+          "name": "Red Infantry 54",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 2640
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 54,
+          "army": 1,
+          "name": "Red Infantry 55",
+          "archetype": "prussian_line",
+          "position": {
+            "x": 610,
+            "y": 2750
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 55,
+          "army": 1,
+          "name": "Red Infantry 56",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 610,
+            "y": 2860
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 56,
+          "army": 1,
+          "name": "Red Infantry 57",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 610,
+            "y": 2970
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 57,
+          "army": 1,
+          "name": "Red Infantry 58",
+          "archetype": "commonwealth_uhlans",
+          "position": {
+            "x": 610,
+            "y": 3080
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 58,
+          "army": 1,
+          "name": "Red Infantry 59",
+          "archetype": "revolutionary_rifles",
+          "position": {
+            "x": 610,
+            "y": 3190
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        },
+        {
+          "id": 59,
+          "army": 1,
+          "name": "Red Infantry 60",
+          "archetype": "french_horse_artillery",
+          "position": {
+            "x": 720,
+            "y": 3300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0
+        }
+      ],
+      "commands": [
+        {
+          "tick": 0,
+          "regimentId": 3,
+          "order": {
+            "kind": "attack",
+            "targetId": 33
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 9,
+          "order": {
+            "kind": "attack",
+            "targetId": 39
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 15,
+          "order": {
+            "kind": "attack",
+            "targetId": 45
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 21,
+          "order": {
+            "kind": "attack",
+            "targetId": 51
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 27,
+          "order": {
+            "kind": "attack",
+            "targetId": 57
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 33,
+          "order": {
+            "kind": "attack",
+            "targetId": 3
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 39,
+          "order": {
+            "kind": "attack",
+            "targetId": 9
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 45,
+          "order": {
+            "kind": "attack",
+            "targetId": 15
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 51,
+          "order": {
+            "kind": "attack",
+            "targetId": 21
+          }
+        },
+        {
+          "tick": 0,
+          "regimentId": 57,
+          "order": {
+            "kind": "attack",
+            "targetId": 27
+          }
+        }
+      ],
+      "terrain": {
+        "hills": [
+          {
+            "x": 530,
+            "y": 120,
+            "radiusX": 50,
+            "radiusY": 65,
+            "height": 8,
+            "compact": true
+          }
+        ],
+        "forests": [
+          {
+            "x": 460,
+            "y": 220,
+            "radiusX": 70,
+            "radiusY": 75,
+            "density": 0.6
+          }
+        ]
+      },
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true
+    },
+    "expected": {
+      "finalStates": [
+        {
+          "id": 0,
+          "position": {
+            "x": 390,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 1,
+          "position": {
+            "x": 390,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 390,
+            "y": 330
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 278.9977660712745,
+            "y": 389.70300569285035
+          },
+          "strength": 49,
+          "morale": 41.05000000000034,
+          "cohesion": 26.83500000000009,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 4,
+          "position": {
+            "x": 390,
+            "y": 550
+          },
+          "strength": 101,
+          "morale": 55.8507142857129,
+          "cohesion": 90.35264285714213,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 5,
+          "position": {
+            "x": 280,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 6,
+          "position": {
+            "x": 390,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 7,
+          "position": {
+            "x": 390,
+            "y": 880
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 8,
+          "position": {
+            "x": 390,
+            "y": 990
+          },
+          "strength": 180,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 9,
+          "position": {
+            "x": 222.87111314540775,
+            "y": 1029.5056049100665
+          },
+          "strength": 47,
+          "morale": 31.149999999999995,
+          "cohesion": 6.485000000000007,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 10,
+          "position": {
+            "x": 390,
+            "y": 1210
+          },
+          "strength": 113,
+          "morale": 64.53857142857066,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 11,
+          "position": {
+            "x": 280,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 12,
+          "position": {
+            "x": 390,
+            "y": 1430
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 13,
+          "position": {
+            "x": 390,
+            "y": 1540
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 14,
+          "position": {
+            "x": 390,
+            "y": 1650
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 15,
+          "position": {
+            "x": 226.20664189715237,
+            "y": 1691.77151998941
+          },
+          "strength": 47,
+          "morale": 29.259999999999998,
+          "cohesion": 2.6000000000000005,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 16,
+          "position": {
+            "x": 390,
+            "y": 1870
+          },
+          "strength": 113,
+          "morale": 67.71857142857053,
+          "cohesion": 99.43428571428562,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 17,
+          "position": {
+            "x": 280,
+            "y": 1980
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 18,
+          "position": {
+            "x": 390,
+            "y": 2090
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 19,
+          "position": {
+            "x": 390,
+            "y": 2200
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 20,
+          "position": {
+            "x": 390,
+            "y": 2310
+          },
+          "strength": 176,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 21,
+          "position": {
+            "x": 384.4034967961367,
+            "y": 2426.9483579116118
+          },
+          "strength": 44,
+          "morale": 9.18760875000118,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 22,
+          "position": {
+            "x": 390,
+            "y": 2530
+          },
+          "strength": 126,
+          "morale": 94.5949999999986,
+          "cohesion": 99.43428571428562,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 23,
+          "position": {
+            "x": 280,
+            "y": 2640
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 24,
+          "position": {
+            "x": 390,
+            "y": 2750
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 25,
+          "position": {
+            "x": 390,
+            "y": 2860
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 26,
+          "position": {
+            "x": 390,
+            "y": 2970
+          },
+          "strength": 176,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 27,
+          "position": {
+            "x": 248.98080086367486,
+            "y": 3017.496133285714
+          },
+          "strength": 43,
+          "morale": 30.699999999999996,
+          "cohesion": 5.560000000000005,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 28,
+          "position": {
+            "x": 390,
+            "y": 3190
+          },
+          "strength": 109,
+          "morale": 65.36928571428462,
+          "cohesion": 93.85449999999966,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 29,
+          "position": {
+            "x": 280,
+            "y": 3300
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 30,
+          "position": {
+            "x": 610,
+            "y": 110
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 31,
+          "position": {
+            "x": 610,
+            "y": 220
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 32,
+          "position": {
+            "x": 610,
+            "y": 330
+          },
+          "strength": 179,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 33,
+          "position": {
+            "x": 709.5293235137548,
+            "y": 393.8545182127759
+          },
+          "strength": 47,
+          "morale": 46.125,
+          "cohesion": 26.83500000000009,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 34,
+          "position": {
+            "x": 610,
+            "y": 550
+          },
+          "strength": 100,
+          "morale": 51.79714285714148,
+          "cohesion": 88.46114285714215,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 35,
+          "position": {
+            "x": 720,
+            "y": 660
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 36,
+          "position": {
+            "x": 610,
+            "y": 770
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 37,
+          "position": {
+            "x": 610,
+            "y": 880
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 38,
+          "position": {
+            "x": 610,
+            "y": 990
+          },
+          "strength": 175,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 39,
+          "position": {
+            "x": 657.2618374757425,
+            "y": 1085.5350657017345
+          },
+          "strength": 37,
+          "morale": 32.375,
+          "cohesion": 6.485000000000007,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 40,
+          "position": {
+            "x": 610,
+            "y": 1210
+          },
+          "strength": 122,
+          "morale": 82.4957142857129,
+          "cohesion": 96.95871428571395,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 41,
+          "position": {
+            "x": 720,
+            "y": 1320
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 42,
+          "position": {
+            "x": 610,
+            "y": 1430
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 43,
+          "position": {
+            "x": 610,
+            "y": 1540
+          },
+          "strength": 138,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 44,
+          "position": {
+            "x": 610,
+            "y": 1650
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 45,
+          "position": {
+            "x": 661.4853156954557,
+            "y": 1744.4820205221315
+          },
+          "strength": 39,
+          "morale": 29.75,
+          "cohesion": 2.6000000000000005,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 46,
+          "position": {
+            "x": 610,
+            "y": 1870
+          },
+          "strength": 123,
+          "morale": 88.29928571428434,
+          "cohesion": 98.50571428571419,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 47,
+          "position": {
+            "x": 720,
+            "y": 1980
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 48,
+          "position": {
+            "x": 610,
+            "y": 2090
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 49,
+          "position": {
+            "x": 610,
+            "y": 2200
+          },
+          "strength": 140,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 50,
+          "position": {
+            "x": 610,
+            "y": 2310
+          },
+          "strength": 177,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 51,
+          "position": {
+            "x": 817.8772846906868,
+            "y": 2450.9424806677393
+          },
+          "strength": 40,
+          "morale": 6.197608750000878,
+          "cohesion": 0.0,
+          "state": "routing",
+          "withdrawn": false
+        },
+        {
+          "id": 52,
+          "position": {
+            "x": 610,
+            "y": 2530
+          },
+          "strength": 107,
+          "morale": 59.18714285714194,
+          "cohesion": 97.79535714285682,
+          "state": "shaken",
+          "withdrawn": false
+        },
+        {
+          "id": 53,
+          "position": {
+            "x": 720,
+            "y": 2640
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 54,
+          "position": {
+            "x": 610,
+            "y": 2750
+          },
+          "strength": 240,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 55,
+          "position": {
+            "x": 610,
+            "y": 2860
+          },
+          "strength": 139,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 56,
+          "position": {
+            "x": 610,
+            "y": 2970
+          },
+          "strength": 179,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 57,
+          "position": {
+            "x": 681.1510331811838,
+            "y": 3049.700981459187
+          },
+          "strength": 46,
+          "morale": 31.75,
+          "cohesion": 5.560000000000005,
+          "state": "rallying",
+          "withdrawn": false
+        },
+        {
+          "id": 58,
+          "position": {
+            "x": 610,
+            "y": 3190
+          },
+          "strength": 121,
+          "morale": 79.03714285714145,
+          "cohesion": 97.31528571428538,
+          "state": "steady",
+          "withdrawn": false
+        },
+        {
+          "id": 59,
+          "position": {
+            "x": 720,
+            "y": 3300
+          },
+          "strength": 40,
+          "morale": 100.0,
+          "cohesion": 100.0,
+          "state": "steady",
+          "withdrawn": false
+        }
+      ],
+      "draws": 1996
+    }
+  }
+]

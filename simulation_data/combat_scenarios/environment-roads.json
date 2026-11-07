@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "name": "Environment D — Main road and track march",
+  "width": 1200,
+  "height": 900,
+  "seed": 1796,
+  "duration": 400,
+  "sampleTicks": [
+    0,
+    100,
+    1000,
+    4000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [],
+  "units": [
+    {
+      "id": 0,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 0",
+      "position": {
+        "x": 180,
+        "y": 160
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1000,
+          "y": 160
+        }
+      }
+    },
+    {
+      "id": 1,
+      "archetype": "infantry",
+      "army": 0,
+      "name": "Blue infantry 1",
+      "position": {
+        "x": 180,
+        "y": 300
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1000,
+          "y": 300
+        }
+      },
+      "formation": "column"
+    },
+    {
+      "id": 2,
+      "archetype": "cavalry",
+      "army": 0,
+      "name": "Blue cavalry 2",
+      "position": {
+        "x": 180,
+        "y": 440
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1000,
+          "y": 440
+        }
+      }
+    },
+    {
+      "id": 3,
+      "archetype": "artillery",
+      "army": 0,
+      "name": "Blue artillery 3",
+      "position": {
+        "x": 180,
+        "y": 580
+      },
+      "facing": 0,
+      "autonomy": "ordered",
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 1000,
+          "y": 580
+        }
+      }
+    },
+    {
+      "id": 4,
+      "archetype": "infantry",
+      "army": 1,
+      "name": "Red infantry 4",
+      "position": {
+        "x": 1050,
+        "y": 800
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "ordered"
+    }
+  ],
+  "terrain": {
+    "hills": [],
+    "forests": [],
+    "environment": {
+      "version": 1,
+      "rivers": [],
+      "crossings": [],
+      "roads": [
+        {
+          "id": "column_road",
+          "name": "Main road",
+          "points": [
+            {
+              "x": 100,
+              "y": 300
+            },
+            {
+              "x": 600,
+              "y": 300
+            },
+            {
+              "x": 1100,
+              "y": 300
+            }
+          ],
+          "width": 10,
+          "surface": "mainRoad"
+        },
+        {
+          "id": "gun_road",
+          "name": "Main road",
+          "points": [
+            {
+              "x": 100,
+              "y": 580
+            },
+            {
+              "x": 600,
+              "y": 580
+            },
+            {
+              "x": 1100,
+              "y": 580
+            }
+          ],
+          "width": 10,
+          "surface": "mainRoad"
+        },
+        {
+          "id": "cavalry_track",
+          "name": "Track",
+          "points": [
+            {
+              "x": 100,
+              "y": 440
+            },
+            {
+              "x": 600,
+              "y": 440
+            },
+            {
+              "x": 1100,
+              "y": 440
+            }
+          ],
+          "width": 7,
+          "surface": "track"
+        }
+      ],
+      "defences": [],
+      "weather": {
+        "type": "clear",
+        "visibilityLimit": 180
+      }
+    }
+  }
+}

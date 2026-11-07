@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Antoni Madaliński — Relentless Pursuit",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_uhlans",
+      "name": "Advance Guard Lancers",
+      "position": {
+        "x": 460,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-antoni_madalinski",
+        "definitionId": "antoni_madalinski",
+        "name": "Antoni Madaliński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "aggressive",
+        "specialization": "relentless_pursuit_signature",
+        "biography": "Moving pursuit +22%, contact gap +12%, pursuit disorder −20%; steady frontal combat −10%.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 555,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      },
+      "state": "routing",
+      "cohesion": 20,
+      "morale": 12
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Stationary reserve (keeps pursuit laboratory active)",
+      "position": {
+        "x": 1000,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "autonomy": "hold"
+    }
+  ]
+}

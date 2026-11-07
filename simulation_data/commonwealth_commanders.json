@@ -1,0 +1,360 @@
+[
+  {
+    "id": "tadeusz_kosciuszko",
+    "name": "Tadeusz Kościuszko",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "stalwart",
+    "specialization": "citizens_defence",
+    "specializationName": "Citizen’s Defence",
+    "campaignRole": "Commander-in-chief",
+    "availability": [
+      "army_commander",
+      "commander_in_chief"
+    ],
+    "categories": [
+      "infantry",
+      "cavalry",
+      "artillery"
+    ],
+    "description": "Within 180 m of headquarters: cohesive citizen formations holding position take 15% less morale shock and recover up to 0.15 morale/s.",
+    "notes": "Fortification construction is future-only.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": true,
+    "intendedRoles": [
+      "militia",
+      "assault"
+    ]
+  },
+  {
+    "id": "franciszek_ksawery_niesiolowski",
+    "name": "Franciszek Ksawery Niesiołowski",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "methodical",
+    "specialization": "steady_volley",
+    "specializationName": "Steady Volley",
+    "campaignRole": "Proposed starting commander",
+    "availability": [
+      "starting_commander"
+    ],
+    "categories": [
+      "infantry"
+    ],
+    "description": "Stationary infantry in line gain up to 18% volley accuracy as cohesion rises from 60 to 90.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "line"
+    ]
+  },
+  {
+    "id": "jan_henryk_dabrowski",
+    "name": "Jan Henryk Dąbrowski",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "methodical",
+    "specialization": "flexible_manoeuvres",
+    "specializationName": "Flexible Manoeuvres",
+    "campaignRole": "Recruitable officer",
+    "availability": [
+      "recruitable_ally"
+    ],
+    "categories": [
+      "infantry"
+    ],
+    "description": "Formation time −15%, manoeuvre cohesion loss −22%, cohesion recovery +18%.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "line",
+      "assault",
+      "skirmisher"
+    ]
+  },
+  {
+    "id": "antoni_madalinski",
+    "name": "Antoni Madaliński",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "aggressive",
+    "specialization": "relentless_pursuit_signature",
+    "specializationName": "Relentless Pursuit",
+    "campaignRole": "Cavalry officer",
+    "availability": [
+      "recruitable_ally"
+    ],
+    "categories": [
+      "cavalry"
+    ],
+    "description": "Moving pursuit +22%, contact gap +12%, pursuit disorder −20%; steady frontal combat −10%.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "cavalry",
+      "shock_cavalry",
+      "light_cavalry"
+    ]
+  },
+  {
+    "id": "jakub_jasinski",
+    "name": "Jakub Jasiński",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "aggressive",
+    "specialization": "revolutionary_fervour",
+    "specializationName": "Revolutionary Fervour",
+    "campaignRole": "Republican officer",
+    "availability": [
+      "recruitable_ally"
+    ],
+    "categories": [
+      "infantry"
+    ],
+    "description": "Citizen formations locally outnumbered within 130 m take 18% less direct shock, 12% less casualty morale loss, and gain 10% melee power.",
+    "notes": "Survival beyond November 1794 is an explicit alternate-history divergence.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "militia",
+      "assault"
+    ]
+  },
+  {
+    "id": "franciszek_ksawery_lazninski",
+    "name": "Franciszek Ksawery Łaźniński",
+    "faction": "Polish-Lithuanian Commonwealth",
+    "personality": "cautious",
+    "specialization": "cavalry_reserve",
+    "specializationName": "Cavalry Reserve",
+    "campaignRole": "Cavalry officer",
+    "availability": [
+      "recruitable_ally"
+    ],
+    "categories": [
+      "cavalry"
+    ],
+    "description": "While resting/reforming: cohesion recovery +25%, fatigue recovery 0.25/s; charge cooldown −15%, clearance/reform time −20%. Genuine separation is still required.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "cavalry",
+      "shock_cavalry",
+      "light_cavalry"
+    ]
+  },
+  {
+    "id": "edward_marcus_despard",
+    "name": "Edward Marcus Despard",
+    "faction": "Revolutionary Britain",
+    "personality": "stalwart",
+    "specialization": "improvised_defences",
+    "specializationName": "Improvised Defences",
+    "campaignRole": "Expeditionary leader",
+    "availability": [
+      "expeditionary_leader"
+    ],
+    "categories": [
+      "infantry",
+      "cavalry",
+      "artillery"
+    ],
+    "description": "Prepared cohesive defenders take 12% less shock; artillery limber and deployment time −15%.",
+    "notes": "Engineers and fortification construction remain future-only.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "artillery",
+      "militia",
+      "line"
+    ]
+  },
+  {
+    "id": "lord_edward_fitzgerald",
+    "name": "Lord Edward FitzGerald",
+    "faction": "Revolutionary Britain",
+    "personality": "stalwart",
+    "specialization": "brotherhood_of_nations",
+    "specializationName": "Brotherhood of Nations",
+    "campaignRole": "British/Irish coalition specialist",
+    "availability": [
+      "coalition_specialist"
+    ],
+    "categories": [
+      "infantry",
+      "cavalry",
+      "artillery"
+    ],
+    "description": "With a visible, steady allied regiment of a different faction within 110 m: both recover cohesion 12% faster and up to 0.12 morale/s. Strongest coordination source only.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "Ireland",
+    "armyLevel": false,
+    "intendedRoles": [
+      "line",
+      "skirmisher",
+      "rifles",
+      "cavalry",
+      "artillery"
+    ]
+  },
+  {
+    "id": "joseph_louis_cook",
+    "name": "Joseph Louis Cook",
+    "faction": "Haudenosaunee Confederacy",
+    "personality": "opportunistic",
+    "specialization": "veteran_of_two_worlds",
+    "specializationName": "Veteran of Two Worlds",
+    "campaignRole": "Expeditionary leader",
+    "availability": [
+      "expeditionary_leader"
+    ],
+    "categories": [
+      "infantry",
+      "cavalry",
+      "artillery"
+    ],
+    "description": "With a visible allied conventional regiment and a Haudenosaunee detachment within 110 m: both gain 15% cohesion recovery, 10% less manoeuvre disorder, and up to 0.12 morale/s.",
+    "notes": "",
+    "alternativeNames": [
+      "Akiatonharónkwen"
+    ],
+    "nation": "Mohawk",
+    "armyLevel": false,
+    "intendedRoles": [
+      "skirmisher",
+      "line",
+      "rifles",
+      "cavalry"
+    ]
+  },
+  {
+    "id": "friedrich_wilhelm_von_bulow",
+    "name": "Friedrich Wilhelm von Bülow",
+    "faction": "Prussia",
+    "personality": "methodical",
+    "specialization": "disciplined_skirmishers",
+    "specializationName": "Disciplined Skirmishers",
+    "campaignRole": "Early opponent",
+    "availability": [
+      "early_opponent"
+    ],
+    "categories": [
+      "infantry"
+    ],
+    "description": "Infantry formation changes −20%, manoeuvre cohesion loss −18%, cohesion recovery +12%.",
+    "notes": "Works with existing musketeers/grenadiers; no Fusilier archetype introduced.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "line",
+      "assault",
+      "skirmisher"
+    ]
+  },
+  {
+    "id": "gebhard_leberecht_von_blucher",
+    "name": "Gebhard Leberecht von Blücher",
+    "faction": "Prussia",
+    "personality": "aggressive",
+    "specialization": "vorwarts",
+    "specializationName": "Vorwärts!",
+    "campaignRole": "Recurring cavalry rival",
+    "availability": [
+      "recurring_rival"
+    ],
+    "categories": [
+      "cavalry"
+    ],
+    "description": "Aggressive common AI policy; exposed charge shock +15%, but charging adds 0.10 fatigue/s and up to 2 cohesion loss on impact.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "shock_cavalry",
+      "cavalry"
+    ]
+  },
+  {
+    "id": "pyotr_bagration",
+    "name": "Pyotr Bagration",
+    "faction": "Russia",
+    "personality": "aggressive",
+    "specialization": "vanguard_assault",
+    "specializationName": "Vanguard Assault",
+    "campaignRole": "Early opponent",
+    "availability": [
+      "early_opponent"
+    ],
+    "categories": [
+      "infantry"
+    ],
+    "description": "Infantry attack/advance speed +8%, manoeuvre disorder −12%, moving charge shock +8%.",
+    "notes": "",
+    "alternativeNames": [],
+    "nation": "Georgian",
+    "armyLevel": false,
+    "intendedRoles": [
+      "assault",
+      "line"
+    ]
+  },
+  {
+    "id": "matvei_platov",
+    "name": "Matvei Platov",
+    "faction": "Russia",
+    "personality": "opportunistic",
+    "specialization": "cossack_screen",
+    "specializationName": "Cossack Screen",
+    "campaignRole": "Cavalry commander",
+    "availability": [
+      "cavalry_commander"
+    ],
+    "categories": [
+      "cavalry"
+    ],
+    "description": "Light cavalry manoeuvre speed +6%, pursuit +15%, disruption −10%, terrain sight opacity −10%; avoids prepared fronts.",
+    "notes": "No strategic reconnaissance system is implied.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": false,
+    "intendedRoles": [
+      "light_cavalry"
+    ]
+  },
+  {
+    "id": "alexander_suvorov",
+    "name": "Alexander Suvorov",
+    "faction": "Russia",
+    "personality": "aggressive",
+    "specialization": "speed_and_shock",
+    "specializationName": "Speed and Shock",
+    "campaignRole": "Potential final opponent",
+    "availability": [
+      "army_commander",
+      "final_opponent"
+    ],
+    "categories": [
+      "infantry",
+      "cavalry",
+      "artillery"
+    ],
+    "description": "Offensive army objective; within 220 m of headquarters, attacking infantry move 6% faster, take 8% less morale shock and recover cohesion 8% faster.",
+    "notes": "Doctrine and bounded local coordination, not a universal combat-stat bonus.",
+    "alternativeNames": [],
+    "nation": "",
+    "armyLevel": true,
+    "intendedRoles": [
+      "line",
+      "assault"
+    ]
+  }
+]

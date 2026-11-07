@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "name": "straight",
+  "seed": 17,
+  "width": 1000,
+  "height": 600,
+  "duration": 140,
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Movement Regiment 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 200,
+        "y": 300
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 450,
+          "y": 300
+        },
+        "facing": null
+      }
+    }
+  ],
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    30,
+    70,
+    80,
+    100,
+    200,
+    400,
+    700,
+    1400
+  ]
+}

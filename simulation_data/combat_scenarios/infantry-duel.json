@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "name": "Infantry Duel",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1000,
+  "height": 650,
+  "duration": 900,
+  "sampleTicks": [
+    0,
+    1,
+    2,
+    10,
+    20,
+    21,
+    50,
+    100,
+    9000
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Line 1",
+      "archetype": "infantry",
+      "position": {
+        "x": 430,
+        "y": 220
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Line 2",
+      "archetype": "infantry",
+      "position": {
+        "x": 430,
+        "y": 400
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 1,
+      "name": "Red Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 570,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Red Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 570,
+        "y": 400
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [],
+  "terrain": null
+}

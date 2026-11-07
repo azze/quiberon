@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Battle laboratory: russian",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 330,
+        "y": 80
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-0",
+        "name": "Laboratory Officer 1",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 330,
+        "y": 170
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "archetype": "commonwealth_scythemen",
+      "name": "Scythemen (Kosynierzy)",
+      "position": {
+        "x": 330,
+        "y": 260
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "archetype": "commonwealth_national_cavalry",
+      "name": "National Cavalry",
+      "position": {
+        "x": 330,
+        "y": 350
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-3",
+        "name": "Laboratory Officer 4",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 330,
+        "y": 440
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-4",
+        "name": "Laboratory Officer 5",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 5,
+      "army": 1,
+      "archetype": "russian_musketeers",
+      "name": "Russian Musketeers",
+      "position": {
+        "x": 770,
+        "y": 80
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-5",
+        "name": "Laboratory Officer 6",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 6,
+      "army": 1,
+      "archetype": "russian_grenadiers",
+      "name": "Russian Grenadiers",
+      "position": {
+        "x": 770,
+        "y": 170
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-6",
+        "name": "Laboratory Officer 7",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "archetype": "russian_cossacks",
+      "name": "Russian Cossacks",
+      "position": {
+        "x": 770,
+        "y": 260
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-7",
+        "name": "Laboratory Officer 8",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 8,
+      "army": 1,
+      "archetype": "russian_musketeers",
+      "name": "Russian Musketeers",
+      "position": {
+        "x": 770,
+        "y": 350
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-8",
+        "name": "Laboratory Officer 9",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "archetype": "artillery",
+      "name": "Standard Field Artillery",
+      "position": {
+        "x": 770,
+        "y": 440
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-9",
+        "name": "Laboratory Officer 10",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "terrain": null
+}

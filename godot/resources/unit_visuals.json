@@ -1,0 +1,97 @@
+{
+  "infantry": {
+    "coat": "#9b9b8d",
+    "headwear": "cap",
+    "horse": "#7b5942"
+  },
+  "prussian_line": {
+    "coat": "#315e8c",
+    "headwear": "cap"
+  },
+  "royal_grenadiers": {
+    "coat": "#e5e0cd",
+    "headwear": "tall_cap"
+  },
+  "revolutionary_rifles": {
+    "coat": "#3d714b",
+    "headwear": "cap"
+  },
+  "haudenosaunee_skirmishers": {
+    "coat": "#a38860",
+    "headwear": "none"
+  },
+  "cavalry": {
+    "coat": "#8093a2",
+    "headwear": "cap",
+    "horse": "#815536"
+  },
+  "commonwealth_uhlans": {
+    "coat": "#405a7d",
+    "headwear": "square_cap",
+    "horse": "#947052",
+    "lance": true
+  },
+  "artillery": {
+    "coat": "#6f7c88",
+    "headwear": "cap",
+    "gun": "#555f59"
+  },
+  "french_horse_artillery": {
+    "coat": "#486787",
+    "headwear": "cap",
+    "gun": "#71674a",
+    "horse": "#86664b",
+    "horse_battery": true
+  },
+  "commonwealth_regulars": {
+    "coat": "#6c7890",
+    "headwear": "cap"
+  },
+  "commonwealth_militia": {
+    "coat": "#8c8572",
+    "headwear": "cap"
+  },
+  "commonwealth_scythemen": {
+    "coat": "#d3ceba",
+    "headwear": "cap",
+    "scythe": true
+  },
+  "commonwealth_national_cavalry": {
+    "coat": "#425d82",
+    "headwear": "square_cap",
+    "horse": "#815536"
+  },
+  "commonwealth_field_artillery": {
+    "coat": "#52667c",
+    "headwear": "cap",
+    "gun": "#6b6758"
+  },
+  "revolutionary_line": {
+    "coat": "#9e5348",
+    "headwear": "cap"
+  },
+  "prussian_grenadiers": {
+    "coat": "#315e8c",
+    "headwear": "tall_cap"
+  },
+  "prussian_cuirassiers": {
+    "coat": "#dbd6bd",
+    "headwear": "cap",
+    "armour": true,
+    "horse": "#544333"
+  },
+  "russian_musketeers": {
+    "coat": "#41694c",
+    "headwear": "cap"
+  },
+  "russian_grenadiers": {
+    "coat": "#3c6045",
+    "headwear": "tall_cap"
+  },
+  "russian_cossacks": {
+    "coat": "#536f88",
+    "headwear": "cap",
+    "horse": "#967155",
+    "lance": true
+  }
+}

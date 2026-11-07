@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../simulation_data/campaign/commonwealth.json" LogicalName="campaign.json" />
+    <EmbeddedResource Include="../../simulation_data/commonwealth_commanders.json" LogicalName="commonwealth_commanders.json" />
+    <EmbeddedResource Include="../../simulation_data/commander_upgrades.json" LogicalName="commander_upgrades.json" />
+    <EmbeddedResource Include="../../scenarios/presets/*.json" LogicalName="battle_presets.%(Filename).json" />
+    <EmbeddedResource Include="../../simulation_data/commander_definitions.json" LogicalName="commander_definitions.json" />
+    <EmbeddedResource Include="../../simulation_data/movement_archetypes.json" LogicalName="movement_archetypes.json" />
+    <EmbeddedResource Include="../../simulation_data/combat_scenarios/*.json" LogicalName="combat_scenarios.%(Filename).json" />
+  </ItemGroup>
+</Project>

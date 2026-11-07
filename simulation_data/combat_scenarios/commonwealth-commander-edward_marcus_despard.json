@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 700,
+  "duration": 600,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth Lab — Edward Marcus Despard — Improvised Defences",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 420,
+        "y": 330
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-edward_marcus_despard",
+        "definitionId": "edward_marcus_despard",
+        "name": "Edward Marcus Despard",
+        "background": "Revolutionary Britain",
+        "personality": "stalwart",
+        "specialization": "improvised_defences",
+        "biography": "Prepared cohesive defenders take 12% less shock; artillery limber and deployment time −15%.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 1,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 650,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "move",
+        "destination": {
+          "x": 460,
+          "y": 330
+        }
+      }
+    },
+    {
+      "tick": 180,
+      "regimentId": 0,
+      "order": {
+        "kind": "fireAt",
+        "targetId": 1
+      }
+    }
+  ]
+}

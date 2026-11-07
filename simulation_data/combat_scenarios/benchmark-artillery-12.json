@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "name": "Artillery Heavy 12",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    400,
+    700
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Battery 1",
+      "archetype": "artillery",
+      "position": {
+        "x": 280,
+        "y": 110
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Infantry 2",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 280,
+        "y": 220
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Blue Battery 3",
+      "archetype": "artillery",
+      "position": {
+        "x": 280,
+        "y": 330
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Infantry 4",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 390,
+        "y": 440
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "name": "Blue Infantry 5",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 390,
+        "y": 550
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "name": "Blue Infantry 6",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 390,
+        "y": 660
+      },
+      "facing": 0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 6,
+      "army": 1,
+      "name": "Red Battery 7",
+      "archetype": "artillery",
+      "position": {
+        "x": 720,
+        "y": 110
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 7,
+      "army": 1,
+      "name": "Red Infantry 8",
+      "archetype": "french_horse_artillery",
+      "position": {
+        "x": 720,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 8,
+      "army": 1,
+      "name": "Red Battery 9",
+      "archetype": "artillery",
+      "position": {
+        "x": 720,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 9,
+      "army": 1,
+      "name": "Red Infantry 10",
+      "archetype": "prussian_line",
+      "position": {
+        "x": 610,
+        "y": 440
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 10,
+      "army": 1,
+      "name": "Red Infantry 11",
+      "archetype": "royal_grenadiers",
+      "position": {
+        "x": 610,
+        "y": 550
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    },
+    {
+      "id": 11,
+      "army": 1,
+      "name": "Red Infantry 12",
+      "archetype": "commonwealth_uhlans",
+      "position": {
+        "x": 610,
+        "y": 660
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 5,
+      "order": {
+        "kind": "attack",
+        "targetId": 11
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 11,
+      "order": {
+        "kind": "attack",
+        "targetId": 5
+      }
+    }
+  ],
+  "terrain": {
+    "hills": [
+      {
+        "x": 530,
+        "y": 120,
+        "radiusX": 50,
+        "radiusY": 65,
+        "height": 8,
+        "compact": true
+      }
+    ],
+    "forests": [
+      {
+        "x": 460,
+        "y": 220,
+        "radiusX": 70,
+        "radiusY": 75,
+        "density": 0.6
+      }
+    ]
+  },
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true
+}

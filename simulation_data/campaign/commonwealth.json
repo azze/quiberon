@@ -1,0 +1,2667 @@
+{
+  "rules": {
+    "capacity": 10,
+    "upgradeLimit": 3,
+    "autoReplenish": 0.2,
+    "rewardReplenish": 0.6,
+    "decisiveSurvival": 0.55
+  },
+  "startingUnits": [
+    "commonwealth_regulars",
+    "commonwealth_regulars",
+    "commonwealth_militia",
+    "commonwealth_national_cavalry",
+    "commonwealth_field_artillery"
+  ],
+  "events": [
+    {
+      "id": "haudenosaunee",
+      "title": "Haudenosaunee assistance",
+      "text": "The expedition acts under its own alliance agreements. Cook offers cooperation with the Commonwealth. At capacity, an officer enters reserve and replacements substitute for an extra regiment.",
+      "choices": [
+        {
+          "id": "accept",
+          "label": "Welcome Cook and the War Party",
+          "description": "Unlock War Parties; Cook joins with a detachment if capacity permits.",
+          "flags": [
+            "haudenosaunee"
+          ],
+          "unit": "haudenosaunee_skirmishers",
+          "commander": "joseph_louis_cook"
+        },
+        {
+          "id": "liaison",
+          "label": "Request a liaison officer",
+          "description": "Cook joins reserve; unlock War Party recruitment without adding a regiment.",
+          "flags": [
+            "haudenosaunee"
+          ],
+          "commander": "joseph_louis_cook"
+        }
+      ]
+    },
+    {
+      "id": "british",
+      "title": "The British expedition arrives",
+      "text": "Despard’s expedition reaches the Commonwealth. The line detachment enters the Vistula battlefield after sixty simulated seconds.",
+      "choices": [
+        {
+          "id": "line",
+          "label": "Accept Despard and line infantry",
+          "description": "Unlock British troops; add an expeditionary regiment if space permits.",
+          "flags": [
+            "british"
+          ],
+          "unit": "revolutionary_line",
+          "commander": "edward_marcus_despard"
+        },
+        {
+          "id": "rifles",
+          "label": "Accept Despard and rifle specialists",
+          "description": "Unlock British troops; add a rifle detachment if space permits.",
+          "flags": [
+            "british"
+          ],
+          "unit": "revolutionary_rifles",
+          "commander": "edward_marcus_despard"
+        }
+      ]
+    },
+    {
+      "id": "dangerous_choice",
+      "title": "A Dangerous Choice",
+      "text": "Russian pressure leaves time for one operation. These alternatives replace each other; the campaign still has six battles.",
+      "choices": [
+        {
+          "id": "rescue",
+          "label": "Rescue the allied force",
+          "description": "Success adds friendly support in The Two Eagles.",
+          "flags": []
+        },
+        {
+          "id": "intercept",
+          "label": "Intercept the supply column",
+          "description": "Success removes one Russian assault battalion in The Two Eagles.",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "id": "politics",
+      "title": "Political tensions",
+      "text": "Regular officers and republican organisers seek support. Choose a clearly defined reinforcement; at capacity it becomes replacements.",
+      "choices": [
+        {
+          "id": "republicans",
+          "label": "Support republican volunteers",
+          "description": "Add Scythemen (or replacements at capacity); endorse citizen formations.",
+          "flags": [
+            "republican"
+          ],
+          "unit": "commonwealth_scythemen"
+        },
+        {
+          "id": "regulars",
+          "label": "Support regular officers",
+          "description": "Add regular infantry (or replacements at capacity); preserve conventional organisation.",
+          "flags": [
+            "regular_officers"
+          ],
+          "unit": "commonwealth_regulars"
+        }
+      ]
+    },
+    {
+      "id": "volunteers",
+      "title": "Commonwealth volunteers assemble",
+      "text": "Warsaw sends its remaining volunteers to the army.",
+      "choices": [
+        {
+          "id": "militia",
+          "label": "Accept citizen militia",
+          "description": "Add militia, or restore 35% of missing soldiers at capacity.",
+          "flags": [
+            "volunteers"
+          ],
+          "unit": "commonwealth_militia"
+        },
+        {
+          "id": "scythes",
+          "label": "Accept Scythemen",
+          "description": "Add Scythemen, or restore 35% of missing soldiers at capacity.",
+          "flags": [
+            "volunteers"
+          ],
+          "unit": "commonwealth_scythemen"
+        }
+      ]
+    },
+    {
+      "id": "disagreement",
+      "title": "Prussian–Russian disagreement",
+      "text": "Enemy liaison officers have quarrelled. Exploit the delay or give the army time to recover.",
+      "choices": [
+        {
+          "id": "delay",
+          "label": "Disrupt their liaison",
+          "description": "Delay the Russian second wave in The Two Eagles by 45 seconds.",
+          "flags": [
+            "enemy_delay"
+          ]
+        },
+        {
+          "id": "rest",
+          "label": "Rest and reorganise",
+          "description": "Restore 35% of missing soldiers instead.",
+          "flags": [
+            "strategic_rest"
+          ]
+        }
+      ]
+    }
+  ],
+  "encounters": [
+    {
+      "id": "frontier",
+      "stage": 1,
+      "title": "The Frontier",
+      "date": "April 1796",
+      "briefing": "Kościuszko orders your detachment to repel the Prussian advance. Keep your firing line together and preserve the citizen formations.",
+      "knownEnemy": "Bülow: three infantry battalions and a cavalry detachment.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 250,
+          "y": 160
+        },
+        {
+          "x": 250,
+          "y": 315
+        },
+        {
+          "x": 250,
+          "y": 470
+        },
+        {
+          "x": 250,
+          "y": 625
+        },
+        {
+          "x": 250,
+          "y": 780
+        },
+        {
+          "x": 345,
+          "y": 160
+        },
+        {
+          "x": 345,
+          "y": 315
+        },
+        {
+          "x": 345,
+          "y": 470
+        },
+        {
+          "x": 345,
+          "y": 625
+        },
+        {
+          "x": 345,
+          "y": 780
+        },
+        {
+          "x": 440,
+          "y": 160
+        },
+        {
+          "x": 440,
+          "y": 315
+        },
+        {
+          "x": 440,
+          "y": 470
+        },
+        {
+          "x": 440,
+          "y": 625
+        },
+        {
+          "x": 440,
+          "y": 780
+        },
+        {
+          "x": 535,
+          "y": 160
+        },
+        {
+          "x": 535,
+          "y": 315
+        },
+        {
+          "x": 535,
+          "y": 470
+        },
+        {
+          "x": 535,
+          "y": 625
+        },
+        {
+          "x": 535,
+          "y": 780
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "The Frontier",
+        "width": 1200,
+        "height": 1000,
+        "duration": 900,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 500,
+              "y": 130,
+              "radiusX": 100,
+              "radiusY": 80,
+              "density": 0.4
+            }
+          ],
+          "environment": {
+            "version": 1
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 100",
+            "position": {
+              "x": 720,
+              "y": 250
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-friedrich_wilhelm_von_bulow",
+              "name": "Friedrich Wilhelm von Bülow",
+              "background": "Prussia",
+              "personality": "methodical",
+              "specialization": "disciplined_skirmishers",
+              "definitionId": "friedrich_wilhelm_von_bulow",
+              "nation": ""
+            },
+            "strength": 130
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 101",
+            "position": {
+              "x": 760,
+              "y": 450
+            },
+            "facing": 3.141592653589793,
+            "strength": 130
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "prussian_grenadiers",
+            "name": "Prussian Grenadiers 102",
+            "position": {
+              "x": 800,
+              "y": 650
+            },
+            "facing": 3.141592653589793,
+            "strength": 115
+          },
+          {
+            "id": 103,
+            "army": 1,
+            "archetype": "prussian_cuirassiers",
+            "name": "Prussian Cuirassiers 103",
+            "position": {
+              "x": 900,
+              "y": 780
+            },
+            "facing": 3.141592653589793,
+            "strength": 60
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "defeat",
+              "description": "Drive off the Prussian advance force.",
+              "position": {
+                "x": 600,
+                "y": 450
+              },
+              "radius": 90,
+              "duration": 300
+            }
+          ],
+          "directives": [],
+          "timeout": 900
+        }
+      }
+    },
+    {
+      "id": "forest-road",
+      "stage": 2,
+      "title": "The Forest Road",
+      "date": "May 1796",
+      "briefing": "Joseph Louis Cook and the allied detachment join the defence of a wooded road. Stop the column reaching the western exit for six minutes; forcing its army to break also succeeds.",
+      "knownEnemy": "A Prussian marching column with cavalry support.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 250,
+          "y": 160
+        },
+        {
+          "x": 250,
+          "y": 315
+        },
+        {
+          "x": 250,
+          "y": 470
+        },
+        {
+          "x": 250,
+          "y": 625
+        },
+        {
+          "x": 250,
+          "y": 780
+        },
+        {
+          "x": 345,
+          "y": 160
+        },
+        {
+          "x": 345,
+          "y": 315
+        },
+        {
+          "x": 345,
+          "y": 470
+        },
+        {
+          "x": 345,
+          "y": 625
+        },
+        {
+          "x": 345,
+          "y": 780
+        },
+        {
+          "x": 440,
+          "y": 160
+        },
+        {
+          "x": 440,
+          "y": 315
+        },
+        {
+          "x": 440,
+          "y": 470
+        },
+        {
+          "x": 440,
+          "y": 625
+        },
+        {
+          "x": 440,
+          "y": 780
+        },
+        {
+          "x": 535,
+          "y": 160
+        },
+        {
+          "x": 535,
+          "y": 315
+        },
+        {
+          "x": 535,
+          "y": 470
+        },
+        {
+          "x": 535,
+          "y": 625
+        },
+        {
+          "x": 535,
+          "y": 780
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "The Forest Road",
+        "width": 1200,
+        "height": 1000,
+        "duration": 900,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 430,
+              "y": 280,
+              "radiusX": 210,
+              "radiusY": 160,
+              "density": 0.65
+            },
+            {
+              "x": 580,
+              "y": 690,
+              "radiusX": 230,
+              "radiusY": 190,
+              "density": 0.65
+            }
+          ],
+          "environment": {
+            "version": 1,
+            "roads": [
+              {
+                "id": "main",
+                "name": "Campaign road",
+                "points": [
+                  {
+                    "x": 80,
+                    "y": 480
+                  },
+                  {
+                    "x": 1120,
+                    "y": 480
+                  }
+                ],
+                "width": 12,
+                "surface": "mainRoad"
+              }
+            ]
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 100",
+            "position": {
+              "x": 850,
+              "y": 220
+            },
+            "facing": 3.141592653589793,
+            "strength": 190
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 101",
+            "position": {
+              "x": 930,
+              "y": 335
+            },
+            "facing": 3.141592653589793,
+            "strength": 190
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 102",
+            "position": {
+              "x": 850,
+              "y": 450
+            },
+            "facing": 3.141592653589793,
+            "strength": 190
+          },
+          {
+            "id": 103,
+            "army": 1,
+            "archetype": "prussian_grenadiers",
+            "name": "Prussian Grenadiers 103",
+            "position": {
+              "x": 930,
+              "y": 565
+            },
+            "facing": 3.141592653589793,
+            "strength": 180
+          },
+          {
+            "id": 104,
+            "army": 1,
+            "archetype": "prussian_cuirassiers",
+            "name": "Prussian Cuirassiers 104",
+            "position": {
+              "x": 850,
+              "y": 680
+            },
+            "facing": 3.141592653589793,
+            "strength": 90
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "delay",
+              "description": "Deny the western road exit for 360 seconds.",
+              "position": {
+                "x": 140,
+                "y": 480
+              },
+              "radius": 90,
+              "duration": 360
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 100,
+              "waypoints": [
+                {
+                  "x": 540,
+                  "y": 480
+                },
+                {
+                  "x": 140,
+                  "y": 480
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "formation": "column"
+            },
+            {
+              "unitId": 101,
+              "waypoints": [
+                {
+                  "x": 540,
+                  "y": 480
+                },
+                {
+                  "x": 140,
+                  "y": 480
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "formation": "column"
+            },
+            {
+              "unitId": 102,
+              "waypoints": [
+                {
+                  "x": 540,
+                  "y": 480
+                },
+                {
+                  "x": 140,
+                  "y": 480
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "formation": "column"
+            },
+            {
+              "unitId": 103,
+              "waypoints": [
+                {
+                  "x": 540,
+                  "y": 480
+                },
+                {
+                  "x": 140,
+                  "y": 480
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "formation": "column"
+            },
+            {
+              "unitId": 104,
+              "waypoints": [
+                {
+                  "x": 540,
+                  "y": 480
+                },
+                {
+                  "x": 140,
+                  "y": 480
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "formation": "column"
+            }
+          ],
+          "timeout": 900
+        }
+      },
+      "defensiveSlots": [
+        {
+          "x": 175,
+          "y": 445
+        },
+        {
+          "x": 175,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "id": "vistula",
+      "stage": 3,
+      "title": "Defence of the Vistula",
+      "date": "June 1796",
+      "briefing": "Hold the eastern bank for eight minutes. Despard’s expedition arrives after one minute. Enemy battalions have authored bridge and ford approach orders; all must cross physically.",
+      "knownEnemy": "Blücher leads infantry and cavalry supported by a battery and a second wave.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 850,
+          "y": 150
+        },
+        {
+          "x": 850,
+          "y": 305
+        },
+        {
+          "x": 850,
+          "y": 460
+        },
+        {
+          "x": 850,
+          "y": 615
+        },
+        {
+          "x": 850,
+          "y": 770
+        },
+        {
+          "x": 950,
+          "y": 150
+        },
+        {
+          "x": 950,
+          "y": 305
+        },
+        {
+          "x": 950,
+          "y": 460
+        },
+        {
+          "x": 950,
+          "y": 615
+        },
+        {
+          "x": 950,
+          "y": 770
+        },
+        {
+          "x": 1050,
+          "y": 150
+        },
+        {
+          "x": 1050,
+          "y": 305
+        },
+        {
+          "x": 1050,
+          "y": 460
+        },
+        {
+          "x": 1050,
+          "y": 615
+        },
+        {
+          "x": 1050,
+          "y": 770
+        },
+        {
+          "x": 1150,
+          "y": 150
+        },
+        {
+          "x": 1150,
+          "y": 305
+        },
+        {
+          "x": 1150,
+          "y": 460
+        },
+        {
+          "x": 1150,
+          "y": 615
+        },
+        {
+          "x": 1150,
+          "y": 770
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "Defence of the Vistula",
+        "width": 1200,
+        "height": 1000,
+        "duration": 750,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 950,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [],
+          "environment": {
+            "version": 1,
+            "rivers": [
+              {
+                "id": "vistula",
+                "name": "River laboratory",
+                "points": [
+                  {
+                    "x": 600,
+                    "y": -100
+                  },
+                  {
+                    "x": 600,
+                    "y": 1100
+                  }
+                ],
+                "width": 90,
+                "waterHeight": -0.4,
+                "depth": 2
+              }
+            ],
+            "crossings": [
+              {
+                "id": "main_bridge",
+                "riverId": "vistula",
+                "position": {
+                  "x": 600,
+                  "y": 400
+                },
+                "facing": 0,
+                "length": 140,
+                "width": 26,
+                "kind": "bridge",
+                "fordDepth": "shallow",
+                "speed": 0.85
+              },
+              {
+                "id": "south_ford",
+                "riverId": "vistula",
+                "position": {
+                  "x": 600,
+                  "y": 650
+                },
+                "facing": 0,
+                "length": 140,
+                "width": 42,
+                "kind": "ford",
+                "fordDepth": "moderate",
+                "speed": 0.45
+              }
+            ],
+            "roads": [
+              {
+                "id": "bridge_road",
+                "name": "Main road",
+                "points": [
+                  {
+                    "x": 100,
+                    "y": 400
+                  },
+                  {
+                    "x": 600,
+                    "y": 400
+                  },
+                  {
+                    "x": 1100,
+                    "y": 400
+                  }
+                ],
+                "width": 10,
+                "surface": "mainRoad"
+              },
+              {
+                "id": "ford_track",
+                "name": "Track",
+                "points": [
+                  {
+                    "x": 100,
+                    "y": 650
+                  },
+                  {
+                    "x": 600,
+                    "y": 650
+                  },
+                  {
+                    "x": 1100,
+                    "y": 650
+                  }
+                ],
+                "width": 7,
+                "surface": "track"
+              }
+            ],
+            "defences": [
+              {
+                "id": "north_bank_work",
+                "position": {
+                  "x": 820,
+                  "y": 460
+                },
+                "facing": 3.141592653589793,
+                "width": 150,
+                "depth": 3,
+                "kind": "earthwork",
+                "musketExposure": 0.7,
+                "chargeResistance": 0.65,
+                "protectionDepth": 36
+              },
+              {
+                "id": "ford_barricade",
+                "position": {
+                  "x": 820,
+                  "y": 650
+                },
+                "facing": 3.141592653589793,
+                "width": 150,
+                "depth": 3,
+                "kind": "barricade",
+                "musketExposure": 0.7,
+                "chargeResistance": 0.65,
+                "protectionDepth": 36
+              }
+            ],
+            "weather": {
+              "type": "clear"
+            }
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 100",
+            "position": {
+              "x": 230,
+              "y": 140
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 101",
+            "position": {
+              "x": 230,
+              "y": 290
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "prussian_grenadiers",
+            "name": "Prussian Grenadiers 102",
+            "position": {
+              "x": 230,
+              "y": 440
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 103,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Artillery 103",
+            "position": {
+              "x": 230,
+              "y": 590
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 104,
+            "army": 1,
+            "archetype": "prussian_cuirassiers",
+            "name": "Prussian Cuirassiers 104",
+            "position": {
+              "x": 230,
+              "y": 740
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-gebhard_leberecht_von_blucher",
+              "name": "Gebhard Leberecht von Blücher",
+              "background": "Prussia",
+              "personality": "aggressive",
+              "specialization": "vorwarts",
+              "definitionId": "gebhard_leberecht_von_blucher",
+              "nation": ""
+            }
+          },
+          {
+            "id": 105,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 105",
+            "position": {
+              "x": 145,
+              "y": 140
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 106,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 106",
+            "position": {
+              "x": 145,
+              "y": 290
+            },
+            "facing": 3.141592653589793
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "delay",
+              "description": "Prevent an uncontested eastern bridgehead for 480 seconds.",
+              "position": {
+                "x": 825,
+                "y": 450
+              },
+              "radius": 115,
+              "duration": 480
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 100,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge",
+              "formation": "column"
+            },
+            {
+              "unitId": 101,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge",
+              "formation": "column"
+            },
+            {
+              "unitId": 102,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge",
+              "formation": "column"
+            },
+            {
+              "unitId": 103,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge"
+            },
+            {
+              "unitId": 104,
+              "waypoints": [
+                {
+                  "x": 450,
+                  "y": 650
+                },
+                {
+                  "x": 820,
+                  "y": 650
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "south_ford"
+            },
+            {
+              "unitId": 105,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 150,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge",
+              "formation": "column"
+            },
+            {
+              "unitId": 106,
+              "waypoints": [
+                {
+                  "x": 440,
+                  "y": 400
+                },
+                {
+                  "x": 800,
+                  "y": 400
+                }
+              ],
+              "arrival": 150,
+              "after": "attack",
+              "convoy": false,
+              "crossing": "main_bridge",
+              "formation": "column"
+            }
+          ],
+          "timeout": 750,
+          "playerZone": "east"
+        }
+      },
+      "defensiveSlots": [
+        {
+          "x": 850,
+          "y": 460
+        },
+        {
+          "x": 850,
+          "y": 650
+        }
+      ]
+    },
+    {
+      "id": "danger-rescue",
+      "stage": 4,
+      "title": "A Dangerous Choice — Rescue",
+      "date": "June 1796",
+      "briefing": "An allied detachment is cut off. Preserve at least half its original soldiers and bring them into the western withdrawal zone. The detachment follows an authored withdrawal route; you may redirect it.",
+      "knownEnemy": "Bagration’s infantry with Cossack support.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 250,
+          "y": 160
+        },
+        {
+          "x": 250,
+          "y": 315
+        },
+        {
+          "x": 250,
+          "y": 470
+        },
+        {
+          "x": 250,
+          "y": 625
+        },
+        {
+          "x": 250,
+          "y": 780
+        },
+        {
+          "x": 345,
+          "y": 160
+        },
+        {
+          "x": 345,
+          "y": 315
+        },
+        {
+          "x": 345,
+          "y": 470
+        },
+        {
+          "x": 345,
+          "y": 625
+        },
+        {
+          "x": 345,
+          "y": 780
+        },
+        {
+          "x": 440,
+          "y": 160
+        },
+        {
+          "x": 440,
+          "y": 315
+        },
+        {
+          "x": 440,
+          "y": 470
+        },
+        {
+          "x": 440,
+          "y": 625
+        },
+        {
+          "x": 440,
+          "y": 780
+        },
+        {
+          "x": 535,
+          "y": 160
+        },
+        {
+          "x": 535,
+          "y": 315
+        },
+        {
+          "x": 535,
+          "y": 470
+        },
+        {
+          "x": 535,
+          "y": 625
+        },
+        {
+          "x": 535,
+          "y": 780
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "A Dangerous Choice — Rescue",
+        "width": 1200,
+        "height": 1000,
+        "duration": 720,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 470,
+              "y": 250,
+              "radiusX": 160,
+              "radiusY": 140,
+              "density": 0.65
+            }
+          ],
+          "environment": {
+            "version": 1,
+            "roads": [
+              {
+                "id": "main",
+                "name": "Campaign road",
+                "points": [
+                  {
+                    "x": 80,
+                    "y": 450
+                  },
+                  {
+                    "x": 1120,
+                    "y": 450
+                  }
+                ],
+                "width": 12,
+                "surface": "mainRoad"
+              }
+            ]
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 100",
+            "position": {
+              "x": 820,
+              "y": 350
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-pyotr_bagration",
+              "name": "Pyotr Bagration",
+              "background": "Russia",
+              "personality": "aggressive",
+              "specialization": "vanguard_assault",
+              "definitionId": "pyotr_bagration",
+              "nation": "Georgian"
+            }
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "russian_grenadiers",
+            "name": "Russian Grenadiers 101",
+            "position": {
+              "x": 850,
+              "y": 550
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "russian_cossacks",
+            "name": "Russian Cossacks 102",
+            "position": {
+              "x": 910,
+              "y": 750
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 850,
+            "army": 0,
+            "archetype": "commonwealth_regulars",
+            "name": "Commonwealth Regulars 850",
+            "position": {
+              "x": 650,
+              "y": 450
+            },
+            "facing": 0,
+            "strength": 160
+          },
+          {
+            "id": 851,
+            "army": 0,
+            "archetype": "commonwealth_militia",
+            "name": "Commonwealth Militia 851",
+            "position": {
+              "x": 680,
+              "y": 570
+            },
+            "facing": 0,
+            "strength": 180
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "rescue",
+              "description": "Bring 50% of the allied detachment to the western safety area.",
+              "position": {
+                "x": 180,
+                "y": 450
+              },
+              "radius": 110,
+              "duration": 300,
+              "units": [
+                850,
+                851
+              ]
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 850,
+              "waypoints": [
+                {
+                  "x": 490,
+                  "y": 450
+                },
+                {
+                  "x": 180,
+                  "y": 450
+                }
+              ],
+              "arrival": 0,
+              "after": "hold",
+              "convoy": false
+            },
+            {
+              "unitId": 851,
+              "waypoints": [
+                {
+                  "x": 490,
+                  "y": 500
+                },
+                {
+                  "x": 180,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "hold",
+              "convoy": false
+            }
+          ],
+          "timeout": 720
+        }
+      }
+    },
+    {
+      "id": "danger-intercept",
+      "stage": 4,
+      "title": "A Dangerous Choice — Interception",
+      "date": "June 1796",
+      "briefing": "Intercept both supply trains before either reaches the eastern exit. Unarmed wagon proxies are physical, vulnerable regiment targets, not abstract cargo counters.",
+      "knownEnemy": "Platov’s Cossacks and two escort battalions.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 420,
+          "y": 150
+        },
+        {
+          "x": 420,
+          "y": 300
+        },
+        {
+          "x": 420,
+          "y": 450
+        },
+        {
+          "x": 420,
+          "y": 600
+        },
+        {
+          "x": 420,
+          "y": 750
+        },
+        {
+          "x": 510,
+          "y": 150
+        },
+        {
+          "x": 510,
+          "y": 300
+        },
+        {
+          "x": 510,
+          "y": 450
+        },
+        {
+          "x": 510,
+          "y": 600
+        },
+        {
+          "x": 510,
+          "y": 750
+        },
+        {
+          "x": 600,
+          "y": 150
+        },
+        {
+          "x": 600,
+          "y": 300
+        },
+        {
+          "x": 600,
+          "y": 450
+        },
+        {
+          "x": 600,
+          "y": 600
+        },
+        {
+          "x": 600,
+          "y": 750
+        },
+        {
+          "x": 690,
+          "y": 150
+        },
+        {
+          "x": 690,
+          "y": 300
+        },
+        {
+          "x": 690,
+          "y": 450
+        },
+        {
+          "x": 690,
+          "y": 600
+        },
+        {
+          "x": 690,
+          "y": 750
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "A Dangerous Choice — Interception",
+        "width": 1200,
+        "height": 1000,
+        "duration": 600,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 500,
+              "y": 280,
+              "radiusX": 170,
+              "radiusY": 130,
+              "density": 0.65
+            }
+          ],
+          "environment": {
+            "version": 1,
+            "roads": [
+              {
+                "id": "main",
+                "name": "Campaign road",
+                "points": [
+                  {
+                    "x": 80,
+                    "y": 480
+                  },
+                  {
+                    "x": 1120,
+                    "y": 480
+                  }
+                ],
+                "width": 12,
+                "surface": "mainRoad"
+              }
+            ]
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 100",
+            "position": {
+              "x": 790,
+              "y": 300
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 101",
+            "position": {
+              "x": 800,
+              "y": 650
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "russian_cossacks",
+            "name": "Russian Cossacks 102",
+            "position": {
+              "x": 900,
+              "y": 750
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-matvei_platov",
+              "name": "Matvei Platov",
+              "background": "Russia",
+              "personality": "opportunistic",
+              "specialization": "cossack_screen",
+              "definitionId": "matvei_platov",
+              "nation": ""
+            }
+          },
+          {
+            "id": 900,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Supply train 900",
+            "position": {
+              "x": 680,
+              "y": 450
+            },
+            "facing": 3.141592653589793,
+            "strength": 36,
+            "nonCombatant": true
+          },
+          {
+            "id": 901,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Supply train 901",
+            "position": {
+              "x": 710,
+              "y": 510
+            },
+            "facing": 3.141592653589793,
+            "strength": 36,
+            "nonCombatant": true
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "convoy",
+              "description": "Disable both supply trains before one escapes.",
+              "position": {
+                "x": 1120,
+                "y": 480
+              },
+              "radius": 65,
+              "duration": 300,
+              "units": [
+                900,
+                901
+              ]
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 900,
+              "waypoints": [
+                {
+                  "x": 1120,
+                  "y": 450
+                }
+              ],
+              "arrival": 0,
+              "after": "hold",
+              "convoy": true
+            },
+            {
+              "unitId": 901,
+              "waypoints": [
+                {
+                  "x": 1120,
+                  "y": 510
+                }
+              ],
+              "arrival": 0,
+              "after": "hold",
+              "convoy": true
+            }
+          ],
+          "timeout": 600
+        }
+      }
+    },
+    {
+      "id": "two-eagles",
+      "stage": 5,
+      "title": "The Two Eagles",
+      "date": "July 1796",
+      "briefing": "Prussia and Russia converge. Hold the road junction for nine minutes or break the offensive. The rescue provides an allied support battalion; severed supplies remove one Russian assault battalion.",
+      "knownEnemy": "Blücher, Bagration and Platov coordinate a mixed offensive.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 250,
+          "y": 160
+        },
+        {
+          "x": 250,
+          "y": 315
+        },
+        {
+          "x": 250,
+          "y": 470
+        },
+        {
+          "x": 250,
+          "y": 625
+        },
+        {
+          "x": 250,
+          "y": 780
+        },
+        {
+          "x": 345,
+          "y": 160
+        },
+        {
+          "x": 345,
+          "y": 315
+        },
+        {
+          "x": 345,
+          "y": 470
+        },
+        {
+          "x": 345,
+          "y": 625
+        },
+        {
+          "x": 345,
+          "y": 780
+        },
+        {
+          "x": 440,
+          "y": 160
+        },
+        {
+          "x": 440,
+          "y": 315
+        },
+        {
+          "x": 440,
+          "y": 470
+        },
+        {
+          "x": 440,
+          "y": 625
+        },
+        {
+          "x": 440,
+          "y": 780
+        },
+        {
+          "x": 535,
+          "y": 160
+        },
+        {
+          "x": 535,
+          "y": 315
+        },
+        {
+          "x": 535,
+          "y": 470
+        },
+        {
+          "x": 535,
+          "y": 625
+        },
+        {
+          "x": 535,
+          "y": 780
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "The Two Eagles",
+        "width": 1200,
+        "height": 1000,
+        "duration": 800,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "balanced"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 550,
+              "y": 200,
+              "radiusX": 150,
+              "radiusY": 120,
+              "density": 0.65
+            },
+            {
+              "x": 700,
+              "y": 800,
+              "radiusX": 130,
+              "radiusY": 140,
+              "density": 0.65
+            }
+          ],
+          "environment": {
+            "version": 1,
+            "roads": [
+              {
+                "id": "main",
+                "name": "Campaign road",
+                "points": [
+                  {
+                    "x": 80,
+                    "y": 470
+                  },
+                  {
+                    "x": 1120,
+                    "y": 470
+                  }
+                ],
+                "width": 12,
+                "surface": "mainRoad"
+              }
+            ],
+            "weather": {
+              "type": "rain"
+            }
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 100",
+            "position": {
+              "x": 800,
+              "y": 120
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "russian_grenadiers",
+            "name": "Russian Grenadiers 101",
+            "position": {
+              "x": 890,
+              "y": 120
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-pyotr_bagration",
+              "name": "Pyotr Bagration",
+              "background": "Russia",
+              "personality": "aggressive",
+              "specialization": "vanguard_assault",
+              "definitionId": "pyotr_bagration",
+              "nation": "Georgian"
+            }
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 102",
+            "position": {
+              "x": 980,
+              "y": 120
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 103,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 103",
+            "position": {
+              "x": 800,
+              "y": 300
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 104,
+            "army": 1,
+            "archetype": "prussian_cuirassiers",
+            "name": "Prussian Cuirassiers 104",
+            "position": {
+              "x": 890,
+              "y": 300
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-gebhard_leberecht_von_blucher",
+              "name": "Gebhard Leberecht von Blücher",
+              "background": "Prussia",
+              "personality": "aggressive",
+              "specialization": "vorwarts",
+              "definitionId": "gebhard_leberecht_von_blucher",
+              "nation": ""
+            }
+          },
+          {
+            "id": 105,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Artillery 105",
+            "position": {
+              "x": 980,
+              "y": 300
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 106,
+            "army": 1,
+            "archetype": "russian_grenadiers",
+            "name": "Russian Grenadiers 106",
+            "position": {
+              "x": 800,
+              "y": 480
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 107,
+            "army": 1,
+            "archetype": "russian_cossacks",
+            "name": "Russian Cossacks 107",
+            "position": {
+              "x": 890,
+              "y": 480
+            },
+            "facing": 3.141592653589793,
+            "commander": {
+              "id": "historical-matvei_platov",
+              "name": "Matvei Platov",
+              "background": "Russia",
+              "personality": "opportunistic",
+              "specialization": "cossack_screen",
+              "definitionId": "matvei_platov",
+              "nation": ""
+            }
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "delay",
+              "description": "Deny the western road junction for 540 seconds.",
+              "position": {
+                "x": 250,
+                "y": 470
+              },
+              "radius": 90,
+              "duration": 540
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 100,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 101,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 102,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 103,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 104,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 105,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 106,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 130,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 107,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 130,
+              "after": "attack",
+              "convoy": false
+            }
+          ],
+          "timeout": 800
+        }
+      },
+      "defensiveSlots": [
+        {
+          "x": 285,
+          "y": 430
+        },
+        {
+          "x": 285,
+          "y": 510
+        }
+      ]
+    },
+    {
+      "id": "warsaw",
+      "stage": 6,
+      "title": "The Road to Warsaw",
+      "date": "Summer 1796",
+      "briefing": "Suvorov attempts one last decisive assault. Defend the Warsaw road for ten minutes or break his force. A final victory with at least 55% surviving roster strength is decisive; otherwise peace is negotiated.",
+      "knownEnemy": "Suvorov: a major infantry assault, cavalry exploitation and artillery support.",
+      "startingUnits": [],
+      "deployment": [
+        {
+          "x": 250,
+          "y": 160
+        },
+        {
+          "x": 250,
+          "y": 315
+        },
+        {
+          "x": 250,
+          "y": 470
+        },
+        {
+          "x": 250,
+          "y": 625
+        },
+        {
+          "x": 250,
+          "y": 780
+        },
+        {
+          "x": 345,
+          "y": 160
+        },
+        {
+          "x": 345,
+          "y": 315
+        },
+        {
+          "x": 345,
+          "y": 470
+        },
+        {
+          "x": 345,
+          "y": 625
+        },
+        {
+          "x": 345,
+          "y": 780
+        },
+        {
+          "x": 440,
+          "y": 160
+        },
+        {
+          "x": 440,
+          "y": 315
+        },
+        {
+          "x": 440,
+          "y": 470
+        },
+        {
+          "x": 440,
+          "y": 625
+        },
+        {
+          "x": 440,
+          "y": 780
+        },
+        {
+          "x": 535,
+          "y": 160
+        },
+        {
+          "x": 535,
+          "y": 315
+        },
+        {
+          "x": 535,
+          "y": 470
+        },
+        {
+          "x": 535,
+          "y": 625
+        },
+        {
+          "x": 535,
+          "y": 780
+        }
+      ],
+      "scenario": {
+        "version": 1,
+        "name": "The Road to Warsaw",
+        "width": 1200,
+        "height": 1000,
+        "duration": 850,
+        "combatEnabled": true,
+        "moraleEnabled": true,
+        "cavalryEnabled": true,
+        "artilleryEnabled": true,
+        "specialistsEnabled": true,
+        "commandersEnabled": true,
+        "aiEnabled": true,
+        "aiArmies": [
+          1
+        ],
+        "aiStrategies": {
+          "1": "all_out_attack"
+        },
+        "armyCommanders": [
+          {
+            "army": 0,
+            "commanderId": "tadeusz_kosciuszko",
+            "position": {
+              "x": 250,
+              "y": 500
+            }
+          },
+          {
+            "army": 1,
+            "commanderId": "alexander_suvorov",
+            "position": {
+              "x": 950,
+              "y": 470
+            }
+          }
+        ],
+        "terrain": {
+          "hills": [],
+          "forests": [
+            {
+              "x": 600,
+              "y": 210,
+              "radiusX": 150,
+              "radiusY": 100,
+              "density": 0.65
+            }
+          ],
+          "environment": {
+            "version": 1,
+            "roads": [
+              {
+                "id": "main",
+                "name": "Campaign road",
+                "points": [
+                  {
+                    "x": 80,
+                    "y": 470
+                  },
+                  {
+                    "x": 1120,
+                    "y": 470
+                  }
+                ],
+                "width": 12,
+                "surface": "mainRoad"
+              }
+            ],
+            "defences": [
+              {
+                "id": "warsaw-work",
+                "position": {
+                  "x": 350,
+                  "y": 470
+                },
+                "facing": 0,
+                "width": 240,
+                "depth": 3,
+                "protectionDepth": 50
+              }
+            ]
+          }
+        },
+        "units": [
+          {
+            "id": 100,
+            "army": 1,
+            "archetype": "russian_grenadiers",
+            "name": "Russian Grenadiers 100",
+            "position": {
+              "x": 800,
+              "y": 120
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 101,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 101",
+            "position": {
+              "x": 890,
+              "y": 120
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 102,
+            "army": 1,
+            "archetype": "prussian_line",
+            "name": "Prussian Line 102",
+            "position": {
+              "x": 980,
+              "y": 120
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 103,
+            "army": 1,
+            "archetype": "russian_grenadiers",
+            "name": "Russian Grenadiers 103",
+            "position": {
+              "x": 800,
+              "y": 290
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 104,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Artillery 104",
+            "position": {
+              "x": 890,
+              "y": 290
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 105,
+            "army": 1,
+            "archetype": "prussian_cuirassiers",
+            "name": "Prussian Cuirassiers 105",
+            "position": {
+              "x": 980,
+              "y": 290
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 106,
+            "army": 1,
+            "archetype": "russian_musketeers",
+            "name": "Russian Musketeers 106",
+            "position": {
+              "x": 800,
+              "y": 460
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 107,
+            "army": 1,
+            "archetype": "russian_cossacks",
+            "name": "Russian Cossacks 107",
+            "position": {
+              "x": 890,
+              "y": 460
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 108,
+            "army": 1,
+            "archetype": "artillery",
+            "name": "Artillery 108",
+            "position": {
+              "x": 980,
+              "y": 460
+            },
+            "facing": 3.141592653589793
+          },
+          {
+            "id": 109,
+            "army": 1,
+            "archetype": "prussian_grenadiers",
+            "name": "Prussian Grenadiers 109",
+            "position": {
+              "x": 800,
+              "y": 630
+            },
+            "facing": 3.141592653589793
+          }
+        ],
+        "mission": {
+          "objectives": [
+            {
+              "id": "primary",
+              "type": "delay",
+              "description": "Protect the Warsaw approach for 600 seconds or break the invasion.",
+              "position": {
+                "x": 250,
+                "y": 470
+              },
+              "radius": 90,
+              "duration": 600
+            }
+          ],
+          "directives": [
+            {
+              "unitId": 100,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 101,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 102,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 103,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 104,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 105,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 106,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 107,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 0,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 108,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 160,
+              "after": "attack",
+              "convoy": false
+            },
+            {
+              "unitId": 109,
+              "waypoints": [
+                {
+                  "x": 500,
+                  "y": 470
+                },
+                {
+                  "x": 250,
+                  "y": 470
+                }
+              ],
+              "arrival": 160,
+              "after": "attack",
+              "convoy": false
+            }
+          ],
+          "timeout": 850
+        }
+      },
+      "defensiveSlots": [
+        {
+          "x": 285,
+          "y": 430
+        },
+        {
+          "x": 285,
+          "y": 510
+        }
+      ]
+    }
+  ],
+  "startingCommanders": {
+    "0": "franciszek_ksawery_niesiolowski"
+  }
+}

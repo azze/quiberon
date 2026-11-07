@@ -1,0 +1,13 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Quiberon</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="scripts/simulation_adapter/**/*.cs" />
+    <ProjectReference Include="Simulation/Simulation.csproj" />
+  </ItemGroup>
+</Project>

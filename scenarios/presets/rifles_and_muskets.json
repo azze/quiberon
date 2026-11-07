@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "Rifles and Muskets",
+  "width": 1000,
+  "height": 600,
+  "blue": {
+    "infantry": 2,
+    "cavalry": 0,
+    "artillery": 0,
+    "specialists": {
+      "revolutionary_rifles": 3
+    }
+  },
+  "red": {
+    "infantry": 5,
+    "cavalry": 0,
+    "artillery": 0,
+    "specialists": {}
+  },
+  "seed": null,
+  "symmetric": false,
+  "max_per_type": 12,
+  "max_total": 48,
+  "ai_armies": [
+    1
+  ],
+  "placements": [],
+  "terrain_preset": "Mixed Terrain"
+}

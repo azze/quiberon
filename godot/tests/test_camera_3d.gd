@@ -1,0 +1,165 @@
+extends SceneTree
+const Frame = preload("res://scripts/battle_frame.gd")
+const World = preload("res://scripts/three_d/world_3d.gd")
+const Surface = preload("res://scripts/three_d/terrain_surface.gd")
+const Rig = preload("res://scripts/three_d/tactical_camera.gd")
+var failed := false
+var checks := 0
+func check(value: bool, message: String) -> void:
+    checks += 1
+    if not value:failed = true;push_error(message)
+func _initialize() -> void:run.call_deferred()
+func settle(rig: Rig, seconds: float = 2.0) -> void:
+    for _i in range(int(seconds * 120)):rig.advance(1.0 / 120)
+func run() -> void:
+    root.size = Vector2i(1200, 800)
+    check(World.ground(Vector2(10, 20), 8) == Vector3(10, 8, 20), "Coordinate mapping")
+    check(World.horizontal(Vector3(10, 8, 20)) == Vector2(10, 20), "Inverse mapping")
+    check((World.facing_basis(PI / 2) * Vector3.RIGHT).is_equal_approx(Vector3.BACK), "Positive Python quarter turn faces +Z")
+    check((World.facing_basis(PI) * Vector3.RIGHT).is_equal_approx(Vector3.LEFT), "Half turn")
+    var a := Frame.ShotState.new();a.position = Vector2(10, 20);a.height = 35;a.ground = 30
+    check(World.projectile(a, null, 0) == Vector3(10, 35, 20), "Absolute projectile height, not 65")
+    var model := Frame.TerrainData.new();model.size = Vector2(1000, 600)
+    var flat := Surface.new();flat.configure(model)
+    check(flat.height_at(Vector2(200, 100)) == 0, "Flat sampled surface")
+    check(flat.normal_at(Vector2(200, 100)) == Vector3.UP, "Flat normals")
+    var hit: Variant = flat.raycast(Vector3(200, 100, 200), Vector3.DOWN)
+    check(hit != null and hit.distance_to(Vector3(200, 0, 200)) < 0.001, "Vertical ray")
+    check(flat.raycast(Vector3(-5, 100, 200), Vector3.DOWN) == null, "Outside rays do not snap to a plane")
+    model.hills = [{"center": Vector2(500, 300), "radius": Vector2(90, 100), "height": 40.0, "compact": false}]
+    var hill := Surface.new();hill.configure(model)
+    check(absf(hill.height_at(Vector2(500, 300)) - 40) < 0.001, "Hill summit")
+    hit = hill.raycast(Vector3(500, 200, 300), Vector3.DOWN)
+    check(hit != null and absf(hit.y - 40) < 0.001, "Ray sees hill rather than zero plane")
+    var rig := Rig.new();root.add_child(rig);rig.configure(hill)
+    check(rig.camera.projection == Camera3D.PROJECTION_PERSPECTIVE, "Default perspective for physical dolly zoom")
+    rig.configure(flat);rig.span=200;rig.target_span=200;rig.update_pose()
+    var dolly_anchor:=Vector3(530,0,300)
+    var dolly_pixel:=rig.camera.unproject_position(dolly_anchor)
+    var original_eye:=rig.camera.position
+    var original_distance: float=original_eye.distance_to(dolly_anchor)
+    var original_fov: float=rig.camera.fov
+    rig.request_zoom(2,dolly_pixel)
+    check(rig.camera.position.distance_to(original_eye)<.001,"Wheel does not jump the camera before smoothing")
+    rig.advance(1./60)
+    check(rig.camera.position.distance_to(dolly_anchor)<original_distance and rig.span>rig.target_span,"Dolly starts moving smoothly towards the cursor")
+    settle(rig)
+    check(rig.camera.position.distance_to(dolly_anchor)<original_distance*.8 and rig.camera.position.y<original_eye.y,"Zoom physically approaches the ground and cursor target")
+    check(rig.camera.fov==original_fov,"Dolly keeps lens field of view fixed")
+    check(rig.camera.unproject_position(dolly_anchor).distance_to(dolly_pixel)<.5,"Dolly preserves the terrain point under the cursor")
+    rig.request_zoom(-2,dolly_pixel);settle(rig)
+    check(rig.camera.position.distance_to(original_eye)<.02,"Zooming out physically returns to the previous distance")
+    rig.toggle_overhead();settle(rig)
+    check(not rig.perspective,"Overhead can still provide an orthographic overview")
+    dolly_pixel=rig.camera.unproject_position(dolly_anchor)
+    var overhead_eye:=rig.camera.position
+    rig.request_zoom(1,dolly_pixel);settle(rig)
+    check(rig.perspective and rig.camera.position.y<overhead_eye.y,"Wheel from overhead also moves physically closer")
+    check(rig.camera.unproject_position(dolly_anchor).distance_to(dolly_pixel)<.5,"Overhead dolly retains cursor anchoring")
+    rig.toggle_overhead();settle(rig)
+    check(rig.perspective and absf(rig.pitch-deg_to_rad(55))<.001,"Overhead exit restores the angled perspective view")
+    rig.configure(hill)
+    var starting := rig.focus
+    for _i in range(120):rig.advance(1.0 / 120, Vector2(0, -1))
+    check(rig.focus.y < starting.y and absf(rig.focus.x - starting.x) < 0.01, "W forward at yaw zero")
+    rig.yaw = PI / 2;rig.target_yaw = rig.yaw;rig.focus = Vector2(500, 300);rig.target_focus = rig.focus;rig.velocity = Vector2.ZERO
+    for _i in range(120):rig.advance(1.0 / 120, Vector2(0, -1))
+    check(rig.focus.x < 500 and absf(rig.focus.y - 300) < 0.01, "W follows horizontal camera orientation")
+    # Actual projected cursor anchor on a hill; compare final screen position.
+    rig.yaw = 0;rig.target_yaw = 0;rig.pitch = deg_to_rad(55);rig.target_pitch = rig.pitch;rig.fit(true)
+    var anchor := World.ground(Vector2(570, 320), hill.height_at(Vector2(570, 320)))
+    var pixel := rig.camera.unproject_position(anchor)
+    rig.request_zoom(3, pixel);settle(rig)
+    check(rig.camera.unproject_position(anchor).distance_to(pixel) < 0.6, "Smooth zoom pins the cursor on elevated terrain")
+    var before := rig.focus
+    rig.begin_drag(pixel, false);rig.drag_to(pixel + Vector2(60, 25), Vector2(60, 25));rig.end_drag()
+    check(rig.focus.distance_to(before) > 10, "Ground dragging pans")
+    check(rig.camera.unproject_position(anchor).distance_to(pixel + Vector2(60, 25)) < 0.8, "Grabbed ground stays under the cursor")
+    # Equal ground-plane scale in orthographic/perspective, not only equal centre.
+    rig.configure(flat);rig.perspective=false;rig.span=200;rig.target_span=200;rig.update_pose()
+    var center:=Vector3(500,0,300);var side:=center+Vector3(10,0,0)
+    var separation: float=rig.camera.unproject_position(side).distance_to(rig.camera.unproject_position(center))
+    rig.toggle_projection()
+    check(absf(rig.camera.unproject_position(side).distance_to(rig.camera.unproject_position(center))-separation)<.01,"Projection switch preserves focal-plane scale")
+    rig.fit(true)
+    var rect:=rig.camera.get_viewport().get_visible_rect()
+    var corners_inside:=true
+    for x in [0.,flat.size.x]:
+        for z in [0.,flat.size.y]:
+            if not rect.has_point(rig.camera.unproject_position(Vector3(x,0,z))):corners_inside=false
+    check(corners_inside,"Perspective overview includes near and far corners")
+    rig.toggle_projection();rig.configure(hill)
+    var old_focus := rig.focus;var old_pitch := rig.target_pitch;var old_span := rig.target_span
+    rig.toggle_overhead();settle(rig)
+    check(rig.pitch > deg_to_rad(85) and rig.focus.distance_to(old_focus) < 0.1, "Overhead around current focal point")
+    rig.toggle_overhead();settle(rig)
+    check(absf(rig.pitch - old_pitch) < 0.001 and absf(rig.span - old_span) < 0.1, "Restore angled view/scale")
+    rig.perspective=false;rig.update_pose()
+    var screen := rig.camera.unproject_position(World.ground(rig.focus, hill.height_at(rig.focus)))
+    rig.toggle_projection()
+    check(rig.perspective and rig.camera.unproject_position(World.ground(rig.focus, hill.height_at(rig.focus))).distance_to(screen) < 0.1, "Projection preserves focus")
+    anchor = World.ground(rig.focus + Vector2(15, 0), hill.height_at(rig.focus + Vector2(15, 0)))
+    pixel = rig.camera.unproject_position(anchor);rig.request_zoom(2, pixel);settle(rig)
+    check(rig.camera.unproject_position(anchor).distance_to(pixel) < 0.8, "Perspective terrain-aware cursor zoom")
+    rig.target_pitch = -100;settle(rig)
+    check(rig.pitch >= deg_to_rad(rig.settings.minimum_pitch) - 0.001, "Lower pitch limit")
+    rig.target_pitch = 100;settle(rig)
+    check(rig.pitch <= deg_to_rad(88) + 0.001, "Upper pitch limit")
+    check(rig.camera.position.y >= hill.height_at(World.horizontal(rig.camera.position)) + rig.settings.terrain_clearance - 0.001, "Camera stays above terrain")
+    rig.follow_id = 3;rig.advance(0.1, Vector2.ZERO, 0, false, Vector2(250, 250))
+    check(rig.target_focus == Vector2(250, 250), "Follow target")
+    var fixed_point:=Vector2(250,250)
+    for _i in range(240):rig.advance(1./120,Vector2.ZERO,0,false,fixed_point)
+    var anchor_follow:=World.ground(fixed_point, hill.height_at(fixed_point))
+    var follow_pixel:=rig.camera.unproject_position(anchor_follow)
+    rig.request_zoom(1,follow_pixel)
+    for _i in range(240):rig.advance(1./120,Vector2.ZERO,0,false,fixed_point)
+    var settled_focus:=rig.focus
+    for _i in range(120):rig.advance(1./120,Vector2.ZERO,0,false,fixed_point)
+    check(rig.focus.distance_to(settled_focus)<.02 and rig.follow_id==3,"Zoom while following settles without fighting the focus")
+    rig.advance(0.1, Vector2(1, 0), 0, false, Vector2(250, 250))
+    check(rig.follow_id == -1, "Manual movement interrupts follow")
+    rig.follow_id = 3;rig.advance(0.1)
+    check(rig.follow_id == -1, "Missing follow target ends safely")
+    rig.focus_on(Vector2(400, 200));settle(rig)
+    check(rig.focus.distance_to(Vector2(400, 200)) < 0.02, "Smooth focus")
+    for _i in range(1000):rig.advance(0.02, Vector2(1, 1), 0, true)
+    check(rig.focus.x <= hill.size.x + rig.margin + 0.001 and rig.focus.y <= hill.size.y + rig.margin + 0.001, "Bounded pan without target overshoot")
+    rig.request_zoom(-100, Vector2(-1000, -1000));settle(rig)
+    check(rig.span <= rig.max_span + 0.01, "Zoom out bound / sky fallback")
+    rig.request_zoom(100, Vector2(-1000, -1000));settle(rig)
+    check(rig.span >= rig.settings.minimum_zoom - 0.01, "Close zoom bound")
+    # Same real-time inputs, very different render rates, independent of replay.
+    var final: Array = []
+    for hz in [20, 144]:
+        rig.configure(flat);rig.span=150;rig.target_span=150
+        for _i in range(hz * 2):rig.advance(1.0 / hz, Vector2(0.6, -1), 0.2)
+        final.append(rig.focus)
+    check(final[0].distance_to(final[1]) < 1.0, "Camera integration consistent at 20/144 FPS")
+    var large_model := Frame.TerrainData.new();large_model.size = Vector2(4800, 3000)
+    var large := Surface.new();large.configure(large_model)
+    check(large.heights.size() <= 201000, "Large-map mesh budget")
+    rig.configure(large);check(rig.target_span > 1000, "Fit scales with map size")
+    for projection in [false,true]:
+        for degrees in [30.,55.,87.]:
+            rig.configure(hill);rig.perspective=projection;rig.pitch=deg_to_rad(degrees);rig.target_pitch=rig.pitch;rig.span=250;rig.target_span=250;rig.update_pose()
+            var actual:=World.ground(Vector2(570,320),hill.height_at(Vector2(570,320)))
+            var cursor:=rig.camera.unproject_position(actual);rig.request_zoom(2,cursor);settle(rig)
+            check(rig.camera.unproject_position(actual).distance_to(cursor)<1.,"Cursor zoom across pitch/projection: "+str(degrees)+" / "+str(projection))
+    rig.configure(hill);rig.focus=Vector2(970,580);rig.target_focus=rig.focus;rig.span=80;rig.target_span=80;rig.update_pose()
+    var edge:=World.ground(Vector2(990,590),hill.height_at(Vector2(990,590)))
+    var edge_pixel:=rig.camera.unproject_position(edge);rig.request_zoom(3,edge_pixel);settle(rig)
+    check(rig.camera.unproject_position(edge).distance_to(edge_pixel)<1.,"Cursor zoom near battlefield edge")
+    var pivot:=rig.focus
+    rig.begin_drag(edge_pixel,true);rig.drag_to(edge_pixel+Vector2(30,-10),Vector2(30,-10));rig.end_drag();settle(rig)
+    check(rig.focus.distance_to(pivot)<.01 and absf(rig.yaw)>.1,"Alt orbit rotates around current focus")
+    rig.fit_mode=false;rig.request_zoom(1,Vector2(400,300));rig.begin_drag(Vector2(400,300),false)
+    var saved:=rig.focus;root.size=Vector2i(960,640);rig.viewport_resized()
+    check(rig.focus==saved and not rig.dragging and rig.zoom_anchor==null,"Resize preserves free focus and clears stale anchors")
+    for sensitivity in [.5,1.5]:
+        rig.configure(flat);rig.span=200;rig.target_span=200;rig.settings.mouse_pan_sensitivity=sensitivity;rig.update_pose()
+        var anchor_s:=Vector3(500,0,300);var mouse_s:=rig.camera.unproject_position(anchor_s)
+        rig.begin_drag(mouse_s,false);rig.drag_to(mouse_s+Vector2(20,0),Vector2(20,0));rig.end_drag()
+        check(rig.camera.unproject_position(anchor_s).distance_to(mouse_s+Vector2(20*sensitivity,0))<.5,"Ground drag sensitivity is linear and stable: "+str(sensitivity))
+    rig.queue_free();await process_frame
+    print("3D camera checks: %d, failed: %s" % [checks, failed]);quit(1 if failed else 0)

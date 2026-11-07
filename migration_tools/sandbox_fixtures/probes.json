@@ -1,0 +1,4565 @@
+[
+  {
+    "input": {
+      "version": 1,
+      "name": "rolling_volley-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rolling_volley"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "rolling_volley-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rolling_volley"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "rolling_volley-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rolling_volley"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "swift_reform-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "swift_reform"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 5.0925,
+      "manoeuvre": 0.7212800000000001,
+      "recovery": 1.3770000000000002,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "swift_reform-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "swift_reform"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 4.54125,
+      "manoeuvre": 0.6697600000000001,
+      "recovery": 1.4715000000000003,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "swift_reform-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "swift_reform"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 4.4624999999999995,
+      "manoeuvre": 0.6624000000000001,
+      "recovery": 1.4850000000000003,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "rallying_presence-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rallying_presence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0.3
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "rallying_presence-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rallying_presence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0.3
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "rallying_presence-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "rallying_presence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0.3
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "controlled_charge-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "controlled_charge"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "controlled_charge-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "controlled_charge"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "controlled_charge-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "controlled_charge"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "relentless_pursuit-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "relentless_pursuit"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.344,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "relentless_pursuit-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "relentless_pursuit"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.344,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "relentless_pursuit-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "relentless_pursuit"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.344,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "shock_commander-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "shock_commander-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "shock_commander-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Cavalry 1",
+          "archetype": "cavalry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "pursuit_specialist",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.12,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "woodland_ambush-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "woodland_ambush"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "woodland_ambush-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "woodland_ambush"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "woodland_ambush-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "woodland_ambush"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "harassing_fire-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "harassing_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "harassing_fire-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "harassing_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "harassing_fire-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "haudenosaunee_skirmishers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "harassing_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "steadfast_defence-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "steadfast_defence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "steadfast_defence-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "steadfast_defence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 0.8,
+      "defence": 0.8,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "steadfast_defence-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "steadfast_defence"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 0.8,
+      "defence": 0.8,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "mobile_battery-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "mobile_battery"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 0.66,
+      "scatter": 0.88,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "mobile_battery-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "mobile_battery"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 0.66,
+      "scatter": 0.88,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "mobile_battery-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "mobile_battery"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 0.66,
+      "scatter": 0.88,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "calculated_fire-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "calculated_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.1,
+      "scatter": 0.5720000000000001,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "calculated_fire-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "calculated_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.1,
+      "scatter": 0.5720000000000001,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "calculated_fire-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Battery 1",
+          "archetype": "artillery",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "artillerist",
+            "upgrades": [
+              "calculated_fire"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 7.0,
+      "manoeuvre": 0.92,
+      "recovery": 1.0,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.1,
+      "scatter": 0.5720000000000001,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "inspired_attack-50",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "inspired_attack"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 50,
+    "action": "factors",
+    "expected": {
+      "formation": 6.79,
+      "manoeuvre": 0.9016000000000001,
+      "recovery": 1.02,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "inspired_attack-85",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "inspired_attack"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 85,
+    "action": "factors",
+    "expected": {
+      "formation": 6.055,
+      "manoeuvre": 0.8372,
+      "recovery": 1.09,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "inspired_attack-100",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Line 1",
+          "archetype": "infantry",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": [
+              "inspired_attack"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 350,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster",
+            "upgrades": []
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      }
+    },
+    "cohesion": 100,
+    "action": "factors",
+    "expected": {
+      "formation": 5.95,
+      "manoeuvre": 0.8280000000000001,
+      "recovery": 1.1,
+      "shock": 1.0,
+      "defence": 1.0,
+      "redeploy": 1.0,
+      "scatter": 1.0,
+      "pursuit": 1.0,
+      "chargeShock": 1.0,
+      "aura": 0
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-0-0.2",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.2,
+    "action": "impact",
+    "expected": {
+      "strength": 237,
+      "morale": 81.8925,
+      "cohesion": 96.903,
+      "attackerCohesion": 100.0,
+      "cooldown": 20.0,
+      "lastMomentum": 0.2
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-0-0.7",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.7,
+    "action": "impact",
+    "expected": {
+      "strength": 230,
+      "morale": 70.88102666666667,
+      "cohesion": 88.22710933333333,
+      "attackerCohesion": 97.9,
+      "cooldown": 20.0,
+      "lastMomentum": 0.7
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-0-1",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 1,
+    "action": "impact",
+    "expected": {
+      "strength": 225,
+      "morale": 64.54729999999999,
+      "cohesion": 82.79468,
+      "attackerCohesion": 97.0,
+      "cooldown": 20.0,
+      "lastMomentum": 1
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-1.5707963267948966-0.2",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 1.5707963267948966,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.2,
+    "action": "impact",
+    "expected": {
+      "strength": 238,
+      "morale": 82.64833333333333,
+      "cohesion": 97.57066666666667,
+      "attackerCohesion": 100.0,
+      "cooldown": 20.0,
+      "lastMomentum": 0.2
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-1.5707963267948966-0.7",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 1.5707963267948966,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.7,
+    "action": "impact",
+    "expected": {
+      "strength": 232,
+      "morale": 73.57781333333334,
+      "cohesion": 89.97723466666667,
+      "attackerCohesion": 97.9,
+      "cooldown": 20.0,
+      "lastMomentum": 0.7
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-1.5707963267948966-1",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 1.5707963267948966,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 1,
+    "action": "impact",
+    "expected": {
+      "strength": 228,
+      "morale": 68.4564,
+      "cohesion": 85.37224,
+      "attackerCohesion": 97.0,
+      "cooldown": 20.0,
+      "lastMomentum": 1
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-3.141592653589793-0.2",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.2,
+    "action": "impact",
+    "expected": {
+      "strength": 239,
+      "morale": 83.40416666666667,
+      "cohesion": 98.23833333333333,
+      "attackerCohesion": 100.0,
+      "cooldown": 20.0,
+      "lastMomentum": 0.2
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-3.141592653589793-0.7",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 0.7,
+    "action": "impact",
+    "expected": {
+      "strength": 234,
+      "morale": 78.425,
+      "cohesion": 92.48,
+      "attackerCohesion": 100.0,
+      "cooldown": 20.0,
+      "lastMomentum": 0.7
+    }
+  },
+  {
+    "input": {
+      "version": 1,
+      "name": "bayonet-3.141592653589793-1",
+      "seed": 17,
+      "combatEnabled": true,
+      "width": 1400,
+      "height": 800,
+      "duration": 900,
+      "sampleTicks": [
+        0,
+        1,
+        10,
+        50,
+        100,
+        200,
+        400,
+        700
+      ],
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "name": "Blue Infantry 1",
+          "archetype": "royal_grenadiers",
+          "position": {
+            "x": 300,
+            "y": 300
+          },
+          "facing": 0.0,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-0",
+            "name": "Test Officer 0",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "firebrand",
+            "upgrades": [
+              "shock_commander"
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "army": 1,
+          "name": "Red Line 2",
+          "archetype": "infantry",
+          "position": {
+            "x": 330,
+            "y": 300
+          },
+          "facing": 3.141592653589793,
+          "cohesion": 100.0,
+          "commander": {
+            "id": "officer-1",
+            "name": "Test Officer 1",
+            "rank": "Major",
+            "background": "Generic",
+            "personality": "methodical",
+            "specialization": "drillmaster"
+          }
+        }
+      ],
+      "commands": [],
+      "terrain": null,
+      "moraleEnabled": true,
+      "cavalryEnabled": true,
+      "artilleryEnabled": true,
+      "specialistsEnabled": true,
+      "aiEnabled": false,
+      "commandersEnabled": true,
+      "commanderSeed": 1729,
+      "aiArmies": [
+        0,
+        1
+      ],
+      "aiStrategies": {
+        "0": "balanced",
+        "1": "balanced"
+      },
+      "randomDraws": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "momentum": 1,
+    "action": "impact",
+    "expected": {
+      "strength": 231,
+      "morale": 75.4375,
+      "cohesion": 89.025,
+      "attackerCohesion": 100.0,
+      "cooldown": 20.0,
+      "lastMomentum": 1
+    }
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "name": "Multiple Cavalry Pursuit",
+  "seed": 17,
+  "combatEnabled": true,
+  "width": 1400,
+  "height": 800,
+  "duration": 60,
+  "sampleTicks": [
+    0,
+    1,
+    2,
+    10,
+    20,
+    21,
+    50,
+    100,
+    600
+  ],
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Blue Cavalry 1",
+      "archetype": "cavalry",
+      "position": {
+        "x": 400,
+        "y": 295
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Blue Cavalry 2",
+      "archetype": "cavalry",
+      "position": {
+        "x": 400,
+        "y": 305
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 2,
+      "army": 1,
+      "name": "Red Line 3",
+      "archetype": "infantry",
+      "position": {
+        "x": 470,
+        "y": 300
+      },
+      "facing": 0,
+      "cohesion": 30,
+      "state": "routing",
+      "morale": 10,
+      "strength": 200
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "name": "Blue Line 4",
+      "archetype": "infantry",
+      "position": {
+        "x": 120,
+        "y": 650
+      },
+      "facing": 0.0,
+      "cohesion": 100.0
+    },
+    {
+      "id": 4,
+      "army": 1,
+      "name": "Red Line 5",
+      "archetype": "infantry",
+      "position": {
+        "x": 1250,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "cohesion": 100.0
+    }
+  ],
+  "commands": [
+    {
+      "tick": 0,
+      "regimentId": 0,
+      "order": {
+        "kind": "charge",
+        "targetId": 2
+      }
+    },
+    {
+      "tick": 0,
+      "regimentId": 1,
+      "order": {
+        "kind": "charge",
+        "targetId": 2
+      }
+    }
+  ],
+  "terrain": null,
+  "moraleEnabled": true,
+  "cavalryEnabled": true
+}

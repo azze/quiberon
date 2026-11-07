@@ -1,0 +1,929 @@
+{
+  "name": "destination-conflict",
+  "snapshots": [
+    {
+      "tick": 0,
+      "time": 0.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 220,
+            "y": 300
+          },
+          "facing": 0.0,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0,
+          "speed": 0.0,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "order": {
+            "kind": "hold",
+            "destination": null,
+            "facing": null
+          },
+          "movementState": "holding",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 220,
+            "y": 390
+          },
+          "facing": 0.0,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0,
+          "speed": 0.0,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "order": {
+            "kind": "hold",
+            "destination": null,
+            "facing": null
+          },
+          "movementState": "holding",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 1,
+      "time": 0.1,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 220.20573817746524,
+            "y": 300.00869761387537
+          },
+          "facing": 0.04225000000000001,
+          "formation": "line",
+          "cohesion": 99.98465,
+          "fatigue": 0.0025000000000000005,
+          "speed": 2.059219418950932,
+          "velocity": {
+            "x": 2.057381774652356,
+            "y": 0.08697613875369825
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 220.2035481167532,
+            "y": 389.9913949712864
+          },
+          "facing": -0.04225000000000001,
+          "formation": "line",
+          "cohesion": 99.98465,
+          "fatigue": 0.0025000000000000005,
+          "speed": 2.0372992503051965,
+          "velocity": {
+            "x": 2.0354811675321116,
+            "y": -0.08605028713589036
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 10,
+      "time": 1.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 222.0612248040159,
+            "y": 300.3353543246004
+          },
+          "facing": 0.1977690479544134,
+          "formation": "line",
+          "cohesion": 99.9813385712274,
+          "fatigue": 0.02500000000000001,
+          "speed": 2.0998582499999996,
+          "velocity": {
+            "x": 2.0589264696209852,
+            "y": 0.4125850976311085
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 222.04272400415104,
+            "y": 389.6136357280044
+          },
+          "facing": -0.24556963246418329,
+          "formation": "line",
+          "cohesion": 99.95265822052153,
+          "fatigue": 0.02500000000000001,
+          "speed": 2.0998582499999996,
+          "velocity": {
+            "x": 2.0368604018594283,
+            "y": -0.510494244267079
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 30,
+      "time": 3.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 226.1787534404484,
+            "y": 301.16045953332315
+          },
+          "facing": 0.1977690479544134,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.07500000000000005,
+          "speed": 2.0995432499999995,
+          "velocity": {
+            "x": 2.058617609802411,
+            "y": 0.4125232056890127
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 226.1161239807009,
+            "y": 388.59272764774164
+          },
+          "facing": -0.24556963246418417,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.07500000000000005,
+          "speed": 2.0995432499999995,
+          "velocity": {
+            "x": 2.0365548521746746,
+            "y": -0.5104176649609826
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 70,
+      "time": 7.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 234.4119575544025,
+            "y": 302.8102985991145
+          },
+          "facing": 0.19776904795441386,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.17500000000000013,
+          "speed": 2.09891325,
+          "velocity": {
+            "x": 2.057999890165547,
+            "y": 0.4123994218042526
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 234.26109063569143,
+            "y": 386.55137096305
+          },
+          "facing": -0.24556963246418373,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.17500000000000013,
+          "speed": 2.09891325,
+          "velocity": {
+            "x": 2.035943752804883,
+            "y": -0.5102645063499267
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 80,
+      "time": 8.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 236.46987250811793,
+            "y": 303.2226810006344
+          },
+          "facing": 0.1977690479544134,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.20000000000000015,
+          "speed": 2.0987557499999996,
+          "velocity": {
+            "x": 2.05784546025626,
+            "y": 0.41236847583263625
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 236.296950362333,
+            "y": 386.0411275160092
+          },
+          "facing": -0.24556963246418329,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.20000000000000015,
+          "speed": 2.0987557499999996,
+          "velocity": {
+            "x": 2.035790977962506,
+            "y": -0.5102262166968785
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 100,
+      "time": 10.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 240.58523912582103,
+            "y": 304.0473529657607
+          },
+          "facing": 0.1977690479544134,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.25000000000000017,
+          "speed": 2.0984407499999995,
+          "velocity": {
+            "x": 2.057536600437686,
+            "y": 0.4123065838905404
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 240.36821149108874,
+            "y": 385.02075549088653
+          },
+          "facing": -0.24556963246418373,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.25000000000000017,
+          "speed": 2.0984407499999995,
+          "velocity": {
+            "x": 2.035485428277468,
+            "y": -0.5101496373913506
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 200,
+      "time": 20.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 261.15280641978217,
+            "y": 308.1688560331216
+          },
+          "facing": 0.19776904795441386,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.5000000000000003,
+          "speed": 2.0968657499999996,
+          "velocity": {
+            "x": 2.0559923013451,
+            "y": 0.4119971241789244
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 260.7153506443212,
+            "y": 379.92119274444497
+          },
+          "facing": -0.24556963246418373,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 0.5000000000000003,
+          "speed": 2.0968657499999996,
+          "velocity": {
+            "x": 2.0339576798534154,
+            "y": -0.5097667408625739
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 400,
+      "time": 40.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 302.1033976073276,
+            "y": 316.37488180065435
+          },
+          "facing": 0.19776904795441386,
+          "formation": "line",
+          "cohesion": 99.63387835720945,
+          "fatigue": 0.9999999999999897,
+          "speed": 2.0659646174528548,
+          "velocity": {
+            "x": 2.0256935134426612,
+            "y": 0.40592559683204854
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.12463035258610944,
+          "congestionSpeed": 0.9866145030373288,
+          "congestionLoss": 0.07138931713424654,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 301.2270633515772,
+            "y": 369.76782330215434
+          },
+          "facing": -0.24556963246418506,
+          "formation": "line",
+          "cohesion": 99.63387835720945,
+          "fatigue": 0.9999999999999897,
+          "speed": 2.0659646174528548,
+          "velocity": {
+            "x": 2.0039836121952703,
+            "y": -0.5022544003003304
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.12463035258610944,
+          "congestionSpeed": 0.9866145030373288,
+          "congestionLoss": 0.07138931713424654,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 700,
+      "time": 70.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 361.82563399678327,
+            "y": 328.34252857923383
+          },
+          "facing": 0.19776904795441697,
+          "formation": "line",
+          "cohesion": 94.94941734122668,
+          "fatigue": 1.7499999999999738,
+          "speed": 2.0037730922442853,
+          "velocity": {
+            "x": 1.964714265229759,
+            "y": 0.39370605939438974
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.3802855782192675,
+          "congestionSpeed": 0.9591567275019549,
+          "congestionLoss": 0.21783078665624048,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 360.30924049924926,
+            "y": 354.960175539394
+          },
+          "facing": -0.24556963246418373,
+          "formation": "line",
+          "cohesion": 94.94941734122668,
+          "fatigue": 1.7499999999999738,
+          "speed": 2.0037730922442853,
+          "velocity": {
+            "x": 1.9436578949574823,
+            "y": -0.48713508657442617
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "moving",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.3802855782192675,
+          "congestionSpeed": 0.9591567275019549,
+          "congestionLoss": 0.21783078665624048,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    },
+    {
+      "tick": 1800,
+      "time": 180.0,
+      "units": [
+        {
+          "id": 0,
+          "army": 0,
+          "position": {
+            "x": 419.0388323573812,
+            "y": 339.80739309950064
+          },
+          "facing": 0.0,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 2.539999999999957,
+          "speed": 0.0,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "arrived",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": null,
+          "positionPreference": null,
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        },
+        {
+          "id": 1,
+          "army": 0,
+          "position": {
+            "x": 479.1487695132027,
+            "y": 341.97126681602447
+          },
+          "facing": 0.0,
+          "formation": "line",
+          "cohesion": 100.0,
+          "fatigue": 3.3149999999999404,
+          "speed": 0.0,
+          "velocity": {
+            "x": 0,
+            "y": 0
+          },
+          "order": {
+            "kind": "move",
+            "destination": {
+              "x": 420,
+              "y": 340
+            },
+            "facing": 0
+          },
+          "movementState": "holding",
+          "transitionLeft": 0.0,
+          "nextFormation": null,
+          "settlingGoal": {
+            "x": 480.1280070278868,
+            "y": 341.9729418371065
+          },
+          "positionPreference": {
+            "x": 420,
+            "y": 340
+          },
+          "congestion": 0.0,
+          "congestionSpeed": 1.0,
+          "congestionLoss": 0.0,
+          "terrainSpeed": 1.0,
+          "terrainLoss": 0.0,
+          "forestCover": 0.0,
+          "groundSlope": 0.0,
+          "limberLeft": 0.0,
+          "setupLeft": 0.0
+        }
+      ]
+    }
+  ]
+}

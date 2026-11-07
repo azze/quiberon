@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "seed": 1796,
+  "width": 1100,
+  "height": 850,
+  "duration": 70,
+  "sampleTicks": [
+    0,
+    100,
+    600,
+    1800,
+    6000
+  ],
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "commandersEnabled": true,
+  "aiEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "balanced"
+  },
+  "name": "Commonwealth roster performance 36",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 400,
+        "y": 70
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-franciszek_ksawery_niesiolowski",
+        "definitionId": "franciszek_ksawery_niesiolowski",
+        "name": "Franciszek Ksawery Niesiołowski",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "methodical",
+        "specialization": "steady_volley",
+        "biography": "Stationary infantry in line gain up to 18% volley accuracy as cohesion rises from 60 to 90.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 400,
+        "y": 145
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-1",
+        "name": "Laboratory Officer 2",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "archetype": "revolutionary_rifles",
+      "name": "Experimental Rifle Corps",
+      "position": {
+        "x": 400,
+        "y": 220
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-2",
+        "name": "Laboratory Officer 3",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 400,
+        "y": 295
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-edward_marcus_despard",
+        "definitionId": "edward_marcus_despard",
+        "name": "Edward Marcus Despard",
+        "background": "Revolutionary Britain",
+        "personality": "stalwart",
+        "specialization": "improvised_defences",
+        "biography": "Prepared cohesive defenders take 12% less shock; artillery limber and deployment time −15%.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 4,
+      "army": 0,
+      "archetype": "haudenosaunee_skirmishers",
+      "name": "War Party",
+      "position": {
+        "x": 400,
+        "y": 370
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-4",
+        "name": "Laboratory Officer 5",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 5,
+      "army": 0,
+      "archetype": "commonwealth_uhlans",
+      "name": "Advance Guard Lancers",
+      "position": {
+        "x": 400,
+        "y": 445
+      },
+      "facing": 0,
+      "commander": {
+        "id": "historical-antoni_madalinski",
+        "definitionId": "antoni_madalinski",
+        "name": "Antoni Madaliński",
+        "background": "Polish-Lithuanian Commonwealth",
+        "personality": "aggressive",
+        "specialization": "relentless_pursuit_signature",
+        "biography": "Moving pursuit +22%, contact gap +12%, pursuit disorder −20%; steady frontal combat −10%.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 6,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 400,
+        "y": 520
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-6",
+        "name": "Laboratory Officer 7",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 7,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 400,
+        "y": 595
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-7",
+        "name": "Laboratory Officer 8",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 8,
+      "army": 0,
+      "archetype": "revolutionary_rifles",
+      "name": "Experimental Rifle Corps",
+      "position": {
+        "x": 400,
+        "y": 670
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-8",
+        "name": "Laboratory Officer 9",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 9,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 400,
+        "y": 745
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-9",
+        "name": "Laboratory Officer 10",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 10,
+      "army": 0,
+      "archetype": "haudenosaunee_skirmishers",
+      "name": "War Party",
+      "position": {
+        "x": 310,
+        "y": 70
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-10",
+        "name": "Laboratory Officer 11",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 11,
+      "army": 0,
+      "archetype": "commonwealth_uhlans",
+      "name": "Advance Guard Lancers",
+      "position": {
+        "x": 310,
+        "y": 145
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-11",
+        "name": "Laboratory Officer 12",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 12,
+      "army": 0,
+      "archetype": "commonwealth_regulars",
+      "name": "Commonwealth Regular Infantry",
+      "position": {
+        "x": 310,
+        "y": 220
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-12",
+        "name": "Laboratory Officer 13",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 13,
+      "army": 0,
+      "archetype": "commonwealth_militia",
+      "name": "Citizen Militia",
+      "position": {
+        "x": 310,
+        "y": 295
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-13",
+        "name": "Laboratory Officer 14",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 14,
+      "army": 0,
+      "archetype": "revolutionary_rifles",
+      "name": "Experimental Rifle Corps",
+      "position": {
+        "x": 310,
+        "y": 370
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-14",
+        "name": "Laboratory Officer 15",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 15,
+      "army": 0,
+      "archetype": "commonwealth_field_artillery",
+      "name": "Commonwealth Field Artillery",
+      "position": {
+        "x": 310,
+        "y": 445
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-15",
+        "name": "Laboratory Officer 16",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 16,
+      "army": 0,
+      "archetype": "haudenosaunee_skirmishers",
+      "name": "War Party",
+      "position": {
+        "x": 310,
+        "y": 520
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-16",
+        "name": "Laboratory Officer 17",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 17,
+      "army": 0,
+      "archetype": "commonwealth_uhlans",
+      "name": "Advance Guard Lancers",
+      "position": {
+        "x": 310,
+        "y": 595
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-officer-17",
+        "name": "Laboratory Officer 18",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 18,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 720,
+        "y": 70
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-18",
+        "name": "Laboratory Officer 19",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 19,
+      "army": 1,
+      "archetype": "russian_grenadiers",
+      "name": "Russian Grenadiers",
+      "position": {
+        "x": 720,
+        "y": 145
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "historical-pyotr_bagration",
+        "definitionId": "pyotr_bagration",
+        "name": "Pyotr Bagration",
+        "background": "Russia",
+        "personality": "aggressive",
+        "specialization": "vanguard_assault",
+        "biography": "Infantry attack/advance speed +8%, manoeuvre disorder −12%, moving charge shock +8%.",
+        "nation": "Georgian"
+      }
+    },
+    {
+      "id": 20,
+      "army": 1,
+      "archetype": "russian_musketeers",
+      "name": "Russian Musketeers",
+      "position": {
+        "x": 720,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-20",
+        "name": "Laboratory Officer 21",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 21,
+      "army": 1,
+      "archetype": "artillery",
+      "name": "Standard Field Artillery",
+      "position": {
+        "x": 720,
+        "y": 295
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-21",
+        "name": "Laboratory Officer 22",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 22,
+      "army": 1,
+      "archetype": "russian_cossacks",
+      "name": "Russian Cossacks",
+      "position": {
+        "x": 720,
+        "y": 370
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-22",
+        "name": "Laboratory Officer 23",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 23,
+      "army": 1,
+      "archetype": "prussian_cuirassiers",
+      "name": "Prussian Cuirassiers",
+      "position": {
+        "x": 720,
+        "y": 445
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "historical-gebhard_leberecht_von_blucher",
+        "definitionId": "gebhard_leberecht_von_blucher",
+        "name": "Gebhard Leberecht von Blücher",
+        "background": "Prussia",
+        "personality": "aggressive",
+        "specialization": "vorwarts",
+        "biography": "Aggressive common AI policy; exposed charge shock +15%, but charging adds 0.10 fatigue/s and up to 2 cohesion loss on impact.",
+        "nation": ""
+      }
+    },
+    {
+      "id": 24,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 720,
+        "y": 520
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-24",
+        "name": "Laboratory Officer 25",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 25,
+      "army": 1,
+      "archetype": "russian_grenadiers",
+      "name": "Russian Grenadiers",
+      "position": {
+        "x": 720,
+        "y": 595
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-25",
+        "name": "Laboratory Officer 26",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 26,
+      "army": 1,
+      "archetype": "russian_musketeers",
+      "name": "Russian Musketeers",
+      "position": {
+        "x": 720,
+        "y": 670
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-26",
+        "name": "Laboratory Officer 27",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 27,
+      "army": 1,
+      "archetype": "artillery",
+      "name": "Standard Field Artillery",
+      "position": {
+        "x": 720,
+        "y": 745
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-27",
+        "name": "Laboratory Officer 28",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 28,
+      "army": 1,
+      "archetype": "russian_cossacks",
+      "name": "Russian Cossacks",
+      "position": {
+        "x": 810,
+        "y": 70
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-28",
+        "name": "Laboratory Officer 29",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 29,
+      "army": 1,
+      "archetype": "prussian_cuirassiers",
+      "name": "Prussian Cuirassiers",
+      "position": {
+        "x": 810,
+        "y": 145
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-29",
+        "name": "Laboratory Officer 30",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 30,
+      "army": 1,
+      "archetype": "prussian_line",
+      "name": "Musketeers",
+      "position": {
+        "x": 810,
+        "y": 220
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-30",
+        "name": "Laboratory Officer 31",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 31,
+      "army": 1,
+      "archetype": "russian_grenadiers",
+      "name": "Russian Grenadiers",
+      "position": {
+        "x": 810,
+        "y": 295
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-31",
+        "name": "Laboratory Officer 32",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 32,
+      "army": 1,
+      "archetype": "russian_musketeers",
+      "name": "Russian Musketeers",
+      "position": {
+        "x": 810,
+        "y": 370
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-32",
+        "name": "Laboratory Officer 33",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 33,
+      "army": 1,
+      "archetype": "artillery",
+      "name": "Standard Field Artillery",
+      "position": {
+        "x": 810,
+        "y": 445
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-33",
+        "name": "Laboratory Officer 34",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 34,
+      "army": 1,
+      "archetype": "russian_cossacks",
+      "name": "Russian Cossacks",
+      "position": {
+        "x": 810,
+        "y": 520
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-34",
+        "name": "Laboratory Officer 35",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 35,
+      "army": 1,
+      "archetype": "prussian_cuirassiers",
+      "name": "Prussian Cuirassiers",
+      "position": {
+        "x": 810,
+        "y": 595
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-officer-35",
+        "name": "Laboratory Officer 36",
+        "personality": "methodical",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "armyCommanders": [
+    {
+      "army": 0,
+      "commanderId": "tadeusz_kosciuszko"
+    },
+    {
+      "army": 1,
+      "commanderId": "alexander_suvorov"
+    }
+  ]
+}
