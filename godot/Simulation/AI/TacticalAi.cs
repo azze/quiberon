@@ -2,7 +2,7 @@ using System.Diagnostics;
 namespace Quiberon.Simulation;
 
 /// <summary>Python army_plan/commander_ai/skirmish_destination, no scene-tree input.</summary>
-public sealed class TacticalAi(BattleSimulation battle)
+public sealed partial class TacticalAi(BattleSimulation battle)
 {
     public SortedDictionary<int,string> Armies { get; }=new();
     public Dictionary<int,Vec2> Anchors { get; }=battle.Units.ToDictionary(u=>u.Id,u=>u.Position);
@@ -12,6 +12,7 @@ public sealed class TacticalAi(BattleSimulation battle)
     private Vec2 Clamp(Regiment u,Vec2 point){double r=u.Rect.Radius+1;return new(Math.Clamp(point.X,r,battle.Rules.Width-r),Math.Clamp(point.Y,r,battle.Rules.Height-r));}
     public void ConfigureArmy(int army,string? strategy)
     {
+        Director.Invalidate(army);
         if(strategy is null){Armies.Remove(army);foreach(var u in battle.Units.Where(u=>u.Army==army && !u.PlayerOrder))u.Autonomy=AutonomyMode.Ordered;return;}
         if(!Strategies.Contains(strategy))throw new ArgumentException("Unknown army strategy");Armies[army]=strategy;
         foreach(var u in battle.Units.Where(u=>u.Army==army && !u.PlayerOrder))u.Autonomy=AutonomyMode.Autonomous;
@@ -42,7 +43,7 @@ public sealed class TacticalAi(BattleSimulation battle)
     {
         bool changed=u.Order!=order;u.Order=order;
         if(changed){battle.Metrics.AiOrders++;if(u.AiIntention!=text)battle.Emit("ai_decision",u,battle.Unit(order.TargetId??u.AiTarget??-1),u.Position,2,0,$"{u.Commander.DisplayName}: {text}");}
-        u.AiIntention=text;
+        u.AiIntention=(u.AiArmyRole.Length>0?$"{u.AiArmyRole}: ":"")+(u.AiAssignment.Length>0?$"{u.AiAssignment}: ":"")+text;
     }
     public void Retreat(Regiment u,Regiment enemy,string why)
     {
@@ -57,7 +58,8 @@ public sealed class TacticalAi(BattleSimulation battle)
         {if(battle.Time>=u.AiNextReform){u.AiReformUntil=battle.Time+8;u.AiNextReform=battle.Time+28;}if(battle.Time<u.AiReformUntil){Note(u,"Methodical preparation: cohesion below 55 (bounded 8 s)",new());return true;}}
         var policy=CommanderSystem.Policy(u);double own=u.Strength*u.Archetype.Melee*(.3+u.Cohesion/100),hostile=nearest.Strength*nearest.Archetype.Melee*(.3+nearest.Cohesion/100);
         if(battle.Terrain.Forests.Count>0){double cover=battle.Combat.ForestCover(u),other=battle.Combat.ForestCover(nearest);own*=ForestPower(u,cover);hostile*=ForestPower(nearest,other);}
-        u.AiThreatRatio=hostile/Math.Max(.1,own);
+        var support=AssessSupport(u,nearest);own+=support.Friendly;hostile+=support.Hostile;
+        u.AiFriendlySupport=support.Friendly;u.AiEnemySupport=support.Hostile;u.AiThreatRatio=hostile/Math.Max(.1,own);
         bool melee=u.AiMeleeSince is { } since && battle.Time-since>=policy.DisengageSeconds,threatened=CommanderSystem.Is(u,"cautious") && (nearest.Position-u.Position).Length<90;
         if(u.Archetype.Category!=UnitCategory.Artillery && !Vulnerable(nearest) && battle.Time>=u.AiNextRetreat && (melee||threatened) && hostile>own*policy.Overmatch)
         {Retreat(u,nearest,$"Preserving regiment: threat ratio {u.AiThreatRatio:F2} exceeds {policy.Overmatch:F2}");return true;}
@@ -82,21 +84,26 @@ public sealed class TacticalAi(BattleSimulation battle)
         {
             if(!u.Effective || !Autonomous(u) || u.InfantryCharging)return;
             if(u.Archetype.Category==UnitCategory.Cavalry && u.CavalryState is CavalryState.Charging or CavalryState.Pursuit or CavalryState.Recoil or CavalryState.Reforming)return;
+            var armyPlan=Director.Get(u.Army,strategy);DescribeRole(u,armyPlan);
+            RefreshAssignment(u);
             var enemies=Detected(u,strategy);
-            if(enemies.Length==0){if(strategy=="hold_the_line")Note(u,"Defend anchor; no detected enemy",(u.Position-Anchors[u.Id]).Length>8?new(OrderKind.Move,Anchors[u.Id]):new());else {u.AiTarget=null;var goal=u.LastSeenTargetPosition??new Vec2(battle.Rules.Width*.5,u.Position.Y);Note(u,"No detected enemy: advance to last contact / army centre",(goal-u.Position).Length>8?new(OrderKind.Move,goal):new());}u.AiTarget=null;return;}
-            var nearest=enemies[0];if(Preparation(u,nearest))return;nearest=SelectOpportunity(u,enemies,nearest);
+            if(MountedDecision(u,enemies,strategy,armyPlan))return;
+            if(ExecuteAssignment(u,enemies))return;
+            if(enemies.Length==0){if(strategy=="hold_the_line")Note(u,"Defend anchor; no detected enemy",(u.Position-DefensiveAnchor(u)).Length>8?new(OrderKind.Move,DefensiveAnchor(u)):new());else {u.AiTarget=null;var goal=u.LastSeenTargetPosition??new Vec2(battle.Rules.Width*.5,u.Position.Y);Note(u,"No detected enemy: advance to last contact / army centre",(goal-u.Position).Length>8?new(OrderKind.Move,goal):new());}u.AiTarget=null;return;}
+            var nearest=SupportedTarget(u,enemies);if(Preparation(u,nearest))return;nearest=SelectOpportunity(u,enemies,nearest);
             if(u.Archetype.Category!=UnitCategory.Cavalry || strategy=="hold_the_line")RecordTarget(u,nearest);
             if(strategy=="hold_the_line" && u.Archetype.Category!=UnitCategory.Artillery)
-            {Note(u,"Hold deployment anchor",(u.Position-Anchors[u.Id]).Length>8?new(OrderKind.Move,Anchors[u.Id]):u.Archetype.Category==UnitCategory.Cavalry && (nearest.Position-u.Position).Length<120 && Vulnerable(nearest)?new(OrderKind.Attack,TargetId:nearest.Id):new());return;}
+            {Note(u,"Hold deployment anchor",(u.Position-DefensiveAnchor(u)).Length>8?new(OrderKind.Move,DefensiveAnchor(u)):u.Archetype.Category==UnitCategory.Cavalry && (nearest.Position-u.Position).Length<120 && Vulnerable(nearest)?new(OrderKind.Attack,TargetId:nearest.Id):new());return;}
             if(u.Archetype.Category==UnitCategory.Artillery){Battery(u,nearest);return;}
             if(u.Archetype.Skirmisher && strategy!="all_out_attack")
-            {SelectCover(u,nearest);Note(u,"Skirmish at effective range",new(OrderKind.Skirmish,nearest.Position,TargetId:nearest.Id));ChooseFormation(u,Formation.Skirmish);return;}
+            {if(TryFiringPosition(u,nearest,strategy))return;SelectCover(u,nearest);Note(u,"Skirmish at effective range",new(OrderKind.Skirmish,nearest.Position,TargetId:nearest.Id));ChooseFormation(u,Formation.Skirmish);return;}
             if(u.Archetype.MeleeOnly)
             {
                 bool rush=u.Cohesion>=35 && (nearest.Position-u.Position).Length<110;
                 Note(u,rush?"Close assault: melee-only formation exploits contact":"Close assault: advance using cover; no firearm",new(rush?OrderKind.Charge:OrderKind.Attack,TargetId:nearest.Id));
                 ChooseFormation(u,(nearest.Position-u.Position).Length>180?Formation.Column:Formation.Line);return;
             }
+            if(TryFiringPosition(u,nearest,strategy))return;
             if(u.Archetype.Role=="militia" && (nearest.Position-u.Position).Length<=(u.Archetype.Weapon?.Range??0)*.9 && !Vulnerable(nearest))
             {ChooseFormation(u,Formation.Line);Note(u,"Citizen defence: hold cohesive firing line",new(OrderKind.Defend,u.Position));return;}
             if(u.Archetype.Category==UnitCategory.Cavalry)
@@ -109,16 +116,15 @@ public sealed class TacticalAi(BattleSimulation battle)
                 bool light=u.Archetype.Role=="light_cavalry";
                 bool ready=(!light && strategy=="all_out_attack") || Vulnerable(exposed) || !prepared && (exposed.Position-u.Position).Length<150 || battle.Time>=u.AiCommitAt && !prepared;
                 if(light && (prepared || exposed.Archetype.Category==UnitCategory.Cavalry && exposed.Archetype.Melee>u.Archetype.Melee*1.5 && !Vulnerable(exposed)))ready=false;
+                if(ready && exposed.State!=MoraleState.Routing && strategy!="all_out_attack" && AssessEngagement(u,exposed)>CommanderSystem.Policy(u).Overmatch*1.25)ready=false;
                 if(ready){Note(u,"Charge opportunity: vulnerability/readiness and commitment evaluated",new(OrderKind.Attack,TargetId:exposed.Id));return;}
                 if(u.AiWaypoint is null){double sign=u.Position.Y<battle.Rules.Height/2?-1:1;u.AiWaypoint=Clamp(u,exposed.Position+new Vec2(u.Army==0?-100:100,sign*100));}
                 if((u.Position-u.AiWaypoint.Value).Length<15){Note(u,"Cavalry reserve: prepared front; wait for disruption",new());if(battle.Time>=u.AiCommitAt+20){u.AiWaypoint=null;u.AiCommitAt=battle.Time+10;}}
                 else Note(u,"Bounded flank approach; avoid prepared frontal charge",new(OrderKind.Move,u.AiWaypoint));return;
             }
-            int reserve=battle.Units.Where(f=>f.Effective && f.Army==u.Army && f.Archetype.Category==UnitCategory.Infantry).Select(f=>f.Id).DefaultIfEmpty(-1).Max();
-            bool enough=battle.Units.Count(f=>f.Effective && f.Army==u.Army && f.Archetype.Category==UnitCategory.Infantry)>=4;
+            if(InfantryReserve(u,armyPlan,nearest))return;
             if(strategy=="skirmish"){Note(u,"Army skirmish objective",new(OrderKind.Skirmish,nearest.Position,TargetId:nearest.Id));return;}
-            if(enough && u.Id==reserve && battle.Time<75 && (nearest.Position-u.Position).Length>190 && !CommanderSystem.Is(u,"aggressive") && strategy!="all_out_attack") {Note(u,"Reserve: wait until 75 s or threat within 190 m",new(OrderKind.Reserve));return;}
-            if(u.Archetype.Role=="assault" && u.Cohesion>=50 && (nearest.Position-u.Position).Length<95 && (Vulnerable(nearest) || (nearest.Position-u.Position).Length<45 && u.Strength*u.Archetype.Melee>nearest.Strength*1.15))
+            if(u.Archetype.Role=="assault" && u.Cohesion>=50 && u.AiThreatRatio<CommanderSystem.Policy(u).Overmatch && (nearest.Position-u.Position).Length<95 && (Vulnerable(nearest) || (nearest.Position-u.Position).Length<45 && u.Strength*u.Archetype.Melee>nearest.Strength*1.15))
             {Note(u,"Assault infantry: exploit local close-combat advantage",new(OrderKind.Charge,TargetId:nearest.Id));ChooseFormation(u,Formation.Line);return;}
             if((CommanderSystem.Is(u,"aggressive") || CommanderSystem.Is(u,"opportunistic")) && Vulnerable(nearest) && (nearest.Position-u.Position).Length<60 && u.Cohesion>=50){Note(u,"Bayonet assault: exposed enemy within 60 m",new(OrderKind.Charge,TargetId:nearest.Id));return;}
             bool holding=(CommanderSystem.Is(u,"stalwart") || CommanderSystem.Has(u,"defensive_tactician") || UpgradeSystem.Has(u,"steadfast_defence")) && (nearest.Position-u.Position).Length<(u.Archetype.Weapon?.Range??0)*.85;
@@ -144,7 +150,7 @@ public sealed class TacticalAi(BattleSimulation battle)
         }
         bool opportunity=CommanderSystem.Is(u,"opportunistic"),cavalry=u.Archetype.Category==UnitCategory.Cavalry;
         Regiment? current=null;
-        var ids=opportunity?new[]{u.AiTarget}:cavalry?new[]{u.Order.TargetId,u.CavalryTargetId,u.AiTarget}:Array.Empty<int?>();
+        var ids=opportunity?new[]{u.AiTarget}:cavalry?new[]{u.Order.TargetId,u.CavalryTargetId,u.AiTarget}:u.Archetype.Category==UnitCategory.Infantry?new[]{u.AiTarget}:Array.Empty<int?>();
         foreach(var id in ids.Distinct())if(battle.Unit(id??-1)is { } candidate && Eligible(candidate) && Seen(candidate)){current=candidate;break;}
         bool currentSeen=current is not null;
         bool locked=currentSeen && (opportunity?battle.Time<u.AiTargetUntil:cavalry);
@@ -159,7 +165,7 @@ public sealed class TacticalAi(BattleSimulation battle)
             if(scoring && found.Count>0 && (e.Position-u.Position).Length*.12-(opportunity?100:130)>best)break;
             bool visible=e.Id==current?.Id?currentSeen:Seen(e);
             if(!visible)continue;
-            found.Add(e);if(scoring)best=Math.Min(best,Score(e));else break;
+            found.Add(e);if(scoring)best=Math.Min(best,Score(e));else if(u.Archetype.Category!=UnitCategory.Infantry || found.Count>=3 || (e.Position-u.Position).Length>350)break;
         }
         if(currentSeen && !found.Any(e=>e.Id==current!.Id))found.Add(current!);
         return found.OrderBy(e=>(e.Position-u.Position).LengthSquared).ThenBy(e=>e.Id).ToArray();

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "seed": 17,
+  "width": 1400,
+  "height": 900,
+  "duration": 600,
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "name": "AI: Clear a blocked firing lane",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Coalition 1",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 300,
+        "y": 300
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-0",
+        "name": "Laboratory Officer 0",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Coalition 2",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 375,
+        "y": 300
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-1",
+        "name": "Laboratory Officer 1",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      },
+      "autonomy": "hold"
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Coalition 3",
+      "archetype": "revolutionary_rifles",
+      "position": {
+        "x": 300,
+        "y": 650
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-2",
+        "name": "Laboratory Officer 2",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Opponent 4",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 450,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-3",
+        "name": "Laboratory Officer 3",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 4,
+      "army": 1,
+      "name": "Opponent 5",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 520,
+        "y": 650
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-4",
+        "name": "Laboratory Officer 4",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "hold_the_line"
+  }
+}

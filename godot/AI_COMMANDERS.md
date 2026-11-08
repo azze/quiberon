@@ -1,5 +1,12 @@
 # Milestone 5 audit / port contract
 
+Current coordination is documented in [Army director and mounted reserves](ARMY_DIRECTOR.md), including a matched comparison against the frozen previous AI.
+
+The subsequent [tactical decision pass](TACTICAL_DECISIONS.md) adds shared mission
+assignments, local support-aware engagement decisions, and infantry firing-position
+selection. Earlier Python-reference AI descriptions below document the foundation;
+those three native extensions intentionally change tactical decisions.
+
 **Current update:** the subsequent [native sandbox stage](SANDBOX.md) ports infantry
 bayonet impacts and acquired abilities. Infantry Firebrand is now generated and
 active, and defensive AI recognizes Steadfast Defence. Statements below excluding

@@ -16,7 +16,9 @@ public sealed class CombatSystem(BattleSimulation battle)
     public void PreparePhase(IReadOnlyList<Regiment> active)
     { index=active.Count>=12?new SpatialIndex(active):null;groupsDirty=true; }
     public Visibility Sight(Regiment a,Regiment b)
-    {double opacity=HistoricalCommanders.Has(a,"cossack_screen")?.9:1;if(battle.Rules.SpecialistsEnabled && battle.Terrain.Forests.Count>0){opacity*=1+(b.Archetype.Concealment-1)*battle.Terrain.ForestDensity(b.Position);opacity*=1-(1-a.Archetype.ForestVision)*battle.Terrain.ForestDensity(a.Position);}return battle.Visibility.Query(a.Position,b.Position,opacity);}
+    =>SightFrom(a,b,a.Position);
+    public Visibility SightFrom(Regiment a,Regiment b,Vec2 origin)
+    {double opacity=HistoricalCommanders.Has(a,"cossack_screen")?.9:1;if(battle.Rules.SpecialistsEnabled && battle.Terrain.Forests.Count>0){opacity*=1+(b.Archetype.Concealment-1)*battle.Terrain.ForestDensity(b.Position);opacity*=1-(1-a.Archetype.ForestVision)*battle.Terrain.ForestDensity(origin);}return battle.Visibility.Query(origin,b.Position,opacity);}
     private static bool Enemy(Regiment a,Regiment? b)=>b is {Active:true} && a.Id!=b.Id && a.Army!=b.Army;
     public Regiment? Designated(Regiment u)=>u.Order.Kind is OrderKind.Attack or OrderKind.Charge or OrderKind.Pursue or OrderKind.FireAt && Enemy(u,battle.Unit(u.Order.TargetId??-1))?battle.Unit(u.Order.TargetId!.Value):null;
     public IEnumerable<Regiment> Nearby(Vec2 point,double radius)=>Candidates(point,point,radius);
@@ -101,33 +103,34 @@ public sealed class CombatSystem(BattleSimulation battle)
         foreach(var u in active)groups[u.Id]=Root(u.Id);
         groupsDirty=false;
     }
-    public double LaneCover(Regiment shooter,Regiment target,Regiment obstacle)
+    public double LaneCover(Regiment shooter,Regiment target,Regiment obstacle,Vec2? origin=null)
     {
-        var side=Vec2.Direction(Vec2.AngleTo(shooter.Position,target.Position)+Math.PI/2);
+        var start=origin??shooter.Position;
+        var side=Vec2.Direction(Vec2.AngleTo(start,target.Position)+Math.PI/2);
         double sourceZ=0,targetZ=0,obstacleZ=0;
-        if(!battle.Terrain.Empty){sourceZ=battle.Terrain.Elevation(shooter.Position)+1.7;targetZ=battle.Terrain.Elevation(target.Position)+1.7;obstacleZ=battle.Terrain.Elevation(obstacle.Position)+1.7;}
+        if(!battle.Terrain.Empty){sourceZ=battle.Terrain.Elevation(start)+1.7;targetZ=battle.Terrain.Elevation(target.Position)+1.7;obstacleZ=battle.Terrain.Elevation(obstacle.Position)+1.7;}
         int covered=0;
         foreach(double fraction in new[]{-.35,0,.35})
         {
             var shift=side*(shooter.Width*fraction);
-            if(OrientedRect.Segment(shooter.Position+shift,target.Position+shift,obstacle.Rect) is not { } entry)continue;
+            if(OrientedRect.Segment(start+shift,target.Position+shift,obstacle.Rect) is not { } entry)continue;
             if(!battle.Terrain.Empty && sourceZ+(targetZ-sourceZ)*entry>obstacleZ+battle.Rules.FriendlyFireClearance)continue;
             covered++;
         }
         return covered/3.0;
     }
-    public Regiment? FiringBlocker(Regiment shooter,Regiment target)
+    public Regiment? FiringBlocker(Regiment shooter,Regiment target,Vec2? origin=null)
     {
         if(shooter.Archetype.Category==UnitCategory.Artillery)return null;
-        battle.Metrics.FiringBlockerChecks++;EnsureGroups();
+        battle.Metrics.FiringBlockerChecks++;EnsureGroups();var start=origin??shooter.Position;
         Regiment? best=null;double first=double.PositiveInfinity;
-        foreach(var u in Candidates(shooter.Position,target.Position))
+        foreach(var u in Candidates(start,target.Position))
         {
             if(!u.Active || u.Id==shooter.Id || u.Id==target.Id)continue;
-            if(OrientedRect.Segment(shooter.Position,target.Position,u.Rect) is not { } entry)continue;
+            if(OrientedRect.Segment(start,target.Position,u.Rect) is not { } entry)continue;
             if(groups[u.Id]==groups[target.Id])continue;
-            if(groups[u.Id]==groups[shooter.Id] && OrientedRect.IntersectionArea(shooter.Rect,u.Rect)>1e-8)continue;
-            if(u.Army==shooter.Army && (u.Formation==Formation.Skirmish || LaneCover(shooter,target,u)<.99))continue;
+            if(origin is null && groups[u.Id]==groups[shooter.Id] && OrientedRect.IntersectionArea(shooter.Rect,u.Rect)>1e-8)continue;
+            if(u.Army==shooter.Army && (u.Formation==Formation.Skirmish || LaneCover(shooter,target,u,origin)<.99))continue;
             if(entry<first || entry==first && u.Id<best!.Id){first=entry;best=u;}
         }
         return best;

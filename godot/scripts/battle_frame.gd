@@ -87,6 +87,13 @@ class UnitState extends RefCounted:
     var order_owner: String=""
     var intention: String=""
     var next_decision: float=0
+    var army_plan: String=""
+    var army_role: String=""
+    var mounted_intent: String=""
+    var tactical_assignment: String=""
+    var friendly_support: float=0
+    var enemy_support: float=0
+    var position_reason: String=""
     var threat_ratio: float=0
     var target_score: float=0
     var upgrades: Array=[]

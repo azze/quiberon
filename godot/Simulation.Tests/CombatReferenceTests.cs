@@ -67,7 +67,7 @@ public class CombatReferenceTests
     }
     [Fact] public void AllPublishedCombatScenariosLoadAndRemainValid()
     {
-        Assert.Equal(103,CombatScenarios.Available.Count());
+        Assert.Equal(107,CombatScenarios.Available.Count());
         foreach(var(id,_) in CombatScenarios.Available)
         {
             var definition=CombatScenarios.Get(id);var battle=definition.Create();Assert.True(battle.Rules.CombatEnabled);

@@ -14,7 +14,7 @@ func run() -> void:
     root.size=Vector2i(1280,800);var v:=Viewer.new();root.add_child(v)
     await process_frame;await process_frame;v.set_process(false);v.action("mode:live")
     check(v.playback.morale_enabled and v.playback.cavalry_enabled,"Normal live combat enables morale and cavalry")
-    check(v.hud.cavalry_orders.visible and v.hud.scenario_choices.size()==105,"Native scenario registry populates the developer selector")
+    check(v.hud.cavalry_orders.visible and v.hud.scenario_choices.size()==109,"Native scenario registry populates the developer selector")
     v.playback.playing=false;v.units.selected=0;v.action("live:step")
     check(v.playback.current.units[0].morale_simulated,"Live morale is authoritative")
     check(not v.hud.inspector.text.contains("Morale: not simulated"),"Inspector shows real morale")

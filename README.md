@@ -1,5 +1,10 @@
 # Quiberon: Battlefield Prototype
 
+The native [army director and mounted reserves](godot/ARMY_DIRECTOR.md) coordinate regimental roles, prepare firing formations, and keep cavalry with the infantry until useful opportunities appear. The guide includes comparison results and a live test scenario.
+
+Native tactical AI now supports shared mission assignments, local support assessment,
+and stable infantry firing-position selection. See [tactical decisions and test scenarios](godot/TACTICAL_DECISIONS.md).
+
 A playable Python real-time tactics experiment, set after an imagined French victory at Quiberon Bay in 1759. Blue and red are sandbox allegiances: mixed historical and alternate-history regiments can fight on either side. A five-battle campaign adds persistent armies and commander upgrades alongside the independent sandbox.
 
 

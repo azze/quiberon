@@ -2,7 +2,7 @@ namespace Quiberon.Simulation;
 
 public sealed record ObjectiveDefinition(string Id,string Type,string Description,Vec2 Position=default,double Radius=70,double Duration=30,int Army=0,int[]? Units=null,double RequiredFraction=.5,string[]? Dependencies=null,bool Optional=false);
 public sealed record DirectiveDefinition(int UnitId,Vec2[] Waypoints,string? Crossing=null,Formation? Formation=null,string After="attack",double Arrival=0,string? Condition=null,bool Convoy=false);
-public sealed record MissionDefinition(ObjectiveDefinition[] Objectives,DirectiveDefinition[]? Directives=null,double Timeout=900,string PlayerZone="west");
+public sealed record MissionDefinition(ObjectiveDefinition[] Objectives,DirectiveDefinition[]? Directives=null,double Timeout=900,string PlayerZone="west",TacticalAssignmentDefinition[]? Assignments=null);
 public sealed class ObjectiveState
 {
     public string Id {get;set;}="";
@@ -27,6 +27,7 @@ public sealed class MissionSystem
         if(d.Objectives.Length==0 || d.Objectives.Select(o=>o.Id).Distinct().Count()!=d.Objectives.Length || d.Timeout<=0 || !double.IsFinite(d.Timeout))throw new ArgumentException("Invalid mission objectives/timeout.");
         foreach(var o in d.Objectives)if(!new[]{"defeat","capture","hold","delay","rescue","convoy"}.Contains(o.Type) || !o.Position.Finite || o.Radius<=0 || o.Duration<0 || !double.IsFinite(o.Radius+o.Duration+o.RequiredFraction) || o.RequiredFraction is <=0 or >1 || o.Dependencies?.Any(id=>!d.Objectives.Any(x=>x.Id==id))==true)throw new ArgumentException("Invalid objective.");
         if(d.Objectives.Any(o=>o.Type is "rescue" or "convoy" && (o.Units is not {Length:>0} || o.Units.Any(id=>b.Unit(id)is null))) || (d.Directives??[]).Select(p=>p.UnitId).Distinct().Count()!=(d.Directives?.Length??0))throw new ArgumentException("Invalid objective units or duplicate directives.");
+        foreach(var assignment in d.Assignments??[])b.Ai.Assign(assignment);
         Objectives=d.Objectives.Select(o=>new ObjectiveState{Id=o.Id}).ToArray();
         foreach(var plan in d.Directives??[])
         {

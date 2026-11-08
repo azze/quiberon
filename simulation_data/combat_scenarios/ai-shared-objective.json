@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "seed": 17,
+  "width": 1400,
+  "height": 900,
+  "duration": 600,
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "name": "AI: Shared road objective",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Coalition 1",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 200,
+        "y": 250
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-0",
+        "name": "Laboratory Officer 0",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Coalition 2",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 200,
+        "y": 380
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-1",
+        "name": "Laboratory Officer 1",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Coalition 3",
+      "archetype": "commonwealth_national_cavalry",
+      "position": {
+        "x": 200,
+        "y": 510
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-2",
+        "name": "Laboratory Officer 2",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Opponent 4",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 950,
+        "y": 330
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-3",
+        "name": "Laboratory Officer 3",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 4,
+      "army": 1,
+      "name": "Opponent 5",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 1000,
+        "y": 460
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-4",
+        "name": "Laboratory Officer 4",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 5,
+      "army": 1,
+      "name": "Opponent 6",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 1200,
+        "y": 750
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-5",
+        "name": "Laboratory Officer 5",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "mission": {
+    "objectives": [
+      {
+        "id": "road",
+        "type": "capture",
+        "description": "Secure the road exit",
+        "position": {
+          "x": 850,
+          "y": 400
+        },
+        "radius": 100,
+        "duration": 30
+      }
+    ],
+    "assignments": [
+      {
+        "id": "road-assault",
+        "army": 0,
+        "kind": "attack",
+        "position": {
+          "x": 850,
+          "y": 400
+        },
+        "radius": 120,
+        "units": [
+          0,
+          1
+        ],
+        "objectiveId": "road"
+      },
+      {
+        "id": "flank-support",
+        "army": 0,
+        "kind": "support",
+        "position": {
+          "x": 650,
+          "y": 510
+        },
+        "radius": 140,
+        "units": [
+          2
+        ],
+        "objectiveId": "road"
+      }
+    ],
+    "timeout": 600
+  }
+}

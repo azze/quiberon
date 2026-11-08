@@ -10,6 +10,7 @@ public sealed record BattleResult(int? WinnerArmy, int Tick, double Time, string
 }
 public sealed class CombatMetrics
 {
+    public long AiPositionEvaluations { get; internal set; }
     public long AiDecisions { get; internal set; }
     public long AiTargetEvaluations { get; internal set; }
     public double AiMilliseconds { get; internal set; }

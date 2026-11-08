@@ -6,6 +6,32 @@ with personalities/starting specializations, acquired commander abilities, infan
 bayonet charges, custom setup/deployment and native battle reports. The six-battle Commonwealth campaign now runs natively in C#. Existing Python presentation/results/campaign UI, tactical camera and
 recording replay are preserved. Earlier milestone sections below are historical records.
 
+## Army director and cavalry accompaniment
+
+The native AI now adds a five-second army plan, persistent regimental roles,
+reactive infantry reserves, cavalry accompaniment/recovery stations and early
+firing-formation preparation. Player authority and authored approaches remain
+binding. Combat calculations and unit statistics are unchanged. The exact previous
+AI was frozen before implementation for mixed-controller testing. See
+[architecture, measurements and limitations](godot/ARMY_DIRECTOR.md). This supersedes
+the earlier pass's fixed reserve timer and enemy-relative mounted approach.
+
+## Tactical decision improvements
+
+Native AI now retains shared attack/defend/support/reserve assignments, derives
+purpose from campaign objectives, assesses nearby visible supporting forces, and
+selects infantry firing positions using existing terrain and firing-lane geometry.
+Player authority, authored approaches and mandatory morale behaviour retain priority.
+Three new live/headless laboratories demonstrate the changes. Combat calculations
+and Python gameplay code remain unchanged. See [rules, configuration, validation and
+performance](godot/TACTICAL_DECISIONS.md).
+
+The subsequent [matched AI evaluation](docs/AI_TACTICAL_EVALUATION.md) found no
+overall win-rate advantage (56 new wins, 55 old, 9 unresolved in 120 games). Lane
+clearing improves markedly, but line/woodland regressions implicate firing-position
+and formation-timing interactions. These findings are documented; no evaluation-time
+gameplay tuning has been applied.
+
 ## The Defence of the Commonwealth — Part 2
 
 Native campaign progression now connects six stages (seven authored encounter

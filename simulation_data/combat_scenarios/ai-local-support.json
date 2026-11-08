@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "seed": 17,
+  "width": 1400,
+  "height": 900,
+  "duration": 600,
+  "combatEnabled": true,
+  "moraleEnabled": true,
+  "cavalryEnabled": true,
+  "artilleryEnabled": true,
+  "specialistsEnabled": true,
+  "aiEnabled": true,
+  "commandersEnabled": true,
+  "aiArmies": [
+    0,
+    1
+  ],
+  "name": "AI: Supported line and isolated flank",
+  "units": [
+    {
+      "id": 0,
+      "army": 0,
+      "name": "Coalition 1",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 300,
+        "y": 300
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-0",
+        "name": "Laboratory Officer 0",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 1,
+      "army": 0,
+      "name": "Coalition 2",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 300,
+        "y": 410
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-1",
+        "name": "Laboratory Officer 1",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 2,
+      "army": 0,
+      "name": "Coalition 3",
+      "archetype": "commonwealth_national_cavalry",
+      "position": {
+        "x": 220,
+        "y": 500
+      },
+      "facing": 0,
+      "commander": {
+        "id": "lab-2",
+        "name": "Laboratory Officer 2",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 3,
+      "army": 1,
+      "name": "Opponent 4",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 500,
+        "y": 300
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-3",
+        "name": "Laboratory Officer 3",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 4,
+      "army": 1,
+      "name": "Opponent 5",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 510,
+        "y": 370
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-4",
+        "name": "Laboratory Officer 4",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 5,
+      "army": 1,
+      "name": "Opponent 6",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 520,
+        "y": 430
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-5",
+        "name": "Laboratory Officer 5",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    },
+    {
+      "id": 6,
+      "army": 1,
+      "name": "Opponent 7",
+      "archetype": "commonwealth_regulars",
+      "position": {
+        "x": 650,
+        "y": 700
+      },
+      "facing": 3.141592653589793,
+      "commander": {
+        "id": "lab-6",
+        "name": "Laboratory Officer 6",
+        "personality": "aggressive",
+        "specialization": "inspirer"
+      }
+    }
+  ],
+  "aiStrategies": {
+    "0": "balanced",
+    "1": "hold_the_line"
+  }
+}

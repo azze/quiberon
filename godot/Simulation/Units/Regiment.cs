@@ -28,6 +28,18 @@ public sealed class Regiment
     public bool SkirmishRetreat;
     public double SkirmishUntil;
     public bool PlayerFormationPinned;
+    public string AiArmyPlan {get;internal set;}="";
+    public string AiArmyRole {get;internal set;}="";
+    public string AiMountedIntent {get;internal set;}="";
+    public Vec2? AiEscortGoal;
+    public Vec2? AiArmyGoal {get;internal set;}
+    public double AiMountedCommitUntil;
+    public string AiAssignment { get; internal set; } = "";
+    public double AiFriendlySupport { get; internal set; }
+    public double AiEnemySupport { get; internal set; }
+    public Vec2? AiFiringPosition { get; internal set; }
+    public double AiFiringCommitUntil, AiFiringEvaluateAt;
+    public string AiPositionReason { get; internal set; } = "";
     public double AiThreatRatio { get; internal set; }
     public double AiTargetScore { get; internal set; }
     public int Decisions { get; internal set; }
